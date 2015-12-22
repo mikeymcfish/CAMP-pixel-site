@@ -1,0 +1,472 @@
+/* Colors */
+/* yellow : 	*/
+/* orange : 	*/
+/* Sizes */
+/* Fonts */
+@font-face {
+  font-family: 'Header';
+  src: url("fonts/GlacialIndifference-Bold.otf"); }
+@font-face {
+  font-family: 'Subheader';
+  src: url("fonts/GlacialIndifference-Regular.otf"); }
+@font-face {
+  font-family: 'Body';
+  src: url("fonts/Gen-Light.otf"); }
+@font-face {
+  font-family: 'Special';
+  src: url("fonts/AHAMONO-Regular.otf"); }
+body {
+  font-family: "Body";
+  background: white;
+  color: #1b2325; }
+
+#wrapper {
+  min-height: 100%;
+  position: relative; }
+
+#content {
+  padding-bottom: 210px; }
+
+a {
+  color: #570fa7;
+  cursor: pointer; }
+  a:hover {
+    color: #6666dd; }
+
+.italics {
+  font-size: 11px !important;
+  line-height: 12px !important;
+  font-style: italic; }
+
+.thisPageLink {
+  color: yellow !important; }
+
+#topBar {
+  background: #1b2325;
+  color: white;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 60px;
+  padding: 0px 0px 0px 75px; }
+  #topBar div {
+    line-height: 60px;
+    display: inline-block; }
+  #topBar a {
+    color: inherit;
+    text-decoration: none; }
+  #topBar #topBarLogo {
+    float: left;
+    font-size: 24px;
+    font-family: "Header"; }
+  #topBar #topBarButtons {
+    float: right;
+    font-family: 'Header'; }
+    #topBar #topBarButtons .topBarButton {
+      margin: 0px 10px; }
+      #topBar #topBarButtons .topBarButton:hover {
+        color: #ccc;
+        cursor: pointer; }
+    #topBar #topBarButtons #startButton {
+      text-align: center;
+      width: 75px;
+      padding: 0px 10px;
+      margin-right: 0px;
+      background: #570fa7; }
+      #topBar #topBarButtons #startButton:hover {
+        background: #6666dd; }
+
+.scrollToTop {
+  cursor: pointer;
+  font-family: "Header";
+  font-size: 18px;
+  color: #ffcc00; }
+
+.section {
+  position: relative;
+  top: 60px;
+  left: 0px;
+  right: 0px;
+  background-size: cover;
+  background-position: center top; }
+  .section .sectionBlurb {
+    margin-bottom: 50px;
+    font-family: "Body";
+    line-height: 24px;
+    font-size: 16px; }
+  .section .mainSectionHeader {
+    background: white;
+    height: 125px;
+    margin-bottom: 50px;
+    border-bottom: 20px solid #6666dd; }
+    .section .mainSectionHeader .mainSectionImageContainer {
+      display: inline-block;
+      position: absolute;
+      width: 100%; }
+      .section .mainSectionHeader .mainSectionImageContainer .mainSectionImage {
+        position: absolute;
+        right: 0px;
+        height: 125px;
+        width: 60%;
+        background-size: cover;
+        background-position: center; }
+      .section .mainSectionHeader .mainSectionImageContainer .mainSectionImageSlash {
+        height: 125px;
+        width: 135px;
+        background: url("images/mainSectionImageSlash.png");
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        left: 40%; }
+    .section .mainSectionHeader .mainSectionText {
+      font-family: "Header";
+      height: 125px;
+      line-height: 125px;
+      z-index: 2;
+      width: 40%;
+      background-color: #1b2325;
+      display: inline-block;
+      color: white;
+      font-size: 36px;
+      font-weight: bold;
+      position: absolute; }
+      .section .mainSectionHeader .mainSectionText span {
+        padding-left: 75px; }
+  .section .sectionContent {
+    padding: 25px 75px; }
+
+#bottomBar {
+  background: #1b2325;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 160px;
+  padding: 0px 75px; }
+  #bottomBar #bottomBarContainer {
+    height: 106.66667px;
+    position: relative;
+    top: 26.66667px; }
+  #bottomBar #bottomBarCampLogo {
+    float: left;
+    width: 106.66667px;
+    height: 100%;
+    background-color: #333;
+    margin-right: 15px; }
+  #bottomBar #bottomBarPixelLogo {
+    background-image: url("images/pixelLogo.png");
+    background-size: cover;
+    float: left;
+    width: 106.66667px;
+    height: 100%;
+    margin-right: 15px; }
+  #bottomBar #bottomBarLinks {
+    float: left;
+    width: 140px;
+    height: 100%;
+    font-family: "Subheader"; }
+    #bottomBar #bottomBarLinks #topLinks {
+      padding-bottom: 8px;
+      border-bottom: 5px solid #6666dd; }
+    #bottomBar #bottomBarLinks #bottomLinks {
+      padding-top: 8px; }
+    #bottomBar #bottomBarLinks a {
+      text-decoration: none;
+      display: block;
+      font-size: 12px;
+      line-height: 15px;
+      color: white; }
+      #bottomBar #bottomBarLinks a:hover {
+        color: #ccc;
+        cursor: pointer; }
+  #bottomBar #bottomBarContact {
+    font-size: 18px;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    font-family: "Header";
+    margin-right: 15px;
+    float: right;
+    text-align: center;
+    color: white;
+    background-color: #570fa7;
+    margin-top: 20px;
+    cursor: pointer; }
+    #bottomBar #bottomBarContact:hover {
+      background-color: #6666dd;
+      color: #ccc; }
+  #bottomBar #bottomBarSignUp {
+    font-size: 18px;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    font-family: "Header";
+    float: right;
+    text-align: center;
+    color: white;
+    background-color: #570fa7;
+    margin-top: 20px;
+    cursor: pointer; }
+    #bottomBar #bottomBarSignUp:hover {
+      background-color: #6666dd;
+      color: #ccc; }
+
+@media screen and (max-width: 670px) {
+  #bottomBar #bottomBarContainer {
+    height: 106.66667px;
+    position: relative;
+    top: 26.66667px; }
+  #bottomBar #bottomBarCampLogo {
+    float: none;
+    display: none;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: #333;
+    margin-right: 10px; }
+  #bottomBar #bottomBarPixelLogo {
+    float: none;
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    font-size: 18px; }
+  #bottomBar #bottomBarLinks {
+    position: absolute;
+    top: 0px;
+    left: 70px;
+    display: inline-block;
+    float: none;
+    width: 140px;
+    height: 100%; }
+  #bottomBar #bottomBarContact {
+    font-size: 18px;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    font-family: "Header";
+    margin-right: 15px;
+    float: right;
+    text-align: center;
+    color: white;
+    background-color: #570fa7;
+    margin-top: 20px;
+    cursor: pointer; }
+    #bottomBar #bottomBarContact:hover {
+      background-color: #6666dd;
+      color: #ccc; }
+  #bottomBar #bottomBarSignUp {
+    position: absolute;
+    top: 0px;
+    right: 0px; } }
+@media screen and (max-width: 875px) {
+  .section .mainSectionText span {
+    font-size: 26px;
+    display: inline-block;
+    min-width: 300px; } }
+@media screen and (max-width: 670px) {
+  #topBar {
+    height: 90px;
+    padding: 0px 0px 0px 0px;
+    z-index: 100; }
+    #topBar div {
+      line-height: 45px; }
+    #topBar a {
+      color: inherit;
+      text-decoration: none; }
+    #topBar #topBarLogo {
+      float: none;
+      width: 100%;
+      text-align: center; }
+    #topBar #topBarButtons {
+      width: 100%;
+      text-align: center;
+      float: none;
+      font-size: 14px; }
+      #topBar #topBarButtons .topBarButton {
+        margin: 0px 5px; }
+      #topBar #topBarButtons #startButton {
+        display: none; }
+
+  .section {
+    top: 90px; }
+    .section .sectionContent {
+      padding: 0px 15px; }
+    .section .mainSectionHeader {
+      width: 100%;
+      text-align: center; }
+      .section .mainSectionHeader .mainSectionText {
+        width: 100%;
+        background-color: rgba(27, 35, 37, 0.6);
+        display: inline-block;
+        color: white;
+        font-size: 36px;
+        font-weight: bold;
+        position: absolute;
+        left: 0px; }
+        .section .mainSectionHeader .mainSectionText span {
+          padding-left: 0px;
+          font-size: 36px; }
+      .section .mainSectionHeader .mainSectionImageContainer {
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        left: 0px; }
+        .section .mainSectionHeader .mainSectionImageContainer .mainSectionImage {
+          position: absolute;
+          right: 0px;
+          height: 125px;
+          width: 100%;
+          left: 0px;
+          background-size: cover;
+          background-position: center; }
+        .section .mainSectionHeader .mainSectionImageContainer .mainSectionImageSlash {
+          display: none; } }
+@media screen and (max-width: 530px) {
+  #bottomBar {
+    padding: 0px 15px; }
+    #bottomBar #bottomBarSignUp {
+      font-size: 16px;
+      height: 30px;
+      line-height: 30px;
+      padding: 15px 15px;
+      font-family: "Header";
+      float: right;
+      text-align: center;
+      color: white;
+      background-color: #570fa7;
+      margin-top: 20px;
+      cursor: pointer; } }
+#locationsSectionHeader .mainSectionImage {
+  background-image: url("images/locations-header.jpg") !important;
+  background-position: right center; }
+
+#locationsNote {
+  margin: 10px 0px;
+  font-size: 12px; }
+
+#locationBlurb {
+  margin-top: 20px; }
+
+#locationSection {
+  text-align: left;
+  padding: 0 75px 50px 75px; }
+  #locationSection #mapImage {
+    text-align: center;
+    display: inline-block;
+    width: 63%;
+    vertical-align: top; }
+    #locationSection #mapImage img {
+      margin: auto;
+      margin-bottom: 50px;
+      width: 100%; }
+  #locationSection #mapAddresses {
+    display: inline-block;
+    width: 30%;
+    margin-right: 20px; }
+  #locationSection .addressBlock {
+    margin-bottom: 50px;
+    /*
+    &:first-of-type{
+    	padding-bottom: 50px;
+    	border-bottom: solid 10px $buttonHover;
+    } */ }
+    #locationSection .addressBlock table {
+      text-align: left; }
+  #locationSection .addressTitle {
+    font-family: "Subheader";
+    font-size: 18px;
+    padding-bottom: 5px;
+    vertical-align: bottom;
+    padding-right: 30%;
+    text-align: left; }
+  #locationSection .addressSubtitle {
+    font-family: "Header";
+    padding-right: 30%;
+    text-align: left;
+    vertical-align: top;
+    font-size: 18px;
+    color: #570fa7;
+    margin-bottom: 15px; }
+  #locationSection .address {
+    font-size: 14px;
+    vertical-align: bottom; }
+  #locationSection .subwayIcons {
+    padding-top: 5px;
+    padding-right: 20px;
+    vertical-align: top; }
+    #locationSection .subwayIcons img {
+      width: 20px; }
+  #locationSection #locationsCTA {
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center; }
+    #locationSection #locationsCTA a {
+      text-decoration: none; }
+  #locationSection #locationsCTA1, #locationSection #locationsCTA2 {
+    font-family: "Header";
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+    font-size: 18px;
+    line-height: 60px;
+    height: 60px;
+    background: #570fa7;
+    font-weight: normal;
+    margin: auto;
+    color: white; }
+    #locationSection #locationsCTA1:hover, #locationSection #locationsCTA2:hover {
+      background: #6666dd;
+      cursor: pointer;
+      color: #ccc; }
+  #locationSection #locationsCTA1 {
+    margin-right: 15px; }
+
+@media screen and (max-width: 690px) {
+  #locationSection {
+    text-align: center;
+    padding: 0 15px 50px 15px; }
+    #locationSection #mapImage {
+      text-align: center;
+      display: block;
+      width: 100%;
+      vertical-align: top; }
+      #locationSection #mapImage img {
+        margin: auto;
+        margin-bottom: 50px;
+        width: 100%; }
+    #locationSection #mapAddresses {
+      display: block;
+      width: 100%;
+      margin-right: 0px;
+      text-align: center; }
+    #locationSection .addressBlock {
+      margin-bottom: 50px; }
+      #locationSection .addressBlock table {
+        text-align: left; }
+    #locationSection .addressTitle {
+      text-align: center;
+      font-size: 26px;
+      vertical-align: bottom;
+      padding-right: 0%; }
+    #locationSection .addressSubtitle {
+      text-align: center;
+      padding-right: 0%;
+      text-align: center;
+      font-size: 26px;
+      margin-bottom: 15px; }
+    #locationSection .address {
+      font-size: 14px;
+      vertical-align: bottom; }
+    #locationSection .subwayIcons {
+      text-align: center;
+      padding-top: 25px;
+      padding-right: 0px; }
+      #locationSection .subwayIcons img {
+        width: 20px; }
+    #locationSection #locationsCTA1 {
+      margin-right: 0px;
+      margin-bottom: 15px; } }
+
+/*# sourceMappingURL=locations.css.map */
