@@ -5,8 +5,10 @@ var searchTerms = {};
 
 function prepFaqSearch(){
 	$(".FAQQuestion").each(function(i, obj){
-		var keywords = $(obj).data("keywords");
-		if (keywords !== undefined){
+		console.log(i);
+		if ($(obj).data("keywords") !== undefined){
+			var anyKeywords = $(obj).data("keywords");
+			var keywords = anyKeywords.toLowerCase();
 			var keywordsList = keywords.split(",");
 			for (index in keywordsList){
 				if (searchTerms.hasOwnProperty(keywordsList[index])){
@@ -20,6 +22,7 @@ function prepFaqSearch(){
 			}
 		}
 	});
+	console.log(searchTerms);
 }
 
 
@@ -40,23 +43,65 @@ $('#searchBarButton').click( function() {
 });
 
 function showQuestions(searchTerm){
+	$("#noResultsMessage").css("display", "none");
+	var noResults = true;
 	if (searchTerm == ""){
-		// show the headers
+		// show labels
+		$(".FAQSubsection").css("margin", "50px 0px")
 		$(".FAQSubsectionLabel").each(function(i, obj){
-			$(obj).css("max-height", "200px");
-		})
+			$(obj).css("display", "block");
+		});
+		$(".scrollToTop").each(function(i, obj){
+			$(obj).css("display", "inline-block");
+		});
 		// show all the questsion
 		$(".FAQQuestion").each(function(i, obj){
 			$(obj).css("max-height", "500px");
+			$(obj).css("margin-bottom", "25px");
 		})
-
 	}
 	else{
+		// hide labels
+		$(".FAQSubsection").css("margin", "0px")
 		$(".FAQSubsectionLabel").each(function(i, obj){
+			$(obj).css("display", "none");
+		});
+		$(".scrollToTop").each(function(i, obj){
+			$(obj).css("display", "none");
+		});
+		// hide questions
+		$(".FAQQuestion").each(function(i, obj){
 			$(obj).css("max-height", "0px");
-		})
-		// show only those with search term, if there is no match, say so but show all answers
-		// if showing search term results, remove the headers
+			$(obj).css("margin-bottom", "0px");
+		});
+		var searchList = searchTerm.split(" ");
+		for (term in searchList){
+			var questions = searchTerms[searchList[term]];
+			if (questions != undefined){
+				for (index in questions){
+					var show = $($(".FAQQuestion")[questions[index]]);
+					show.css("max-height", "500px");
+					show.css("margin-bottom", "25px");
+				}
+				noResults = false;
+			}
+		}
+		if (noResults){
+			$("#noResultsMessage").css("display", "block");
+			// show labels
+			$(".FAQSubsection").css("margin", "50px 0px")
+			$(".FAQSubsectionLabel").each(function(i, obj){
+				$(obj).css("display", "block");
+			});
+			$(".scrollToTop").each(function(i, obj){
+				$(obj).css("display", "inline-block");
+			});
+			// show all the questsion
+			$(".FAQQuestion").each(function(i, obj){
+				$(obj).css("max-height", "500px");
+				$(obj).css("margin-bottom", "25px");
+			})
+		}
 	}
 }
 	

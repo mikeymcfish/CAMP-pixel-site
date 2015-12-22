@@ -425,6 +425,7 @@ a {
       overflow: hidden;
       max-height: 200px; }
     #FAQSection .FAQSubsection .FAQQuestion {
+      overflow: hidden;
       border-left: 10px solid #570fa7;
       padding-left: 25px;
       margin-bottom: 25px;
@@ -436,6 +437,10 @@ a {
       #FAQSection .FAQSubsection .FAQQuestion .answer {
         font-family: "Body";
         font-size: 14px; }
+#noResultsMessage{
+  margin-top: 25px;
+  display: none;
+}
 
 @media screen and (max-width: 850px) {
   #contactSection {
