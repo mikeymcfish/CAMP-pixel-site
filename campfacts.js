@@ -22,8 +22,8 @@ function openExtension(){
 		console.log(obj);
 		$(obj).css("max-height", "0px");
 		if (i == $(".factBlurb").length-1){
-		$("#factsExtension").css("max-height", "1000px");
-	}
+			$("#factsExtension").css("max-height", "1000px");
+		}
 	});
 }
 
