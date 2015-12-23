@@ -347,6 +347,7 @@ a {
   font-size: 12px; }
 
 #locationBlurb {
+  line-height: 24px;
   margin-top: 20px; }
 
 #locationSection {
@@ -355,7 +356,7 @@ a {
   #locationSection #mapImage {
     text-align: center;
     display: inline-block;
-    width: 63%;
+    width: 45%;
     vertical-align: top; }
     #locationSection #mapImage img {
       margin: auto;
@@ -363,7 +364,7 @@ a {
       width: 100%; }
   #locationSection #mapAddresses {
     display: inline-block;
-    width: 30%;
+    width: 50%;
     margin-right: 20px; }
   #locationSection .addressBlock {
     margin-bottom: 50px;
