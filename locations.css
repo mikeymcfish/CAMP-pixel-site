@@ -212,6 +212,77 @@ a {
       background-color: #6666dd;
       color: #ccc; }
 
+    #locationsBuses{
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 50px;
+}
+
+#busesHeader{
+  font-family: "Header";
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+
+.finePrint{
+  padding: 20px 0px;
+  font-family: "Body";
+  color: #666;
+  font-size: 12px;
+}
+
+#busStops{
+  text-align: center;
+  position: relative;
+}
+
+.busStopsList{
+  padding: 0 2%;
+  text-align: left;
+  margin: auto;
+  position: relative;
+  display: inline-block;
+  width: 28%;
+  vertical-align: top;
+}
+
+.busStopsLabel{
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: #570fa7;
+  font-size: 18px;
+  font-family: "Subheader";
+}
+
+.UESstop, .UWSstop, .BKLYNstop{
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.UESstop:before {
+  font-family: "Header";
+  content: ">"; /* Insert content that looks like bullets */
+  padding-right: 8px;
+  color: #f8971b; /* Or a color you prefer */
+}
+
+.UWSstop:before {
+  font-family: "Header";
+  content: ">"; /* Insert content that looks like bullets */
+  padding-right: 8px;
+  color: #f9f7a6; /* Or a color you prefer */
+}
+
+.BKLYNstop:before {
+  font-family: "Header";
+  content: ">"; /* Insert content that looks like bullets */
+  padding-right: 2px;
+  color: #ffdd5e; /* Or a color you prefer */
+}
+
 @media screen and (max-width: 670px) {
   #bottomBar #bottomBarContainer {
     height: 106.66667px;
@@ -376,14 +447,14 @@ a {
     #locationSection .addressBlock table {
       text-align: left; }
   #locationSection .addressTitle {
-    font-family: "Subheader";
+    font-family: "Header";
     font-size: 18px;
     padding-bottom: 5px;
     vertical-align: bottom;
     padding-right: 30%;
     text-align: left; }
   #locationSection .addressSubtitle {
-    font-family: "Header";
+    font-family: "Subheader";
     padding-right: 30%;
     text-align: left;
     vertical-align: top;
@@ -468,6 +539,25 @@ a {
         width: 20px; }
     #locationSection #locationsCTA1 {
       margin-right: 0px;
-      margin-bottom: 15px; } }
+      margin-bottom: 15px; } 
+    .busStopsList{
+      margin: auto;
+      position: relative;
+      display: block;
+      width: 240px;
+      margin-bottom: 35px;
+    }
+    #locationsBuses{
+      position: relative;
+    }
+    #busesHeader{
+      text-align: left;
+    }
+    #busesSubheader{
+      text-align: left;
+    }
+    }
+
+
 
 /*# sourceMappingURL=locations.css.map */
