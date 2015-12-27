@@ -1,5 +1,19 @@
 $(document).ready(function(){
 
+    //temporary to close first pop-up.  added by Fish
+
+    $("#factsExtension").css("max-height", "0px");
+    $(".factSelected").each(function(i, obj){
+        $(obj).removeClass("factSelected");
+    });
+    $(".factBlurb").each(function(i, obj){
+        console.log(obj);
+        $(obj).css("max-height", "200px");
+
+
+    });
+
+    //end temp fix
 
 $('.factHeader').click( function() {
 	var title = ($(this).data("title"));
