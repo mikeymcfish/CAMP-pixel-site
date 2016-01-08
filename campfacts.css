@@ -825,7 +825,9 @@ a {
   background-position: center;
   margin: 0 0 10px 10px; }
 #factTableHeader{
-  font-family: "Subheader";
+  width: 50%;
+  margin: auto;
+  font-family: "Header";
   font-size:28px;
   line-height: 32px;
   margin-bottom: 50px;

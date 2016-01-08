@@ -665,7 +665,6 @@ a {
           display: none; } }
 
 #topicsBlurb{
-    margin-bottom: 50px;
     font-family: "Body";
     line-height: 24px;
     font-size: 16px;
@@ -673,10 +672,12 @@ a {
 
 
 .topic{
-  width: 45%;
-  display: inline-block;
+  width: 46%;
   margin: 1%;
+  display: inline-block;
   margin-bottom: 25px;
+  cursor: pointer;
+  vertical-align: top;
 }
 
 .topicsPicture{
@@ -685,8 +686,10 @@ a {
 
 .topicsTitle{
   font-family: "Header";
-  font-size: 24px;
-  margin-bottom: 15px;
+  font-size: 28px;
+  padding: 15px 0px;
+  background-color: #ff9933;
+  color: white;
 }
 
 .topicsPicture img{
@@ -694,33 +697,68 @@ a {
 }
 
 .topicsInformation{
-  opacity: 0;
+  max-height: 0px;
+   padding: 0px;
+   overflow: hidden;
   transition: opacity .25s ease-in-out;
    -moz-transition: opacity .25s ease-in-out;
    -webkit-transition: opacity .25s ease-in-out;
-   top: 0px;
-   bottom: 0px;
-   left: 0px;
-   right: 0px;
-   background: rgba(0, 0, 0, .8);
-   color: white;
+   color: black;
+   text-align: left;
    font-family: "Body";
-   padding: 15px;
+  -webkit-transition: max-height .5s;
+  -moz-transition: max-height .5s;
+  -ms-transition: max-height .5s;
+  -o-transition: max-height .5s;
+  transition: max-height .5s;
+  -webkit-transition: padding .5s;
+  -moz-transition: padding .5s;
+  -ms-transition: padding .5s;
+  -o-transition: padding .5s;
+  transition: padding .5s;
+}
+
+.topicsDescription span{
+  font-family: "Header";
+}
+
+.topicsInformation.open{
+  height: auto;
+  max-height: 1000px;
+  padding: 20px 0px 0px 0px;
 }
 
 #topicsTable{
-  background: yellow;
+  margin: 35px 0;
 }
 
-.topic:hover .topicsInformation{
-  opacity: 1;
+.topic:hover .topicsTitle{
+  background-color: #ffcc00;
 }   
  
+.topicsDescription{
+  line-height: 20px;
+  font-size: 16px;
+}
+
+.topicDates{
+  margin: 15px 0px;
+  font-family: "Special";
+  font-size: 14px;
+  font-style: bold;
+  color: #ff9933;
+}
+
+.topicsSignUp{
+  font-family: "Header";
+  color: #570fa7;
+  font-size: 22px;
+}
 
 @media screen and (max-width: 690px) {}
 @media screen and (max-width: 850px) { 
   .topic{
-    width: 100%;
+    width: 90%;
     margin: auto 0;
     margin-bottom: 25px;
   }
