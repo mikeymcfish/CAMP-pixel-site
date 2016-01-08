@@ -824,7 +824,12 @@ a {
   background-size: cover;
   background-position: center;
   margin: 0 0 10px 10px; }
-
+#factTableHeader{
+  font-family: "Subheader";
+  font-size:28px;
+  line-height: 32px;
+  margin-bottom: 50px;
+}
 #factTableContainer {
   position: relative;
   text-align: center; }
@@ -852,7 +857,7 @@ a {
     #factTableContainer .fact .factBlurb {
       font-size: 14px;
       line-height: 18px;
-      max-height: 0px;
+      max-height: 200px;
       -webkit-transition: max-height .5s;
       -moz-transition: max-height .5s;
       -ms-transition: max-height .5s;
@@ -901,7 +906,7 @@ a {
 
 #factsExtension {
 
-  max-height: 1000px;
+  max-height: 0px;
   overflow: hidden;
   margin: 5px auto;
   margin-bottom: 50px;
