@@ -1,0 +1,73 @@
+				<!-- TEMPLATE -->
+				<div class="template" id="VIRTUALreality">
+					<div id="mainSection">
+					<div class="topicTemplate" >
+						<div class="topicTemplateInner" id="VIRTUALrealityPic">
+
+						</div>
+						<div class="blackMask">
+							<a href="camptopics.html">
+								<span class="backToTopics">	
+									<img height="12" src="images/backArrow.png" style="margin-right:10px"/> Back to CAMP/topics
+								</span>
+							</a>
+
+							<div class="topTopicTemplate">
+								<span id="topicsNav">
+								<span class="navLink" onclick="prevTopic('VIRTUALreality');">	
+									<img height="12" src="images/backArrow.png" style="margin-right:10px"/> Previous 
+								</span>
+								<span style="color:white;">
+								/
+								</span>
+								<span class="navLink" onclick="nextTopic('VIRTUALreality');">	
+									Next Topic
+									<img height="12" src="images/forwardArrow.png" style="margin-right:10px"/> 
+								</span>
+							</span>
+								<div class="topicName">
+									VIRTUAL/reality
+								</div>
+								<div class="topicBlurb">
+									Make a 3D Video Game for Virtual Reality / Create an Augmented Reality Experience!
+								</div>
+								<center> 
+									<img height="35" class="topicTemplateDownArrow" src="images/downArrow.png" />
+								</center>
+							</div>
+							
+						</div>
+					</div>
+					</div>
+					<div class="bottomTopicTemplate">
+						<div class="projectDescriptions">
+							<span class="digitalProjectDescription">
+								<div class="digitalProjectLabel">
+									Design and Dev for VR Unity
+									<div class="projectLabel">Digital Project</div> 
+								</div>
+								<div class="digitalProjectText">
+									Campers design, code, and test their own 3D, virtual reality video game! They learn to use the Unity game engine, work with the C# programming language, and experience their own creations in virtual reality! Campers get to customize and keep their own Google Cardboard phone-mount headset!
+								</div>
+							</span>	
+							<span class="physicalProjectDescription">
+								<div class="physicalProjectLabel">
+									Augmented Reality
+									<div class="projectLabel">Physical Project</div> 
+								</div>
+								<div class="physicalProjectText">
+									Augmented reality integrates virtual reality into the real world! Campers learn the fundamentals and explore the possibilities of this groundbreaking new technology and come away with their own creative project! 
+								</div>
+							</span>	
+						</div>
+						<div class="topicSchedule">
+							<div class="topicScheduleLength">
+								<div class="scheduleLabel">Length</div> Two Weeks
+							</div>
+							<div class="topicScheduleDates">
+								<div class="scheduleLabel">Dates</div> July 4-15 / July 18-29 / Aug 1-12 / Aug 15-26
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END TEMPLATE -->

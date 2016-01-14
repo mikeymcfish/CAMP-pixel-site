@@ -2,7 +2,7 @@
   position: relative;
   top: 60px;
   width: 100%;
-  height: 110%;
+  height: 100%;
   background-size: cover;
   background-position: center; 
 }
@@ -16,37 +16,97 @@
   top: 0px;
   left: 0px;
   right: 0px;
-  bottom: 60px;
+  bottom: 0px;
+}
+.topicTemplateInner{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
 }
 .blackMask{
   position: absolute;
   top: 0px;
-  bottom: 0px;
+  bottom: 60px;
   left: 0px;
   right: 0px;
-   background: rgba(25, 37, 35, .3);
+  background: rgba(25, 37, 35, .3);
 }
-
-#DJproduction{
+#DJproductionPic{
   background: url("images/topicDJmusicproduction.jpg");
   background-size: cover;
 }
+#CUTscenesPic{
+  background: url("images/Vinyl topic.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+#JURASSICpartsPic{
+  background: url("images/dino topic.jpg");
+  background-size: cover;
+}
+
+#MINECRAFTarchitectPic{
+  background: url("images/ComputerCraft1.png");
+  background-size: cover;
+}
+#MINECRAFTcodingPic{
+  background: url("images/Minecraft coding.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+#MINECRAFTcodingplusPic{
+  background: url("images/Minecraft Coding plus.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+#MINECRAFTengineeringPic{
+  background: url("images/Minecraft engineering.png");
+  background-size: cover;
+  background-position: bottom;
+}
+#VIRTUALrealityPic{
+  background: url("images/vr2.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+#DRIVEdesignPic{
+  background: url("images/DriveDesign.jpg");
+  background-size: cover;
+  background-position: top;
+}
+#FLIGHTdesignPic{
+  background: url("images/plane topic.jpg");
+  background-size: cover;
+  background-position: top;
+}
 .topTopicTemplate{
-  padding: 40px 75px 0px 75px;
+  position: absolute;
+  bottom: 50px;
+  left: 75px;
+  right: 75px;
 }
 .backToTopics{
   font-family: "Body";
   font-size: 16px;
-  margin-bottom: 35px;
   color: white;
   display: inline-block;
   cursor: pointer;
+  position: absolute;
+  left: 75px;
+  top: 50px;
 }    
 #topicsNav{
-  position: absolute;
-  right: 75px; 
+  margin-bottom: 20px;
 }   
-.backToTopics:hover{
+
+.navLink{
+  color: white;
+}
+
+.backToTopics:hover, .navLink:hover{
+  cursor: pointer;
   color: #6666dd;
 }
 .topicName{
@@ -54,25 +114,25 @@
   color: white;
   font-size: 36px;
   margin-bottom: 15px;
+  margin-top: 25px;
 }
 .topicBlurb{
   font-family: "Body";
   color: white;
+  margin-bottom: 30px;
   font-size: 24px;
 }
 .bottomTopicTemplate{
   border-top: 10px solid #6666dd;
   background: rgba(25, 37, 35, .8);
-  position: absolute;
-  top: 200px;
+  position: relative;
+  top: 0px;
+  padding-bottom: 100px;
   bottom: 0px;
   left: 0px;
   right: 0px;
 }
-.topicTemplateDownArrow{
-  position: absolute;
-  bottom: 15px;
-}
+
 .projectDescriptions{
   padding: 30px 75px 0px 75px;
   color: white;
@@ -130,7 +190,9 @@
   width: 80px;
 }
 #DetailsSection {
-  padding: 0px 75px 0px 75px;
+  background-color: white;
+  position: relative;
+  padding: 10px 75px 0px 75px;
   margin-bottom: 20px;
   margin: auto;
   font-family: "Header"; 
@@ -142,6 +204,11 @@
 }
 #DetailsSection #dropOffImage {
   background-image: url("images/DropOff.jpg");
+  background-size: cover;
+  background-position: center 50%; 
+}
+#DetailsSection #screenBreaksImage {
+  background-image: url("images/ScreenBreaks.jpg");
   background-size: cover;
   background-position: center 50%; 
 }
@@ -205,10 +272,12 @@
   max-height: 200px; 
 }
 #costSection{
+
   margin-bottom: 25px;
 }
 #locationSection{
   padding: 0px;
+  position: relative;
   font-family: "Body";
 }
 
@@ -238,7 +307,27 @@
 
 @media screen and (max-width: 690px) {
   #DetailsSection {
-    padding: 0px 15px 0px 15px;
+    padding: 5px 15px 0px 15px;
+  }
+  .backToTopics{
+    left: 20px;
+  }
+  .topTopicTemplate{
+    left: 15px;
+    right: 15px; 
+  }
+  .projectDescriptions{
+    padding: 30px 15px 0px 15px;
+  }
+  .topicSchedule{
+    padding: 30px 15px 0px 15px;
+  }
+  .digitalProjectDescription, .physicalProjectDescription{
+    margin: 0px;
+    margin-bottom: 50px;
+    width: 100%;
+    padding-left: 0px;
+    display: block;
   }
 }
 
