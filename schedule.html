@@ -1,0 +1,473 @@
+<html>
+<head>
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+	<link rel="stylesheet" type="text/css" href="cssReset.css">
+	<link rel="stylesheet" type="text/css" href="sharedStyle.css">
+	<link rel="stylesheet" type="text/css" href="sharedStyleMobile.css">
+	<link rel="stylesheet" type="text/css" href="schedule.css">
+	<script src="jquery-1.11.3.min.js"></script>
+	<script src="schedule.js"></script>
+	<title> CAMP/schedule</title>
+</head>
+<body>
+	<div id="wrapper">
+	<a name="top"></a>
+	<div id="topBar">
+		<div id="topBarLogo">
+			<a href="home.html">
+				<img src="images/topbar-camplogo.png" style="padding-top: 15px;" height="30px;" />
+			</a>
+		</div>
+		<div id="topBarButtons">
+			<a href="about.html">
+				<div class="topBarButton">
+					CAMP/about
+				</div>
+			</a>
+			<a href="schedule.html">
+				<div class="topBarButton thisPageLink">
+					CAMP/schedule
+				</div>
+			</a>
+			<a href="topics.html">
+				<div class="topBarButton">
+					CAMP/topics
+				</div>
+			</a>
+			<a href="https://hq.pixelacademy.org/tickets/camp-pixel">
+				<div id="signupButton" class="topBarButton">
+					TOPICS/signup
+				</div>
+			</a>
+		</div>
+	</div>
+	<div id="content">
+	<!-- CONTACT/FAQ SECTION -->
+	<div class="section">
+		<div class="mainSectionHeader" id="scheduleSectionHeader">
+			<div class="mainSectionText">
+				<span>
+				CAMP/schedule
+				</span>
+			</div>
+			<div class="mainSectionImageContainer">
+				<div class="mainSectionImage" ></div>
+				<div class="mainSectionImageSlash"></div>
+			</div>
+		</div>
+		<div class="sectionContent">
+			<div id="scheduleSection">
+				<span id="scheduleInfo">
+					<div class="sectionBlurb" id="scheduleText">
+						<div id="scheduleImage">
+							<img src="images/standby.jpg" />
+						</div>
+						Every day at CAMP/pixel is packed from morning to afternoon with invigorating, inspiring activities both on and off the screen. Campers are surrounded by endless resources, whether it be technology, physical activity, or tools for a fun challenge. We've created and time-tested a perfect blend of focus and just goofing around to build a social, motivating experience in which imaginative young minds can thrive. For a part of each day, they'll be honed in on their with our expert instructors. For another, they'll be bonding with each other at the playground. They're with Pixel Academy staff throughout the day to ensure that they're always excited, engaged, and standing by our Rule #1: Have Fun.
+					</div>
+				</span>
+				<span id="scheduleTable">
+					<table>
+						<tr>
+							<td colspan="2">
+								<div id="scheduleTableLabel">
+									Sample Schedule
+								</div>
+								<!--<div id="scheduleTableCTA">-->
+									<!--Click on an activity for more information!-->
+								<!--</div>-->
+							</td>
+						</tr>
+						<tr>
+							<td class="scheduleTableLeft">
+								7:30-8:30 a.m.
+							</td>
+							<td class="scheduleTableRight">
+								<table>
+									<tr>
+										<td>
+											Bus Pickup (add-on info coming soon!) 
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr class="highlightedRow">
+							<td class="scheduleTableLeft">
+								8:30-9:15 a.m.
+							</td>
+							<td class="scheduleTableRight">
+								<table>
+									<tr>
+										<td class="scrollTo" data-scroll="dropoff">
+											Flexible Check-In <span class="carat">></span>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td class="scheduleTableLeft">
+								Morning
+							</td>
+							<td class="scheduleTableRight">
+								<table>
+									<tr>
+										<td class="scrollTo" data-scroll="learning">
+											Project Time <span class="carat">></span>
+										</td>
+									</tr>
+									<tr>
+										<td class="scrollTo" data-scroll="meals">
+											Snack <span class="carat">></span>
+										</td>
+									</tr>
+									<tr>
+										<td class="scrollTo" data-scroll="screenbreaks">
+											Group Challenge/Activity <span class="carat">></span>
+										</td>
+									</tr>
+									
+								</table>
+							</td>
+						</tr>
+						<tr  class="highlightedRow">
+							<td class="scheduleTableLeft">
+								Mid-day
+							</td>
+							<td class="scheduleTableRight">
+								<table>
+									<tr>
+										<td class="scrollTo" data-scroll="meals">
+											Lunch (add-on info coming soon!) <span class="carat">></span>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td class="scheduleTableLeft">
+								Afternoon
+							</td>
+							<td class="scheduleTableRight">
+								<table>
+									<tr>
+										<td class="scrollTo" data-scroll="learning">
+											Project Time <span class="carat">></span>
+										</td>
+									</tr>
+						
+									<tr>
+										<td class="scrollTo" data-scroll="meals">
+											Snack <span class="carat">></span>
+										</td>
+									</tr>
+									<tr>
+										<td class="scrollTo" data-scroll="screenbreaks">
+											Group Challenge/Activity <span class="carat">></span>
+										</td>
+									</tr>
+									
+								</table>
+							</td>
+						</tr>
+						<tr  class="highlightedRow">
+							<td class="scheduleTableLeft">
+								2:30-3:00 p.m.
+							</td>
+							<td class="scheduleTableRight">
+								<table>
+									<tr>
+										<td class="scrollTo" data-scroll="dropoff">
+											Flexible Check-Out <span class="carat">></span>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td class="scheduleTableLeft">
+								3:00-5:30 p.m.
+							</td>
+							<td class="scheduleTableRight">
+								<table>
+									<tr>
+										<td class="scrollTo" data-scroll="dropoff">
+											Flexible Extended Care (add-on info coming soon!) <span class="carat">></span>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</span>
+			</div>
+
+			<div id="DetailsSection">
+				<!-- The Camp Day section -->
+				<a name="learning"></a>
+				<div class="scheduleSubsection">
+					<div class="label">
+					<div class="labelImage" id="learningImage">
+					</div>
+					<div class="slashImage">
+					</div>
+					<div class="labelText">
+						LEARNING
+					</div>
+				</div>
+					<div class="scheduleDetail">
+						<a name="digitalprojects"></a>
+						<div class="scheduleSubsectionLabel">
+							DIGITAL PROJECT
+						</div>
+						<div class="detailText">
+							The first half of our meticulously-planned Combos this summer is the Digital Project. The Telegraph says that "using technology in an educational environment not only better reflects children's life outside the classroom, but also allows them to hone their digital skills in a way that will continue to be valuable throughout their adult life." Whether it's coding or modding a video game, digital animation, or music production, this is the camper's opportunity to imagine and create a digital project. Using industry-grade technology, campers will embark on a 1- or 2-week journeys with our instructors to understand and develop skills in new software, design a unique project, and leave with knowledge they'll see time and time again in and out of their education.
+						</div>
+					</div>
+					<div class="scheduleDetail">
+						<a name="physicalprojects"></a>
+						<div class="scheduleSubsectionLabel">
+							PHYSICAL PROJECT
+						</div>
+						<div class="detailText">
+							As Scholastic put so well, "hands-on, creative, and artistic activities help students to focus and retain knowledge, and at the same time emphasize the importance of beauty and design in our world." The Combo's complement to a week's Digital Project is the Physical Project; while each camper spends a good amount of time producing something digital, he or she will work to produce a physical product as well. Campers can work on laser cutting, 3D design, DJing, and much more. Each Physical Project will require some on-screen and off-screen work to accomplish its goal.
+
+						</div>
+					</div>
+					<a class="scrollTo scrollToTop" data-scroll="top">
+						BACK TO TOP >
+					</a>
+				</div>
+				<a name="dropoff"></a>
+				<div class="label">
+					<div class="labelImage" id="dropOffImage">
+					</div>
+					<div class="slashImage">
+					</div>
+					<div class="labelText twoLines">
+					DROP-OFF <br> AND PICK-UP
+					</div>
+				</div>
+				
+				<!-- Registration Section -->
+				<div class="scheduleSubsection">
+					<div class="scheduleDetail">
+						<a name="flexiblecheckin"></a>
+						<div class="scheduleSubsectionLabel">
+							FLEXIBLE CHECK-IN
+						</div>
+						<div class="detailText">
+							We're offering a flexible timeframe for your convenience, every day of CAMP/pixel. We won't start the activities until 9:15 in the morning; you're welcome to drop off as early as 8:30 a.m. for your camper to come and have a bit of free time before the camp day begins. Be sure to bring a lunch if you aren't signed up for our fresh lunches!
+
+						</div>
+					</div>
+					<div class="scheduleDetail">
+						<a name="flexiblecheckout"></a>
+						<div class="scheduleSubsectionLabel">
+							FLEXIBLE CHECK-OUT
+						</div>
+						<div class="detailText">
+							Our program wraps up at 2:30 p.m. every day. You're welcome to drop in anytime between then and 3:00 p.m. to pick up your child. If someone other than the parent is coming to pick up, you'll need to let us know ahead of time for our security. If you need time past 3:00 p.m., we offer P.M. Extended Care.
+						</div>
+					</div>
+					<div class="scheduleDetail">
+						<a name="extendedcare"></a>
+						<div class="scheduleSubsectionLabel">
+							P.M. EXTENDED CARE (3:00-5:30 p.m.)
+						</div>
+						<div class="detailText">
+							Need some extra time to get to CAMP/pixel? We offer P.M. Extended Care as an add-on until 5:30 p.m. Attending campers will have an opportunity to hang out in our space and play games or continue project work on their own.
+						</div>
+					</div>
+					<a class="scrollTo scrollToTop" data-scroll="top">
+						BACK TO TOP >
+					</a>
+				</div>
+				<!-- Miscellaneous  section -->
+				<a name="screenbreaks"></a>
+				<div class="scheduleSubsection">
+					<div class="label">
+						<div class="labelImage" id="screenBreaksImage">
+						</div>
+						<div class="slashImage">
+						</div>
+						<div class="labelText twoLines">
+						 SCREEN BREAKS <br>
+						 AND ACTIVITIES
+						</div>
+					</div>
+					<div class="scheduleDetail">
+						<a name="challengeactivities"></a>
+						<div class="scheduleSubsectionLabel">
+							CHALLENGE ACTIVITIES
+						</div>
+						<div class="detailText">
+							Campers take several screen breaks throughout the Camp day as a chance to reset, move around, and socialize! Challenge Activities are kinetic, group-oriented games campers play for a few minutes to get to know each other and the instructors in a non-learning setting.
+						</div>
+					</div>
+					<div class="scheduleDetail">
+						<a name="circletime"></a>
+						<div class="scheduleSubsectionLabel">
+							CIRCLE TIME
+						</div>
+						<div class="detailText">
+							Every day begins and ends with a circle. It's an opportunity for the campers to ready, plan, reflect, and socialize to start and end the day. Your child will always have an opportunity to center him or herself before getting into the exciting activities of the day, and collect and reflect at the end. This is our first and last opportunity for us to ensure the entire group is following Rule 1: Have Fun.
+						</div>
+					</div>
+					<div class="scheduleDetail">
+						<a name="outsidetime"></a>
+						<div class="scheduleSubsectionLabel">
+							OUTSIDE TIME
+						</div>
+						<div class="detailText">
+							We love playing outside! Weather permitting, we head to a local playground around mid-day to blow off some steam and play together (yes, staff plays too!). On rainy or particularly unseasonal days, we'll instead work together on some non-learning, non-screen indoor activities.
+						</div>
+					</div>
+					<div class="scheduleDetail">
+						<a name="freetime"></a>
+						<div class="scheduleSubsectionLabel">
+							FREE TIME/GAMING
+						</div>
+						<div class="detailText">
+							Playing computer games isn't a part of our CAMP/pixel formula. However, there are some scenarios where we will give campers a few minutes to test games or play on our servers. Campers who want this experience are welcome to add on the P.M. Extended Care add-on for 3:30-5:30 p.m. after regular pick-up.
+						</div>
+					</div>
+					<a class="scrollTo scrollToTop" data-scroll="top">
+						BACK TO TOP >
+					</a>
+				</div>
+				<!-- Miscellaneous  section -->
+				<a name="meals"></a>
+				<div class="scheduleSubsection">
+					<div class="label">
+						<div class="labelText">
+						 MEALS
+						</div>
+						<div class="labelImage" id="mealsImage">
+						</div>
+						<div class="slashImage">
+						</div>
+						
+					</div>
+					<div class="scheduleDetail">
+						<a name="snacks"></a>
+						<div class="scheduleSubsectionLabel">
+							HEALTHY SNACKS (INCLUDED)
+						</div>
+						<div class="detailText">
+							Two snacks per day are included in your CAMP/pixel ticket! We carefully select healthy, delicious snacks for our campers to nibble on during these social, 15-minute screen breaks. Clif bars, KIND Healthy Grains bars, and Annie's Fruit Snacks are examples from our past camps.
+						</div>
+					</div>
+					<div class="scheduleDetail">
+						<a name="lunch"></a>
+						<div class="scheduleSubsectionLabel">
+							FRESH LUNCH (OPTIONAL ADD-ON)
+						</div>
+						<div class="detailText">
+							We partner with healthy, local food delivery services to offer our campers an optional Lunch add-on to CAMP/pixel! Each day of a camp week will feature a different healthy, nutritious lunch for participating campers. Campers are welcome to pack their own lunches as well.
+						</div>
+					</div>
+					<div class="scheduleDetail">
+						<div class="detailText italics">
+							Please note that while we make our best efforts to make our lunch and snacks healthy and available to all, we do not operate allergen-free facilities. Please feel free to send separate food items with your camper if its at all a concern.
+						</div>
+					</div>
+					<a class="scrollTo scrollToTop" data-scroll="top">
+						BACK TO TOP >
+					</a>
+				</div>
+
+			</div>
+			<div id="scheduleCTA" >
+					<a href="about.html">
+						<div id="scheduleCTA1">
+							ABOUT CAMP/pixel
+						</div>
+					</a>
+					<a href="topics.html">
+					<div id="scheduleCTA2">
+						VIEW CAMP/topics
+					</div>
+					</a>
+				</div>
+		</div>
+
+	</div>
+				
+	<!-- END CONTACT/FAQ SECTION -->
+	</div>
+
+	<!-- BOTTOM BAR -->
+		<div id="bottomBar">
+			<div id="bottomBarContainer">
+				<div id="bottomBarLogos">
+					<a href="home.html">
+						<div id="bottomBarCampLogo">
+						</div>
+					</a> 
+					<a href="http://www.pixelacademy.org/" target="_blank">
+						<div id="bottomBarPixelLogo">
+						</div>
+					</a>
+				</div>
+				<div id="bottomBarLinks">
+					<div id="topLinks">
+						<a href="about.html">
+							About CAMP/pixel
+						</a>
+						<a href="schedule.html" class="thisPageLink">
+							A Day at CAMP/pixel
+						</a>
+						<a href="topics.html">
+							CAMP/pixel topics
+						</a>
+					</div>
+					<div id="bottomLinks">
+						<a href="about.html#location">
+							Location
+						</a>
+						<a href="about.html#cost">
+							Cost
+						</a>
+						<a href="http://www.pixelacademy.org/" target="_blank">
+							Pixel Academy Home Page
+						</a>
+					</div>
+				</div>
+			</div>
+				<div id ="bottomBarButtons">
+					<a href="https://hq.pixelacademy.org/tickets/camp-pixel">
+						<div id="bottomBarSignUp">
+							TOPICS/signup
+						</div>
+					</a>
+					<a href="contactfaq.html">
+						<div id="bottomBarSignUp">
+							CONTACT/faq
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END BOTTOM BAR -->
+	</div>
+</body>
+</html>

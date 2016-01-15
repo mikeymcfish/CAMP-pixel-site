@@ -1,0 +1,104 @@
+#topicsSectionHeader .mainSectionImage {
+  background-image: url("images/topics-header.jpg") !important;
+  background-position: right center; 
+}
+
+#topicsBlurb{
+    font-family: "Body";
+    line-height: 24px;
+    font-size: 16px;
+}
+
+
+.topic{
+  width: 46%;
+  margin: 1%;
+  display: inline-block;
+  margin-bottom: 25px;
+  vertical-align: top;
+}
+
+.topicsPicture{
+  position: relative;
+}
+
+.topicsTitle{
+  font-family: "Header";
+  font-size: 28px;
+  padding: 15px 0px;
+  background-color: #ff9933;
+  color: white;
+}
+
+.topicsPicture img{
+  width: 100%;
+}
+
+.topicsInformation{
+  max-height: 0px;
+   padding: 0px;
+   overflow: hidden;
+  transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   color: black;
+   text-align: left;
+   font-family: "Body";
+  -webkit-transition: max-height .5s;
+  -moz-transition: max-height .5s;
+  -ms-transition: max-height .5s;
+  -o-transition: max-height .5s;
+  transition: max-height .5s;
+  -webkit-transition: padding .5s;
+  -moz-transition: padding .5s;
+  -ms-transition: padding .5s;
+  -o-transition: padding .5s;
+  transition: padding .5s;
+}
+
+.topicsDescription span{
+  font-family: "Header";
+}
+
+.topicsInformation{
+  height: auto;
+  max-height: 1000px;
+  padding: 20px 0px 0px 0px;
+}
+
+#topicsTable{
+  margin: 35px 0;
+}
+
+ 
+.topicsDescription{
+  line-height: 20px;
+  font-size: 16px;
+}
+
+.topicDates{
+  margin: 15px 0px;
+  font-family: "Special";
+  font-size: 14px;
+  font-style: bold;
+  color: #ff9933;
+}
+
+.topicsSignUp{
+  font-family: "Header";
+  color: #570fa7;
+  font-size: 22px;
+  line-height: 15px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 850px) { 
+  .topic{
+    width: 90%;
+    margin: auto 0;
+    margin-bottom: 25px;
+  }
+}
+
+/*# sourceMappingURL=campfacts.css.map */

@@ -1,7 +1,26 @@
 <html>
 <head>
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
 	<link rel="stylesheet" type="text/css" href="cssReset.css">
+	<link rel="stylesheet" type="text/css" href="sharedStyle.css">
+	<link rel="stylesheet" type="text/css" href="sharedStyleMobile.css">
 	<link rel="stylesheet" type="text/css" href="home.css">
 	<script src="jquery-1.11.3.min.js"></script>
 	<script src="home.js"></script>
@@ -12,28 +31,28 @@
 		<div id="topBarHome">
 			<div id="topBarLogo">
 				<a href="home.html">
-					CAMP/pixel
+					<img src="images/topbar-camplogo.png" style="padding-top: 15px;" height="30px;" />
 				</a>
 			</div>
 			<div id="topBarButtons">
-				<a href="campfacts.html">
+				<a href="about.html">
 					<div class="topBarButton">
 						CAMP/about
 					</div>
 				</a>
-				<a href="adayatcamppixel.html">
+				<a href="schedule.html">
 					<div class="topBarButton">
 						CAMP/schedule
 					</div>
 				</a>
-				<a href="contact.html">
+				<a href="topics.html">
 					<div class="topBarButton">
-						CAMP/faq
+						CAMP/topics
 					</div>
 				</a>
 				<a href="https://hq.pixelacademy.org/tickets/camp-pixel">
-					<div id="startButton" class="topBarButton">
-						SIGN UP
+					<div id="signupButton" class="topBarButton">
+						TOPICS/signup
 					</div>
 				</a>
 			</div>
@@ -53,12 +72,12 @@
 						</a>
 					</div>
 					<div id="mainSectionCTA" >
-						<a href="adayatcamppixel.html">
+						<a href="schedule.html">
 							<div id="mainSectionCTA1">
 								A DAY AT CAMP/pixel
 							</div>
 						</a>
-						<a href="https://hq.pixelacademy.org/tickets/camp-pixel">
+						<a href="topics.html">
 							<div id="mainSectionCTA2">
 								VIEW CAMP/topics
 							</div>
@@ -73,27 +92,33 @@
 		<!-- BOTTOM BAR -->
 		<div id="bottomBar">
 			<div id="bottomBarContainer">
-				<a href="http://www.pixelacademy.org/" target="_blank">
-					<div id="bottomBarPixelLogo">
-					</div>
-				</a>
+				<div id="bottomBarLogos">
+					<a href="home.html">
+						<div id="bottomBarCampLogo">
+						</div>
+					</a> 
+					<a href="http://www.pixelacademy.org/" target="_blank">
+						<div id="bottomBarPixelLogo">
+						</div>
+					</a>
+				</div>
 				<div id="bottomBarLinks">
 					<div id="topLinks">
-						<a href="campfacts.html">
+						<a href="about.html">
 							About CAMP/pixel
 						</a>
-						<a href="adayatcamppixel.html">
+						<a href="schedule.html">
 							A Day at CAMP/pixel
 						</a>
-						<a href="contact.html">
-							Contact/FAQ
+						<a href="topics.html">
+							CAMP/pixel topics
 						</a>
 					</div>
 					<div id="bottomLinks">
-						<a href="locations.html">
+						<a href="about.html#location">
 							Location
 						</a>
-						<a href="cost.html">
+						<a href="about.html#cost">
 							Cost
 						</a>
 						<a href="http://www.pixelacademy.org/" target="_blank">
@@ -101,11 +126,19 @@
 						</a>
 					</div>
 				</div>
-				<a href="https://hq.pixelacademy.org/tickets/camp-pixel">
-					<div id="bottomBarSignUp">
-						SIGN UP
-					</div>
-				</a>
+			</div>
+				<div id ="bottomBarButtons">
+					<a href="https://hq.pixelacademy.org/tickets/camp-pixel">
+						<div id="bottomBarSignUp">
+							TOPICS/signup
+						</div>
+					</a>
+					<a href="contactfaq.html">
+						<div id="bottomBarSignUp">
+							CONTACT/faq
+						</div>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>

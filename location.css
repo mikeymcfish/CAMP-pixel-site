@@ -1,0 +1,250 @@
+#locationsSectionHeader .mainSectionImage {
+    background-image: url("images/locations-header.jpg") !important;
+    background-position: right center;
+}
+#locationsBuses {
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 25px;
+}
+#busesHeader {
+    font-family: "Header";
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    margin: 20px 0px;
+    text-align: left;
+}
+#busesSubheader {
+    line-height: 24px;
+}
+.finePrint {
+    padding: 20px 0px;
+    font-family: "Body";
+    color: #666;
+    font-size: 12px;
+}
+.busStopsList {
+    padding: 0 1%;
+    text-align: left;
+    margin: auto;
+    position: relative;
+    display: inline-block;
+    width: 15%;
+    vertical-align: top;
+}
+.busStopsLabel {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #570fa7;
+    font-size: 18px;
+    font-family: "Subheader";
+}
+.UESstop,
+.UWSstop,
+.BKLYNstop {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 14px;
+}
+.UESstop:before {
+    font-family: "Header";
+    content: ">";
+    /* Insert content that looks like bullets */
+    
+    padding-right: 0px;
+    color: #f8971b;
+    /* Or a color you prefer */
+}
+.UWSstop:before {
+    font-family: "Header";
+    content: ">";
+    /* Insert content that looks like bullets */
+    
+    padding-right: 0px;
+    color: #f9f7a6;
+    /* Or a color you prefer */
+}
+.BKLYNstop:before {
+    font-family: "Header";
+    content: ">";
+    /* Insert content that looks like bullets */
+    
+    padding-right: 0px;
+    color: #ffdd5e;
+    /* Or a color you prefer */
+}
+#locationsNote {
+    margin: 10px 0px;
+    font-size: 12px;
+}
+#locationBlurb {
+    line-height: 24px;
+    margin-top: 20px;
+}
+#mapImage {
+    width: 50%;
+    float: right;
+    max-width: 400px;
+    margin: 0 0 0px 20px;
+}
+#mapAddresses {
+    display: inline-block;
+    width: 100%;
+    margin-right: 20px;
+}
+.addressBlock {
+    margin-bottom: 25px;
+    /*
+    &:first-of-type{
+      padding-bottom: 50px;
+      border-bottom: solid 10px $buttonHover;
+    } */
+}
+.addressBlock table {
+    text-align: left;
+}
+.addressTitle {
+    font-family: "Header";
+    padding-bottom: 5px;
+    vertical-align: bottom;
+    padding-right: 30%;
+    text-align: left;
+    color: #1b2325;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.addressSubtitle {
+    font-family: "Subheader";
+    padding-right: 30%;
+    text-align: left;
+    vertical-align: top;
+    font-size: 24px;
+    color: #570fa7;
+    margin-bottom: 15px;
+}
+.address {
+    font-size: 22px;
+    vertical-align: bottom;
+}
+.subwayIcons {
+    padding-top: 5px;
+    padding-right: 20px;
+    vertical-align: top;
+}
+.subwayIcons img {
+    width: 20px;
+}
+#locationsCTA {
+    margin: auto;
+    clear: both;
+    position: relative;
+    top: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+#locationsCTA a {
+    text-decoration: none;
+}
+#locationsCTA1,
+#locationsCTA2 {
+    font-family: "Header";
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+    font-size: 18px;
+    line-height: 60px;
+    height: 60px;
+    background: #570fa7;
+    font-weight: normal;
+    margin: auto;
+    color: white;
+}
+#locationsCTA1:hover,
+#locationsCTA2:hover {
+    background: #6666dd;
+    cursor: pointer;
+    color: #ccc;
+}
+#locationsCTA1 {
+    margin-right: 15px;
+}
+@media screen and (max-width: 1050px) {
+    #locationsBuses {
+        text-align: center;
+        clear: both;
+        padding-bottom: 0px;
+    }
+    .busStopsList {
+        padding-top: 25px;
+        padding-bottom: 0px;
+        width: 30%;
+    }
+}
+@media screen and (max-width: 785px) {
+    #mapAddresses {
+        display: block;
+        width: 100%;
+        margin-right: 0px;
+        text-align: center;
+    }
+    .addressBlock {
+        margin-bottom: 50px;
+    }
+    .addressBlock table {
+        text-align: left;
+    }
+    .addressTitle {
+        text-align: center;
+        font-size: 26px;
+        vertical-align: bottom;
+        padding-right: 0%;
+    }
+    .addressSubtitle {
+        text-align: center;
+        padding-right: 0%;
+        text-align: center;
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+    .address {
+        font-size: 14px;
+        vertical-align: bottom;
+    }
+    .subwayIcons {
+        text-align: center;
+        padding-top: 25px;
+        padding-right: 0px;
+    }
+    .subwayIcons img {
+        width: 20px;
+    }
+    #locationsCTA1 {
+        margin-right: 0px;
+        margin-bottom: 15px;
+    }
+    #locationsBuses {
+        clear: both;
+        display: block;
+        position: relative;
+    }
+    #busesSubheader {
+        text-align: left;
+    }
+}
+@media screen and (max-width: 600px) {
+    #mapImage {
+        text-align: center;
+        float: none;
+        width: 100%;
+        max-width: 100%;
+        margin: 0px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .busStopsList {
+        width: 250px;
+        text-align: left;
+        margin: auto;
+    }
+}

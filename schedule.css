@@ -1,0 +1,210 @@
+
+#scheduleSectionHeader .mainSectionImage {
+  background-image: url("images/schedule-header.jpg") !important;
+  background-position: right center; }
+
+#scheduleCTA {
+  padding-bottom: 30px;
+  clear: right;
+  margin: 30px auto;
+  text-align: center; }
+  #scheduleCTA a {
+    text-decoration: none; }
+
+#scheduleCTA1, #scheduleCTA2 {
+  font-family: "Header";
+  display: inline-block;
+  text-align: center;
+  width: 250px;
+  font-size: 18px;
+  line-height: 60px;
+  height: 60px;
+  background: #570fa7;
+  font-weight: normal;
+  margin: auto;
+  color: white; }
+  #scheduleCTA1:hover, #scheduleCTA2:hover {
+    background: #6666dd;
+    cursor: pointer;
+    color: #ccc; }
+
+#scheduleCTA1 {
+  margin-right: 15px; }
+
+#scheduleSection {
+  position: relative;
+  width: 100%;
+  min-width: 300px;
+  font-family: "Header";
+  background: white;}
+  #scheduleSection .highlightedRow {
+    background-color: #eee; }
+  #scheduleSection .label {
+    color: #1b2325;
+    font-size: 32px;
+    margin-bottom: 50px; }
+  #scheduleSection #scheduleInfo {
+    vertical-align: top;
+    display: inline-block;
+    width: 50%;
+    margin-right: 30px;
+    text-align: left; }
+    #scheduleSection #scheduleInfo img {
+      width: 100%;
+      margin-bottom: 20px; }
+  #scheduleSection #scheduleTable {
+    width: 45%;
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+    margin-bottom: 40px; }
+    #scheduleSection #scheduleTable #scheduleTableCTA {
+      font-family: "Body";
+      font-size: 12px;
+      font-style: italic;
+      font-color: #999;
+      text-align: left;
+      padding-bottom: 15px;
+      margin: auto; }
+    #scheduleSection #scheduleTable table {
+      text-align: left;
+      margin: auto; }
+      #scheduleSection #scheduleTable table table {
+        margin: 0; }
+    #scheduleSection #scheduleTable .scrollTo:hover {
+      color: #6666dd;
+      cursor: pointer; }
+    #scheduleSection #scheduleTable #scheduleTableLabel {
+      font-family: "Body";
+      margin-bottom: 5px; }
+    #scheduleSection #scheduleTable .scheduleTableLeft {
+      font-family: "Header";
+      font-size: 18px;
+      color: #570fa7;
+      width: 150px;
+      padding-left: 10px;
+      vertical-align: middle; }
+    #scheduleSection #scheduleTable .scheduleTableRight {
+      vertical-align: middle;
+      font-family: "Special";
+      font-size: 14px;
+      padding: 13px 0px;
+      padding-right: 10px;
+      color: red; }
+      #scheduleSection #scheduleTable .scheduleTableRight .carat {
+        color: #ff9933;
+        font-family: "Header"; }
+      #scheduleSection #scheduleTable .scheduleTableRight td {
+        cursor: pointer;
+        padding: 4px 0; }
+  #scheduleSection #dayButtons div {
+    background-color: #570fa7;
+    color: white;
+    cursor: pointer;
+    width: 40%;
+    margin: 25px 4%;
+    padding: 20px 0;
+    display: inline-block;
+    text-align: center; }
+    #scheduleSection #dayButtons div:hover {
+      background-color: #6666dd; }
+
+#DetailsSection {
+  margin-bottom: 20px;
+  width: 100%;
+  min-width: 300px;
+  margin: auto;
+  font-family: "Header"; }
+  #DetailsSection #mealsImage {
+    background-image: url("images/Meals.jpg");
+    background-size: cover;
+    background-position: bottom; }
+  #DetailsSection #screenBreaksImage {
+    background-image: url("images/ScreenBreaks.jpg");
+    background-size: cover;
+    background-position: center 52%; }
+  #DetailsSection #learningImage {
+    background-image: url("images/Learning.jpg");
+    background-size: cover;
+    background-position: center 81%; }
+  #DetailsSection #dropOffImage {
+    background-image: url("images/DropOff.jpg");
+    background-size: cover;
+    background-position: center 50%; }
+  #DetailsSection .label {
+    height: 100px;
+    background-color: #ff9933;
+    color: #1b2325;
+    font-size: 32px;
+    margin-bottom: 25px;
+    margin-top: 50px;
+    position: relative; }
+    #DetailsSection .label .labelImage {
+      background-color: #999999;
+      height: 100px;
+      width: 58%;
+      display: inline-block;
+      position: absolute;
+      right: 0px; }
+    #DetailsSection .label .slashImage {
+      /* height: 125px; */
+      height: 100%;
+      width: 10%;
+      background: url("images/scheduleSlash.png");
+      background-size: cover;
+      /* background-position: center; */
+      position: absolute;
+      left: 40%;
+      top: 0px; }
+    #DetailsSection .label .labelText {
+      display: inline-block;
+      position: relative;
+      top: 35px;
+      width: 40%;
+      left: 20px;
+      color: white; }
+      #DetailsSection .label .labelText.twoLines {
+        top: 20px; }
+  #DetailsSection .scheduleSubsection .scheduleSubsectionLabel {
+    font-size: 18px;
+    color: #570fa7;
+    margin-bottom: 25px;
+    overflow: hidden;
+    max-height: 200px; }
+  #DetailsSection .scheduleSubsection .scheduleDetail {
+    margin-bottom: 25px;
+    line-height: 22px; }
+    #DetailsSection .scheduleSubsection .scheduleDetail .detailText {
+      font-family: "Body";
+      font-size: 14px; }
+
+@media screen and (max-width: 690px) {
+  #scheduleCTA1 {
+    margin-right: 0px;
+    margin-bottom: 15px; } }
+@media screen and (max-width: 850px) {
+  #scheduleSection #scheduleInfo {
+    width: 100%; }
+
+  #scheduleSection #scheduleTable {
+    width: 100%; }
+
+  #DetailsSection .label {
+    height: 100px;
+    background-color: #ff9933;
+    color: #1b2325;
+    font-size: 32px;
+    margin-bottom: 25px;
+    margin-top: 50px;
+    position: relative; }
+    #DetailsSection .label .labelImage {
+      width: 30%;
+      top: 0px; }
+    #DetailsSection .label .slashImage {
+      width: 20%;
+      left: 70%; }
+    #DetailsSection .label .labelText {
+      font-size: 28px;
+      width: 100%; } }
+
+/*# sourceMappingURL=adayatcamppixel.css.map */
