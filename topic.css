@@ -19,11 +19,13 @@
   bottom: 0px;
 }
 .topicTemplateInner{
-  position: fixed;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
   top: 0px;
   left: 0px;
   right: 0px;
-  bottom: 0px;
+  bottom: 60px;
 }
 .blackMask{
   position: absolute;
@@ -124,7 +126,7 @@
 }
 .bottomTopicTemplate{
   border-top: 10px solid #6666dd;
-  background: rgba(25, 37, 35, .8);
+  background: rgb(25, 37, 35);
   position: relative;
   top: 0px;
   padding-bottom: 100px;

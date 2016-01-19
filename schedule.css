@@ -89,8 +89,13 @@
       font-family: "Special";
       font-size: 14px;
       padding: 13px 0px;
-      padding-right: 10px;
-      color: red; }
+      padding-right: 10px;}
+       #scheduleSection #scheduleTable .scheduleTableRight a{
+     
+      color: #000000; }
+         #scheduleSection #scheduleTable .scheduleTableRight a:hover{
+     
+      color: #6666dd; }
       #scheduleSection #scheduleTable .scheduleTableRight .carat {
         color: #ff9933;
         font-family: "Header"; }
