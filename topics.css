@@ -35,36 +35,22 @@
 }
 
 .topicsInformation{
-  max-height: 0px;
-   padding: 0px;
-   overflow: hidden;
-  transition: opacity .25s ease-in-out;
-   -moz-transition: opacity .25s ease-in-out;
-   -webkit-transition: opacity .25s ease-in-out;
-   color: black;
-   text-align: left;
-   font-family: "Body";
-  -webkit-transition: max-height .5s;
-  -moz-transition: max-height .5s;
-  -ms-transition: max-height .5s;
-  -o-transition: max-height .5s;
-  transition: max-height .5s;
-  -webkit-transition: padding .5s;
-  -moz-transition: padding .5s;
-  -ms-transition: padding .5s;
-  -o-transition: padding .5s;
-  transition: padding .5s;
+  text-align: left;
+  position: absolute;
+  background-color: rgba(0, 0, 0, .75);
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  opacity: 0; 
+  transition-property: opacity;
+  transition-duration: .3s;
 }
 
 .topicsDescription span{
   font-family: "Header";
 }
 
-.topicsInformation{
-  height: auto;
-  max-height: 1000px;
-  padding: 20px 0px 0px 0px;
-}
 
 #topicsTable{
   margin: 35px 0;
@@ -72,8 +58,15 @@
 
  
 .topicsDescription{
-  line-height: 20px;
-  font-size: 16px;
+  line-height: 24px;
+  font-size: 20px;
+  padding: 10px;
+  color: #ffffff;
+  position: absolute;
+  left: 15px;
+  bottom: 0px;
+  right:15px;
+  top: 15px;
 }
 
 .topicDates{
@@ -82,22 +75,148 @@
   font-size: 14px;
   font-style: bold;
   color: #ff9933;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  line-height: 20px;
+  right: 15px;
 }
 
 .topicsSignUp{
+  width: 100%;
+  position: relative;
+  background-color: #570fa7;
+}
+
+
+.topicsSignUp a{
+  text-align: center;
+  position: relative;
   font-family: "Header";
-  color: #570fa7;
+  color: #ffffff;
+  width: 48%;
+  display: inline-block;
+  background-color: #570fa7;
   font-size: 22px;
   line-height: 15px;
   cursor: pointer;
-  margin-bottom: 20px;
+  padding: 20px 0px;
 }
 
-@media screen and (max-width: 850px) { 
+.topicsSignUp a:first-child{
+  border-right: 5px solid #000;
+}
+
+.topicsSignUp a:hover{
+  color: #6666DD;
+}
+
+.topic:hover .topicsInformation{
+  color: red;
+  opacity: 1;
+}
+
+.spacer{
+    height: 18px;
+  }
+
+@media screen and (max-width: 1240px) { 
+  .topicsDescription{
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .spacer{
+    height: 14px;
+  }
+}
+
+@media screen and (max-width: 1060px) { 
+  .topicsDescription{
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .spacer{
+    height: 15px;
+  }
+}
+
+
+
+@media screen and (max-width: 955px) { 
+  .topicsInformation{
+    opacity: 1;
+  }
   .topic{
     width: 90%;
     margin: auto 0;
     margin-bottom: 25px;
+  }
+  .topicsDescription{
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .topicDates{
+    font-size: 18px;
+  }
+  .spacer{
+    height: 24px;
+  }
+}
+
+@media screen and (max-width: 670px) { 
+  .topic{
+    width: 90%;
+    margin: auto 0;
+    margin-bottom: 25px;
+  }
+  
+  .topicsDescription{
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .topicDates{
+    font-size: 14px;
+  }
+  .spacer{
+    height: 8px;
+  }
+}
+
+@media screen and (max-width: 550px) { 
+  .topic{
+    width: 90%;
+    margin: auto 0;
+    margin-bottom: 25px;
+  }
+  
+  .topicsDescription{
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .topicDates{
+    display: none;
+  }
+  .spacer{
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 420px) { 
+  .topic{
+    width: 90%;
+    margin: auto 0;
+    margin-bottom: 25px;
+  }
+  
+  .topicsDescription{
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .topicDates{
+    display: none;
+  }
+  .spacer{
+    height: 20px;
   }
 }
 
