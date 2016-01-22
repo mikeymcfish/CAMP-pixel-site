@@ -36,7 +36,7 @@
 .busStopsLabel {
     margin-top: 10px;
     margin-bottom: 15px;
-    color: #570fa7;
+    color: #59a4a3;
     font-size: 18px;
     font-family: "Subheader";
 }
@@ -53,7 +53,7 @@
     /* Insert content that looks like bullets */
     
     padding-right: 0px;
-    color: #f8971b;
+    color: #0EEB08;
     /* Or a color you prefer */
 }
 .UWSstop:before {
@@ -62,7 +62,7 @@
     /* Insert content that looks like bullets */
     
     padding-right: 0px;
-    color: #f9f7a6;
+    color: #6C2AD9;
     /* Or a color you prefer */
 }
 .BKLYNstop:before {
@@ -71,7 +71,7 @@
     /* Insert content that looks like bullets */
     
     padding-right: 0px;
-    color: #ffdd5e;
+    color: #FE0D87;
     /* Or a color you prefer */
 }
 #locationsNote {
@@ -155,14 +155,14 @@
     font-size: 18px;
     line-height: 60px;
     height: 60px;
-    background: #570fa7;
+    background: #ff017e;
     font-weight: normal;
     margin: auto;
     color: white;
 }
 #locationsCTA1:hover,
 #locationsCTA2:hover {
-    background: #6666dd;
+    background: #e54785;
     cursor: pointer;
     color: #ccc;
 }

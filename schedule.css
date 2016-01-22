@@ -19,14 +19,14 @@
   font-size: 18px;
   line-height: 60px;
   height: 60px;
-  background: #570fa7;
+  background: #ff017e;
   font-weight: normal;
   margin: auto;
   color: white; }
   #scheduleCTA1:hover, #scheduleCTA2:hover {
-    background: #6666dd;
+    background: #e54785;
     cursor: pointer;
-    color: #ccc; }
+    color: #fff; }
 
 #scheduleCTA1 {
   margin-right: 15px; }
@@ -72,7 +72,7 @@
       #scheduleSection #scheduleTable table table {
         margin: 0; }
     #scheduleSection #scheduleTable .scrollTo:hover {
-      color: #6666dd;
+      color: #ff007a;
       cursor: pointer; }
     #scheduleSection #scheduleTable #scheduleTableLabel {
       font-family: "Body";
@@ -80,7 +80,7 @@
     #scheduleSection #scheduleTable .scheduleTableLeft {
       font-family: "Header";
       font-size: 18px;
-      color: #570fa7;
+      color: #59a4a3;
       width: 150px;
       padding-left: 10px;
       vertical-align: middle; }
@@ -97,7 +97,7 @@
      
       color: #6666dd; }
       #scheduleSection #scheduleTable .scheduleTableRight .carat {
-        color: #ff9933;
+        color: #ff007a;
         font-family: "Header"; }
       #scheduleSection #scheduleTable .scheduleTableRight td {
         cursor: pointer;
@@ -138,7 +138,7 @@
     background-position: center 50%; }
   #DetailsSection .label {
     height: 100px;
-    background-color: #ff9933;
+    background-color: #7fcca8;
     color: #1b2325;
     font-size: 32px;
     margin-bottom: 25px;
@@ -172,7 +172,7 @@
         top: 20px; }
   #DetailsSection .scheduleSubsection .scheduleSubsectionLabel {
     font-size: 18px;
-    color: #570fa7;
+    color: #59a4a3;
     margin-bottom: 25px;
     overflow: hidden;
     max-height: 200px; }
@@ -196,7 +196,7 @@
 
   #DetailsSection .label {
     height: 100px;
-    background-color: #ff9933;
+    background-color: #7fcca8;
     color: #1b2325;
     font-size: 32px;
     margin-bottom: 25px;

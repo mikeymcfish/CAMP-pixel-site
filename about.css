@@ -75,7 +75,7 @@
 }
 
 #factTableContainer .fact .factHeader {
-  background: #ff9933;
+  background: #7fcca8;
   height: 35px;
   color: white;
   font-size: 18px;
@@ -87,45 +87,13 @@
 
 #factTableContainer .fact .factHeader:hover {
   cursor: pointer;
-  background-color: #ffcc00; 
+  background-color: #59a4a3; 
 }
 
 #factTableContainer .fact .factSelected {
-  background-color: #ffcc00; 
+  background-color: #59a4a3; 
 }
 
-#factsCTA {
-  margin: 30px auto;
-  text-align: center; 
-}
-
-#factsCTA a {
-  text-decoration: none; 
-}
-
-#factsCTA1, #factsCTA2 {
-  font-family: "Header";
-  display: inline-block;
-  text-align: center;
-  width: 250px;
-  font-size: 18px;
-  line-height: 60px;
-  height: 60px;
-  background: #570fa7;
-  font-weight: normal;
-  margin: auto;
-  color: white; 
-}
-
-#factsCTA1:hover, #factsCTA2:hover {
-  background: #6666dd;
-  cursor: pointer;
-  color: #ccc; 
-}
-
-#factsCTA1 {
-  margin-right: 15px; 
-}
 
 #factsExtension {
   max-height: 0px;
@@ -150,16 +118,16 @@
     font-family: "Header";
     font-size: 22px;
     text-align: left;
-    color: #570fa7; 
+    color: #59a4a3; 
 }
 
 #closeExtensionButton:hover {
       cursor: pointer;
-      color: #6666dd; 
+      color: #7fcca8;
 }
 
 #extensionTitle {
-    color: #ffcc00;
+    color: #7fcca8;
     font-family: "Header";
     font-size: 26px;
     padding-bottom: 15px;
@@ -174,7 +142,7 @@
 }
 
 .extensionButton {
-    background-color: #570fa7;
+    background-color: #ff017e;
     color: #ffffff;
     height: 60px;
     width: 250px;
@@ -189,7 +157,8 @@
 }
 
 .extensionButton:hover {
-    background-color: #6666dd; 
+    background-color: #e54785; 
+    color: #fff;
 }
 
 @media screen and (max-width: 690px) {

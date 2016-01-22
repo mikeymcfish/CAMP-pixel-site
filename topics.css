@@ -26,8 +26,12 @@
   font-family: "Header";
   font-size: 28px;
   padding: 15px 0px;
-  background-color: #ff9933;
+  background-color: #7fcca8;
   color: white;
+}
+
+.topic:hover .topicsTitle{
+  background-color: #59a4a3;
 }
 
 .topicsPicture img{
@@ -37,7 +41,7 @@
 .topicsInformation{
   text-align: left;
   position: absolute;
-  background-color: rgba(0, 0, 0, .75);
+  background-color: rgba(48, 50, 55, 0.8);
   top: 0px;
   left: 0px;
   right: 0px;
@@ -74,7 +78,7 @@
   font-family: "Special";
   font-size: 14px;
   font-style: bold;
-  color: #ff9933;
+  color: #7fcca8;
   position: absolute;
   bottom: 15px;
   left: 15px;
@@ -85,7 +89,7 @@
 .topicsSignUp{
   width: 100%;
   position: relative;
-  background-color: #570fa7;
+  background-color: #ff017e;
 }
 
 
@@ -96,7 +100,7 @@
   color: #ffffff;
   width: 48%;
   display: inline-block;
-  background-color: #570fa7;
+  background-color: #ff017e;
   font-size: 22px;
   line-height: 15px;
   cursor: pointer;
@@ -104,11 +108,11 @@
 }
 
 .topicsSignUp a:first-child{
-  border-right: 5px solid #000;
+  border-right: 5px solid #e54785;
 }
 
 .topicsSignUp a:hover{
-  color: #6666DD;
+  color: #505664;
 }
 
 .topic:hover .topicsInformation{
@@ -145,6 +149,9 @@
 @media screen and (max-width: 955px) { 
   .topicsInformation{
     opacity: 1;
+  }
+  .topicsTitle{
+    background-color: #59a4a3;
   }
   .topic{
     width: 90%;

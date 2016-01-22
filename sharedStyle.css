@@ -23,7 +23,7 @@ body {
 a {
   text-decoration: none;
   color: #ff017e;
-  cursor: pointer; 
+  cursor: pointer !important; 
 }
 a:hover {
   color: #e54785; 
@@ -79,6 +79,7 @@ a:hover {
 }
 #topBarButtons #signupButton:hover {
   background: #e54785; 
+  color: #fff;
 }
 
 /* SECTION */
@@ -131,10 +132,10 @@ a:hover {
   line-height: 125px;
   z-index: 2;
   width: 40%;
-  background-color: rgba(27, 35, 37, 0.6);
+  background-color: #aaa;
   background-image: url("images/crumples.png");
   display: inline-block;
-  color: #ffffff;
+  color: #eee;
   font-size: 36px;
   font-weight: bold;
   position: absolute; 
@@ -225,6 +226,6 @@ a:hover {
 #bottomBarSignUp:hover {
   cursor: pointer;
   background-color: #e54785;
-  color: #ccc; 
+  color: #fff; 
 }
 

@@ -1,5 +1,5 @@
 #topBarHome {
-  background: rgba(27, 35, 27, 0.8);
+  background: rgba(80, 86, 100, 0.8);
   color: white;
   position: absolute;
   top: 0px;
@@ -36,7 +36,7 @@
   max-width: 350px;
   font-size: 32px;
   font-weight: bold;
-  background-color: rgba(27, 35, 27, 0.8);
+  background-color:  rgba(80, 86, 100, 0.8);
   color: #ffffff;
   font-family: "Header"; 
 }
@@ -52,9 +52,11 @@
 }
 #mainSectionMainText {
   margin-bottom: 20px; 
+  color: #eee;
 }
 #mainSectionSubText {
   font-size: 16px;
+  color: #eee; 
   font-weight: normal;
   font-family: "Body"; 
 }
@@ -64,6 +66,7 @@
   margin-bottom: 20px;
   font-weight: normal;
   font-family: "Body"; 
+  color: #eee;
 }
 #mainSectionLocations a {
   text-decoration: underline;
@@ -80,14 +83,14 @@
   font-size: 18px;
   line-height: 60px;
   height: 60px;
-  background: #570fa7;
+  background: #ff017e;
   font-weight: normal;
   color: white; 
 }
 #mainSectionCTA #mainSectionCTA1:hover, #mainSectionCTA #mainSectionCTA2:hover {
-  background: #6666dd;
+  background: #e54785;
   cursor: pointer;
-  color: #ccc; 
+  color: #fff;
 }
 #content {
   padding-bottom: 160px; 

@@ -27,7 +27,7 @@
 .costTableInfo{
   vertical-align: middle;
   height: 50px;
-  color: #ff9933;
+  color: #59a4a3;
   font-family: "Special";
 }
 
@@ -50,9 +50,10 @@ td{
 }
 
 .discountsTableLabel{
-  color: #ff9933;
+  color: #59a4a3;
   font-size: 18px;
   margin-bottom: 10px;
+  font-family: "Subheader";
 }
 
 .discountsTableInfo{
@@ -103,7 +104,7 @@ li{
   margin-bottom: 50px;
   font-family: "Header";
   background: white;
-  border-bottom: solid 10px #6666dd; 
+  border-bottom: solid 10px #7fcca8; 
 }
 #costSection, #swagSection  {
   margin-bottom: 0px;
