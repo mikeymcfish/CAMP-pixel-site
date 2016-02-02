@@ -18,9 +18,9 @@
 }
 
 .detailColumn{
-  display: inline-block;
+  display: block;
   width: 250px;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
   vertical-align: top;
 }
 
@@ -62,7 +62,7 @@ td{
 }
 
 li{
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .finePrint{
@@ -71,6 +71,51 @@ li{
   font-size: 12px;
 }
 
+#costColumn{
+  vertical-align: top;
+  width: 30%;
+  display: inline-block;
+}
+
+#saveColumn{
+  vertical-align: top;
+  width: 65%;
+  display: inline-block;
+}
+
+.saveColumn{
+  font-size: 12px;
+  width: 100%;
+  text-align: left;
+  vertical-align: top;
+  margin-bottom: 25px;
+}
+
+.saveTableLabel{
+  display: inline-block;
+  font-size: 16px;
+  text-align: left;
+  margin: 0px 0 10px 0;
+}
+
+.saveTableInfo{
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+}
+
+.saveIcon{
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+}
+
+.saveDetails{
+  display: inline-block;
+  width: 65%;
+  vertical-align: top;
+}
 
 @media screen and (max-width: 670px) {
   .detailColumn{
@@ -87,8 +132,28 @@ li{
   .section .mainSectionText span {
     font-size: 26px;
     display: inline-block;
-    min-width: 300px; } 
-}
+    min-width: 300px; 
+  }
+
+  #saveColumn, #costColumn{
+    width: 100%;
+    display: block;
+    margin-bottom: 25px;
+
+  }
+  
+  .detailColumn{
+    display: inline-block;
+    margin-bottom: 20px;  
+  }
+
+  .saveDetails{
+    text-align: left;
+  }
+
+
+  } 
+
 
 
 #costSectionHeader .mainSectionImage {
@@ -155,6 +220,8 @@ li{
 
 
 
+
+
 @media screen and (max-width: 690px) {
   #costCTA1 {
     margin-right: 0px; 
@@ -165,4 +232,22 @@ li{
   }
 
 }
+
+
+
+@media screen and (max-width: 815px) {
+  .label{
+    text-align: center;
+  }
+
+  #costColumn, .details{
+    text-align: center;
+  }
+
+  .saveColumn{
+    text-align: center;
+  }
+
+}
+
 

@@ -26,6 +26,22 @@
 	<link rel="stylesheet" type="text/css" href="location.css">
 	<script src="jquery-1.11.3.min.js"></script>
 	<script src="about.js"></script>
+	<script>
+	  var _affirm_config = {
+	    public_api_key:  "XXXXXXXXXXXXXXX",
+	    script:          "https://cdn1-sandbox.affirm.com/js/v2/affirm.js"
+	  };
+	  (function(l,g,m,e,a,f,b){var d,c=l[m]||{},h=document.createElement(f),n=document.getElementsByTagName(f)[0],k=function(a,b,c){return function(){a[b]._.push([c,arguments])}};c[e]=k(c,e,"set");d=c[e];c[a]={};c[a]._=[];d._=[];c[a][b]=k(c,a,b);a=0;for(b="set add save post open empty reset on off trigger ready setProduct".split(" ");a<b.length;a++)d[b[a]]=k(c,e,b[a]);a=0;for(b=["get","token","url","items"];a<b.length;a++)d[b[a]]=function(){};h.async=!0;h.src=g[f];n.parentNode.insertBefore(h,n);delete g[f];d(g);l[m]=c})(window,_affirm_config,"affirm","checkout","ui","script","ready");
+	</script>
+	<!--Start of Zopim Live Chat Script-->
+    <script type="text/javascript">
+        window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+                d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+                _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+            $.src="//v2.zopim.com/?154sLdSAaw4zX6Hoq65ZMP28r6UXYRlH";z.t=+new Date;$.
+                    type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+    </script>
+    <!--End of Zopim Live Chat Script-->
 	<title> CAMP/about </title>
 </head>
 <body>
@@ -54,7 +70,7 @@
 			</a>
 			<a href="https://hq.pixelacademy.org/tickets/camp-pixel">
 				<div id="signupButton" class="topBarButton">
-					TOPICS/signup
+					SIGN UP
 				</div>
 			</a>
 		</div>
@@ -273,39 +289,87 @@
         </div>
         <div class="sectionContent">
             <div id="costSection">
-                <div class="label">
-                    CAMP/cost
-                </div>
-                <div class="details">
-                <div></div>
-                <span class="detailColumn">
-                    <div class="costTableLabel tableLabel">
-                        Before March 15
-                    </div>
-                    <div class="costTableInfo tableInfo">
-                        $735-775 <br>per week
-                    </div>
-                </span>
-                <span class="detailColumn">
-                    <div class="costTableLabel tableLabel">
-                        After March 15
-                    </div>
-                    <div class="costTableInfo tableInfo">
-                        $795-$835 <br>per week*
-                    </div>
-                </span>
-                </div>
-                <div class="finePrint">
-                    * cost varies based on topic
-                </div>
+            	<span id="costColumn">
+	                <div class="label">
+	                    CAMP/cost
+	                </div>
+	                <div class="details">
+	                <div></div>
+	                <span class="detailColumn">
+	                    <div class="costTableLabel tableLabel">
+	                        Before March 15
+	                    </div>
+	                    <div class="costTableInfo tableInfo">
+	                        $735-775 <br>per week
+	                    </div>
+	                </span>
+	                <span class="detailColumn">
+	                    <div class="costTableLabel tableLabel">
+	                        After March 15
+	                    </div>
+	                    <div class="costTableInfo tableInfo">
+	                        $795-$835 <br>per week*
+	                    </div>
+	                </span>
+	                </div>
+	                <div class="finePrint">
+	                    * cost varies based on topic
+	                </div>
+	            </span>
+	            <span id="saveColumn">
+	            	<div class="label">
+	                    Ways To Save
+	                </div>
+	                <div class="details">
+		                <span class="detailColumn saveColumn">
+		                	<span class="saveIcon">
+		                		<img width="100" src="images/riskfree-01.png" />
+		                	</span>
+		                	<span class="saveDetails">
+			                    <div class="saveTableLabel tableLabel">
+			                        No-Fee Refunds and Exchanges until April 15th. 
+			                    </div>
+			                    <div class="saveTableInfo tableInfo">
+			                        Request a refund for a CAMP/pixel ticket before April 15th and you get 100% of your money back.
+			                    </div>
+			                </span>
+		                </span>
+		                <span class="detailColumn saveColumn">
+		                	<span class="saveIcon">
+		                		<div class="affirm-promo" data-promo-key="W6WU7UK82RS34HDH" data-promo-size="120x90"></div>
+		                	</span>
+		                	<span class="saveDetails">
+			                    <div class="saveTableLabel tableLabel">
+			                         Affirm: Pay over time for CAMP/pixel. 
+			                    </div>
+			                    <div class="saveTableInfo tableInfo">
+			                         Reserve your tickets now and pay later with 0-30% APR. There are no gimmicks like deferred interest or hidden fees, so the total you see at checkout is always what you'll actually pay.
+			                    </div>
+			                </span>
+		                </span>
+		                <span class="detailColumn saveColumn">
+		                	<span class="saveIcon">
+		                		<img width="80" src="images/iwannagotocamp.png" />
+		                	</span>
+		                	<span class="saveDetails">
+			                    <div class="saveTableLabel tableLabel">
+			                        IWannaGoToCamp: Fundraise for camp.
+			                    </div>
+			                    <div class="saveTableInfo tableInfo">
+			                        Tell the world you want to come to CAMP/pixel, and start a no-risk fundraiser to help raise money for your kid's camp experience! <a href="https://iwannagotocamp.com/camp-pixel"> [Link] </a>
+			                    </div>
+			                </span>
+		                </span>
+	                </div>
+	            </span>
                 <br><br><br>
                 <div id="swagListLabel">What Campers Get:</div>
                 <ul id="swagList">
-                    <li>2 completely unique CREATIVE PROJECTS they create and take home <span class="finePrint">(plus all the knowledge that went into making them!)</span> </li>
+                    <li>2 completely unique CREATIVE PROJECTS they create and take home</li>
                     <li>1 FREE CAMP/pixel T-SHIRT! </li>
-                    <li>1 FREE FLASHDRIVE <span class="finePrint">(to save their work during CAMP/pixel and beyond!)</span></li>
+                    <li>1 FREE FLASHDRIVE</li>
                     <li>2 SNACKS every day!</li>
-                    <li>1 FREE 3D SCAN <span class="finePrint">(with the option to buy a full-color 3D print from Shapeways!)</span></li>
+                    <li>1 FREE 3D SCAN</li>
                 </ul>
             </div>
         </div>
@@ -559,7 +623,7 @@
 				<div id ="bottomBarButtons">
 					<a href="https://hq.pixelacademy.org/tickets/camp-pixel">
 						<div id="bottomBarSignUp">
-							TOPICS/signup
+							SIGN UP
 						</div>
 					</a>
 					<a href="contactfaq.html">

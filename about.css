@@ -195,6 +195,7 @@
   } 
 }
 
+
 @media screen and (max-width: 850px) {
   #desktopTable {
     display: none !important; 
@@ -204,4 +205,5 @@
     display: block !important; 
   } 
 }
+
 
