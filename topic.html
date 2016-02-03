@@ -26,6 +26,13 @@
 	<link rel="stylesheet" type="text/css" href="location.css">
 	<link rel="stylesheet" type="text/css" href="topic.css">
 	<script src="topic.js"></script>
+	<script>
+	  var _affirm_config = {
+	    public_api_key:  "XXXXXXXXXXXXXXX",
+	    script:          "https://cdn1-sandbox.affirm.com/js/v2/affirm.js"
+	  };
+	  (function(l,g,m,e,a,f,b){var d,c=l[m]||{},h=document.createElement(f),n=document.getElementsByTagName(f)[0],k=function(a,b,c){return function(){a[b]._.push([c,arguments])}};c[e]=k(c,e,"set");d=c[e];c[a]={};c[a]._=[];d._=[];c[a][b]=k(c,a,b);a=0;for(b="set add save post open empty reset on off trigger ready setProduct".split(" ");a<b.length;a++)d[b[a]]=k(c,e,b[a]);a=0;for(b=["get","token","url","items"];a<b.length;a++)d[b[a]]=function(){};h.async=!0;h.src=g[f];n.parentNode.insertBefore(h,n);delete g[f];d(g);l[m]=c})(window,_affirm_config,"affirm","checkout","ui","script","ready");
+	</script>
 	<!--Start of Zopim Live Chat Script-->
     <script type="text/javascript">
         window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
@@ -866,71 +873,111 @@
 					COST
 					</div>
 				</div>
-				<div id="topicCostSection">
-					<div id="costSection">
-						<div class="costLabel">
-							CAMP/cost
-						</div>
-						<div class="details">
-							<span class="detailColumn">
-								<div class="costTableLabel tableLabel">
-									Before March 15
-								</div>
-								<div class="costTableInfo tableInfo">
-									$735-775 <br>per week
-									<div class="finePrint">
-										Details on discount below
-									</div>
-								</div>
-							</span>
-							<span class="detailColumn">
-								<div class="costTableLabel tableLabel">
-									After March 15
-								</div>
-								<div class="costTableInfo tableInfo">
-									$795-$835 <br>per week
-								</div>
-							</span>
-						</div>
-					</div>
-					<div id="discountsSection">
-						<div class="costLabel">
-							CAMP/discounts
-						</div>
-						<div id="discountsTable">
-							<div class="discount">
-								<div class="discountsTableLabel tableLabel">
-									Super Early Bird Discount
-								</div>
-								<div class="discountsTableInfo tableInfo">
-									$120 off EVERY week when you register before January 15th
-								</div>
-							</div>
-							<div class="discount">
-								<div class="discountsTableLabel tableLabel">
-								 	Early Bird Discount
-								</div>
-								<div class="discountsTableInfo tableInfo">
-									$60 off EVERY week when you register before March 15th
-								</div>
-							</div>
-							<div class="discount">
-								<div class="discountsTableLabel tableLabel">
-								 	Quantity &amp; Sibling Discounts
-								</div>
-								<div class="discountsTableInfo tableInfo">
-									Add additional tickets to your cart to earn Quantity Discounts! The more tickets you add, the cheaper they become!*
-								</div>
-							</div>
-						</div>
-						<div class="finePrint">
-							*up to ten <br><br>
-							All discounts are automatically applied, even to tickets already in your cart and already purchased! (Those discounts decrease when you remove tickets.) <br> <br>
-							If you complete your order in multiple purchases, your discounts will carry over as instant rebates. 
-							
-						</div>
-					</div>
-				</div>
+				<div id="costSection">
+            	<span id="costColumn">
+	                <div class="details">
+	                <div></div>
+	                <span class="detailColumn">
+	                    <div class="costTableLabel tableLabel">
+	                        Before March 15
+	                    </div>
+	                    <div class="costTableInfo tableInfo">
+	                        $735-775 <br>per week*
+	                    </div>
+	                </span>
+	                <span class="detailColumn">
+	                    <div class="costTableLabel tableLabel">
+	                        After March 15
+	                    </div>
+	                    <div class="costTableInfo tableInfo">
+	                        $795-$835 <br>per week*
+	                    </div>
+	                </span>
+	                </div>
+	                <div class="finePrint">
+	                    * cost varies based on topic
+	                </div>
+	            </span>
+	            <span id="saveColumn">
+	                <div class="details">
+		                <span class="detailColumn saveColumn">
+		                	<span class="saveIcon">
+		                		<img width="100" src="images/riskfree-01.png" />
+		                	</span>
+		                	<span class="saveDetails">
+			                    <div class="saveTableLabel tableLabel">
+			                        No-Fee Refunds and Exchanges until April 15th. 
+			                    </div>
+			                    <div class="saveTableInfo tableInfo">
+			                        Request a refund for a CAMP/pixel ticket before April 15th and you get 100% of your money back.
+			                    </div>
+			                </span>
+		                </span>
+		                <span class="detailColumn saveColumn">
+		                	<span class="saveIcon">
+		                		<div class="affirm-promo" data-promo-key="W6WU7UK82RS34HDH" data-promo-size="120x90"></div>
+		                	</span>
+		                	<span class="saveDetails">
+			                    <div class="saveTableLabel tableLabel">
+			                         Affirm: Pay over time for CAMP/pixel. 
+			                    </div>
+			                    <div class="saveTableInfo tableInfo">
+			                         Reserve your tickets now and pay later with 0-30% APR. There are no gimmicks like deferred interest or hidden fees, so the total you see at checkout is always what you'll actually pay.
+			                    </div>
+			                </span>
+		                </span>
+		                <span class="detailColumn saveColumn">
+		                	<span class="saveIcon">
+		                		<img width="80" src="images/iwannagotocamp.png" />
+		                	</span>
+		                	<span class="saveDetails">
+			                    <div class="saveTableLabel tableLabel">
+			                        IWannaGoToCamp: Fundraise for camp.
+			                    </div>
+			                    <div class="saveTableInfo tableInfo">
+			                        Tell the world you want to come to CAMP/pixel, and start a no-risk fundraiser to help raise money for your kid's camp experience! <a href="https://iwannagotocamp.com/camp-pixel"> [Link] </a>
+			                    </div>
+			                </span>
+		                </span>
+	                </div>
+	            </span>
+	            <br />
+	            <br />
+	            <div id="discountsSection">
+                <div id="discountsTable">
+                    <div class="discount">
+                        <div class="discountsTableLabel tableLabel">
+                            Early Bird Discount
+                        </div>
+                        <div class="discountsTableInfo tableInfo">
+                            $60 off EVERY week when you register before March 15th
+                        </div>
+                    </div>
+                    <div class="discount">
+                        <div class="discountsTableLabel tableLabel">
+                            Quantity &amp; Sibling Discounts
+                        </div>
+                        <div class="discountsTableInfo tableInfo">
+                            In addition to the Early Bird discount, the more tickets you buy the cheaper they all become!
+                            <br><br>
+                            You'll get $10 off EVERY week when you purchase two weeks, all the way up to $90 off each week when you purchase ten (for a total additional savings of $900)!
+                        </div>
+                    </div>
+                </div>
+                <div class="finePrint">
+                    All discounts are automatically applied, even to tickets already in your cart and already purchased! (Those discounts decrease when you remove tickets.) <br> <br>
+                    If you complete your order in multiple purchases, your discounts will carry over as instant rebates.
+                </div>
+            </div>
+                <div id="swagListLabel">What Campers Get:</div>
+                <ul id="swagList">
+                    <li>2 completely unique CREATIVE PROJECTS they create and take home</li>
+                    <li>1 FREE CAMP/pixel T-SHIRT! </li>
+                    <li>1 FREE FLASHDRIVE</li>
+                    <li>2 SNACKS every day!</li>
+                    <li>1 FREE 3D SCAN</li>
+                </ul>
+            </div>
 				<a name="dropoff"></a>
 				<div class="label">
 					<div class="labelImage" id="screenBreaksImage">

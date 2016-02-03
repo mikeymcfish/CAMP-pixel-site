@@ -14,6 +14,7 @@
 
 .tableLabel{
   margin-bottom: 20px;
+  font-family: 'Header';
 
 }
 
@@ -96,6 +97,7 @@ li{
   font-size: 16px;
   text-align: left;
   margin: 0px 0 10px 0;
+  font-family: 'Body';
 }
 
 .saveTableInfo{
@@ -115,6 +117,12 @@ li{
   display: inline-block;
   width: 65%;
   vertical-align: top;
+}
+
+@media screen and (max-width: 634px) {
+  .saveIcon{
+    margin-bottom: 25px;
+  }
 }
 
 @media screen and (max-width: 670px) {
@@ -169,7 +177,6 @@ li{
   margin-bottom: 50px;
   font-family: "Header";
   background: white;
-  border-bottom: solid 10px #7fcca8; 
 }
 #costSection, #swagSection  {
   margin-bottom: 0px;
@@ -182,6 +189,7 @@ li{
     color: #1b2325;
     font-size: 24px;
     margin-bottom: 35px; 
+    font-family: 'Header';
 }
 .costLabel{
    color: #1b2325;
@@ -247,6 +255,13 @@ li{
   .saveColumn{
     text-align: center;
   }
+
+  .saveDetails{
+  display: inline-block;
+  width: 74%;
+  vertical-align: top;
+}
+
 
 }
 
