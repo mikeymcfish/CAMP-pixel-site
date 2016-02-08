@@ -12,6 +12,9 @@
     padding: 0px 0px 0px 0px;
     z-index: 100; 
   }
+  #topBar #phoneNumber{
+    display: none;
+  }
   #topBar div {
     line-height: 45px; 
   }

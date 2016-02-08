@@ -81,6 +81,11 @@ a:hover {
 }
 
 .topBarContactIcon {
+  position: relative;
+  top: 5px;
+  margin-left: 15px;
+  margin-right: 5px;
+}
   
 
 #topBar a {
