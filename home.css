@@ -121,7 +121,7 @@
   color: #fff;
 }
 #content {
-  padding-bottom: 160px; 
+  padding-bottom: 190px; 
 }
 
 
@@ -159,11 +159,25 @@
     padding: 0px 0px 0px 0px;
     z-index: 100; 
   }
-  #topBarHome #phoneNumber{
-    display: none;
-  }
   #topBarHome div {
     line-height: 45px; 
+  }
+   #topBarHome #phoneNumber{
+    top: 90px;
+    text-align: center;
+  }
+  #topBarHome #phone{
+    margin: auto;
+    float: none;
+  }
+}
+
+
+@media screen and (max-width: 330px) {
+  #topBarHome #phone{
+    margin: auto;
+    float: none;
+    font-size: 12px;
   }
 }
 

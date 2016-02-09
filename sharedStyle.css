@@ -19,7 +19,7 @@ body {
   min-height: 100%;
   position: relative; }
 #content {
-  padding-bottom: 210px; }
+  padding-bottom: 280px; }
 a {
   text-decoration: none;
   color: #ff017e;
@@ -72,6 +72,27 @@ a:hover {
   margin-left: 75px;
 }
 
+#bottomBar #phoneNumber {
+  position: absolute;
+  background-color: #313743;
+  bottom: 0px;
+  left: 0px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, .3);
+  height: 30px;
+  width: 100%;
+  font-family: 'Subheader';
+  padding-right: 75px;
+  color: white;
+}
+
+#bottomBar #phone{
+  line-height: 30px;
+  font-size: 14px;
+  display: inline-block;
+  float: left;
+  margin-left: 75px;
+}
+
 #phoneNumber .emph{
   font-family: 'Header';
   font-weight: bold;
@@ -80,10 +101,15 @@ a:hover {
 
 }
 
+#phoneSpacer{
+  padding-right: 5px;
+  display: inline-block;
+}
+
 .topBarContactIcon {
   position: relative;
   top: 5px;
-  margin-left: 15px;
+  margin-left: 0px;
   margin-right: 5px;
 }
   
@@ -191,7 +217,7 @@ a:hover {
   bottom: 0px;
   left: 0px;
   right: 0px;
-  height: 160px;
+  height: 190px;
   padding: 0px 75px 0px 55px; 
 }
 #bottomBarContainer {

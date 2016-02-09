@@ -7,13 +7,19 @@
 }
 
 @media screen and (max-width: 815px) {
+
   #topBar {
     height: 90px;
     padding: 0px 0px 0px 0px;
     z-index: 100; 
   }
   #topBar #phoneNumber{
-    display: none;
+    top: 90px;
+    text-align: center;
+  }
+  #topBar #phone{
+    margin: auto;
+    float: none;
   }
   #topBar div {
     line-height: 45px; 
@@ -40,7 +46,7 @@
     display: none; 
   }
   .section {
-    top: 90px; 
+    top: 120px; 
   }
   .section .sectionContent {
     padding: 15px 15px; 
@@ -97,6 +103,13 @@
     height: 50px;
     margin-right: 10px;
     font-size: 18px; 
+  }
+  #bottomBar #phoneNumber{
+    text-align: center;
+  }
+  #bottomBar #phone{
+    margin: auto;
+    float: none;
   }
   #bottomBarLogos{
     width: 250px;
@@ -186,6 +199,11 @@
 
 @media screen and (max-width: 330px) {
   .topBarButton{
+    font-size: 12px;
+  }
+  #topBar #phone, #bottomBar #phone{
+    margin: auto;
+    float: none;
     font-size: 12px;
   }
 }

@@ -84,7 +84,7 @@
 }
 .topTopicTemplate{
   position: absolute;
-  bottom: 50px;
+  bottom: 40px;
   left: 75px;
   right: 75px;
 }
@@ -96,11 +96,16 @@
   cursor: pointer;
   position: absolute;
   left: 75px;
-  top: 50px;
+  top: 65px;
 }    
 #topicsNav{
   margin-bottom: 20px;
 }   
+
+#scrollDown{
+  color: #ffffff;
+  font-size: 11px;
+}
 
 .navLink{
   color: white;
@@ -300,6 +305,12 @@
     font-size: 28px;
     width: 100%; 
   } 
+}
+
+@media screen and (max-width: 815px) {
+.backToTopics{
+    top: 95px;
+  }
 }
 
 @media screen and (max-width: 690px) {

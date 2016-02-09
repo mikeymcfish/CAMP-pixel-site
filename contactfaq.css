@@ -52,7 +52,7 @@
     padding: 0px 7px;
     border-radius: 5px 0 0 5px;
     border: 1px solid #cccccc;
-    font-family: 'Nordica'; }
+    font-family: 'Body'; }
   #FAQSection #searchBarButton {
     width: 35px;
     height: 35px;
@@ -60,7 +60,7 @@
     background: #59a4a3;
     background-image: url("images/searchIcon.png");
     position: relative;
-    top: 15px;
+    top: 12px;
     left: -7px;
     border-radius: 0 5px 5px 0;
     cursor: pointer; }

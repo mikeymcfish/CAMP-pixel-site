@@ -112,6 +112,12 @@ li{
   width: 150px;
   text-align: center;
 }
+.saveLink{
+  color: #1b2325;
+}
+.saveLink:hover{
+  color: #59a4a3;
+}
 
 .saveDetails{
   display: inline-block;
