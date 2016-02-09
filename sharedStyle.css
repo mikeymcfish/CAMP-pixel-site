@@ -57,11 +57,11 @@ a:hover {
   background-color: #313743;
   top: 60px;
   left: 0px;
+  right: 0px;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, .3);
   height: 30px;
   width: 100%;
   font-family: 'Subheader';
-  padding-right: 75px;
 }
 
 #topBar #phone{
@@ -81,7 +81,6 @@ a:hover {
   height: 30px;
   width: 100%;
   font-family: 'Subheader';
-  padding-right: 75px;
   color: white;
 }
 
