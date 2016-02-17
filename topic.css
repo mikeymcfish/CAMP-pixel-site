@@ -82,6 +82,21 @@
   background-size: cover;
   background-position: top;
 }
+#FASHIONdesignPic{
+  background: url("images/fashion_topic.jpg");
+  background-size: cover;
+  background-position: top;
+}
+#SPORTSmechanicsPic{
+  background: url("images/sports_topic.jpg");
+  background-size: cover;
+  background-position: top;
+}
+#ARCADEcontrolPic{
+  background: url("images/arcade_topic.jpg");
+  background-size: cover;
+  background-position: top;
+}
 .topTopicTemplate{
   position: absolute;
   bottom: 40px;
