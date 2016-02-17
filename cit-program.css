@@ -1,0 +1,228 @@
+
+
+#scheduleSectionHeader .mainSectionImage {
+  background-image: url("images/schedule-header.jpg") !important;
+  background-position: right center; }
+
+
+#citHeader-left{
+    display: inline-block;
+    width: 50%;}
+#citHeader-right{
+    float:right;
+    display: inline-block;
+    width: 45%;}
+.citHeaderLabel {
+    font-family: "Header";
+    font-size: 24px;
+    padding: 22px 0px;
+    background-color: #CCCCCC;
+    color: #59a4a3;
+    text-align: center;}
+.citSubheaderLabel{
+    font-size: 16px; 
+    padding-top: 10px;}
+#citHeader table td {
+    font-size: 15px;
+    padding: 12px;
+    font-style: "Body";
+    line-height: 120%;}
+.rowHighlight {
+    background-color:#eee;}
+.applyButton {
+    background-color: #ff017e;
+    border: none;
+    font-size: 18px;
+    font-family: "Header";
+    line-height: 60px;
+    height: 60px;
+    width:100%;
+    color: white;
+    margin-bottom: 50px;}
+.applyButton:hover {
+    background-color: #e54785;
+    cursor: pointer;
+    color: white;
+    text-decoration: none; }
+    
+.citHeaderBlurb{
+    font-family: "Body";
+    line-height: 24px;
+    font-size: 16px;
+    margin-bottom: 50px;
+    clear: both; }
+
+
+#midSection{
+    clear: both;
+    position: relative;}
+#midSection .learning{
+    float: left;
+    width: 45%;
+margin-bottom: 50px;}
+#midSection .leading{
+    float:right;
+    width: 45%;
+margin-bottom: 50px;}
+#midSection .midSectionLabel {
+    font-family: "Header";
+    font-size: 25px;
+    background-color: #7fcca8;
+    padding: 20px;
+    color: white;}
+.midSectionList {
+    line-height: 175%;
+    font-size: 14px;
+    margin-top: 12px;
+    margin-left: 0px;}
+.midSectionList li:before {
+font-family: "Header";
+  content: ">"; /* Insert content that looks like bullets */
+  padding-right: 8px;
+  color: #e54785; /* Or a color you prefer */   }
+
+.section{
+    clear:both;
+    width:100%;
+}
+
+#applySectionHeader .mainSectionImage{
+    background-image: url("images/Minecraft%20Coding%20plus.jpg")!important;
+    background-position: right center;}
+
+.applySchedule {
+    width: 180px;}
+.scheduleTitle {
+    color:  #1b2325;
+    font-size: 24px;
+    font-family: "Header";
+    padding-bottom: 15px;}
+.scheduleDate {
+    padding-bottom: 30px;
+    font-size: 22px;
+    color: #59a4a3;
+    font-family: "Special";
+}
+.scheduleDate.second {
+    padding-bottom: 0px;
+}
+.applyDetails{
+
+    margin-bottom: 80px;
+    display: inline-block;
+}
+.applyBlurb{
+    line-height: 24px;
+    position: relative;
+    display: inline-block;
+}
+
+.applyColumn{
+    display: inline-flex;
+    vertical-align: middle;
+}
+.applyColumn.left{
+   width: 180px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.applyColumn.right{
+   margin-left: 180px;
+}
+
+
+#citCTA {
+    padding-bottom: 30px;
+    clear: right;
+    margin: 30px auto;
+    text-align: center; 
+    margin-bottom: 15px;
+    }
+#citCTA a {
+    text-decoration: none; }
+#citCTA1, #citCTA2 {
+    font-family: "Header";
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+    font-size: 18px;
+    line-height: 60px;
+    height: 60px;
+    background: #ff017e;
+    font-weight: normal;
+    margin: auto;
+    color: white; }
+#citCTA1:hover, #citCTA2:hover {
+    background: #e54785;
+    cursor: pointer;
+    color: #fff; }
+#citCTA1 {
+    margin-right: 15px; }
+
+
+#topApplyButton{
+    width: 250px;
+    height: 60px;
+    line-height: 60px;
+    padding: 0;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 815px) {
+
+    .applySchedule{
+        width: 100%;
+    }
+    .applyDetails{
+
+    margin-bottom: 40px;
+    display: inline-block;
+}
+.applyColumn.left{
+     width: 100%;
+    position: relative;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.applyColumn.right{
+   margin-left: 0px;
+   display: block;
+}
+
+.applyScheduleSession{
+   margin-left: 0px;
+   width: 45%;
+   display: inline-block;
+}
+
+#citHeader-left{
+    float: none;
+    display: inline-block;
+    width: 100%;}
+#citHeader-right{
+    float:none;
+    display: inline-block;
+    width: 100%;}
+#citHeader-right table{
+    width: 100%;
+}
+#midSection .learning{
+    float: none;
+    width: 100%;
+margin-bottom: 50px;}
+#midSection .leading{
+    float:none;
+    width: 100%;
+margin-bottom: 50px;}
+
+
+}
+
+@media screen and (max-width: 690px) {
+  #citCTA1 {
+    margin-right: 0px;
+    margin-bottom: 15px; } }

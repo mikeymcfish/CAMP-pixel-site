@@ -222,7 +222,7 @@ a:hover {
 #bottomBarContainer {
   height: 106.66667px;
   position: relative;
-  top: 26.66667px; 
+  top: 17px; 
 }
 #bottomBarCampLogo {
   background-image: url("images/bottombar-camplogo.png");
@@ -265,6 +265,8 @@ a:hover {
   cursor: pointer; 
 }
 #bottomBarLogos{
+  position: relative;
+  top: -5px;
   width: 250px;
   display: inline-block;
 }
