@@ -1,4 +1,6 @@
-
+.hide{
+    display: none;
+}
 
 #scheduleSectionHeader .mainSectionImage {
   background-image: url("images/schedule-header.jpg") !important;
@@ -27,12 +29,6 @@
     padding: 12px;
     font-style: "Body";
     line-height: 120%;}
-    #citHeader table{
-        width: 100%;
-    }
-.citHeaderImage{
-    margin-bottom: 50px;
-}
 .rowHighlight {
     background-color:#eee;}
 .applyButton {
@@ -175,6 +171,56 @@ font-family: "Header";
     padding: 0;
     font-size: 18px;
 }
+
+.label {
+     height: 100px;
+    background-color: #7fcca8;
+    color: #1b2325;
+    font-size: 32px;
+    margin-bottom: 25px;
+    margin-top: 50px;
+    position: relative; }
+
+
+#sliderAges{
+    width: 90%;
+    height: 50px;
+    position: relative;
+    left: -10px;
+}
+
+.sliderAge{
+    font-family: "Header";
+    font-size: 26px;
+    position: absolute;
+
+}
+
+#slider1{
+    left: 0%;
+}
+
+#slider2{
+    left: 20%;
+}
+
+#slider3{
+    left: 40%;
+}
+
+#slider4{
+    left: 60%;
+}
+
+#slider5{
+    left: 80%;
+}
+
+#slider6{
+    left: 100%;
+}
+
+
 
 @media screen and (max-width: 815px) {
 

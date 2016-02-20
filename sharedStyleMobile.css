@@ -7,14 +7,17 @@
 }
 
 @media screen and (max-width: 815px) {
+  #content{
+    padding-bottom: 350px
+  }
 
   #topBar {
-    height: 90px;
+    height: 150px;
     padding: 0px 0px 0px 0px;
     z-index: 100; 
   }
   #topBar #phoneNumber{
-    top: 90px;
+    top: 150px;
     text-align: center;
   }
   #topBar #phone{
@@ -43,10 +46,11 @@
     margin: 0px 5px; 
   }
   #topBarButtons #signupButton {
-    display: none; 
+    display: block;
+    margin: auto;
   }
   .section {
-    top: 120px; 
+    top: 180px; 
   }
   .section .sectionContent {
     padding: 15px 15px; 
@@ -158,7 +162,7 @@
 
 @media screen and (max-width: 670px){
   .section .sectionContent {
-      padding: 15px 15px;
+      padding: 15px inherit;
   }
 }
 

@@ -21,9 +21,8 @@
 	<link rel="stylesheet" type="text/css" href="cssReset.css">
 	<link rel="stylesheet" type="text/css" href="sharedStyle.css">
 	<link rel="stylesheet" type="text/css" href="sharedStyleMobile.css">
-	<link rel="stylesheet" type="text/css" href="home.css">
+	<link rel="stylesheet" type="text/css" href="packages.css">
 	<script src="jquery-1.11.3.min.js"></script>
-	<script src="home.js"></script>
 	<!--Start of Zopim Live Chat Script-->
     <script type="text/javascript">
         window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
@@ -52,131 +51,164 @@
    	 }
   	</script>
 	<!-- End Google Analytics -->
-	<title> CAMP/pixel Home </title>
+	<title> CAMP/topics </title>
 </head>
 <body>
 	<div id="wrapper">
-		<div id="topBarHome">
-			<div id="topBarLogo">
-				<a href="home.html">
-					<img src="images/topbar-camplogo.png" style="padding-top: 15px;" height="30px;" />
-				</a>
+	<div id="topBar">
+		<div id="topBarLogo">
+			<a href="home.html">
+				<img src="images/topbar-camplogo.png" style="padding-top: 15px;" height="30px;" />
+			</a>
+		</div>
+		<div id="topBarButtons">
+			<a href="about.html">
+				<div class="topBarButton">
+					CAMP/about
+				</div>
+			</a>
+			<a href="schedule.html">
+				<div class="topBarButton">
+					CAMP/schedule
+				</div>
+			</a>
+			<a href="topics.html">
+				<div class="topBarButton">
+					CAMP/topics
+				</div>
+			</a>
+			<a href="https://hq.pixelacademy.org/tickets/camp-pixel">
+				<div id="signupButton" class="topBarButton">
+					SIGN UP
+				</div>
+			</a>
+		</div>
+		<div id="phoneNumber">
+			<div id="phone">
+					<img class="topBarContactIcon" height="20" src="images/phone-icon.png" />
+						(866) 771-6837
+
+				<div id="phoneSpacer">
+				</div>
+					<img class="topBarContactIcon"  height="20" src="images/email-icon.png" />
+						info@pixelacademy.org
 			</div>
-			<div id="topBarButtons">
-				<a href="about.html">
-					<div class="topBarButton">
-						CAMP/about
+		</div>
+	</div>
+
+	<div id="content">
+	<!-- FACTS SECTION -->
+	<div class="section">
+		<div class="mainSectionHeader" id="packagesSectionHeader">
+			<div class="mainSectionText">
+				<span>
+				CAMP/packages
+				</span>
+			</div>
+			<div class="mainSectionImageContainer">
+				<div class="mainSectionImage"></div>
+				<div class="mainSectionImageSlash"></div>
+			</div>
+		</div>
+
+		<div class="sectionContent">
+			<div id="packagesBlurb">
+				Get the most out of your CAMP/pixel experience, and start your child on a path to self-identity as a future "techspert". Each of our curated CAMP/packages combines several of our project-fueled offerings into 3- to 4-week complete ideas of fundamental knowledge of a realm of technology. Choose from our Coder package, Maker package, Minecrafter package, Artist Package, or Game Designer Package, all accessible for campers ages 7-11 with no prior experience. <br/><br/>
+
+Click on a package below to learn more. You can either sign up directly with our suggested schedule, or create one yourself on our tickets page.
+			</div>
+			<div id="packageList">
+				<a href="package.html#coder">
+					<div class="packageButton" id="coder">
+						<div class="packageMask">
+						BE A CODER
+						</div>
 					</div>
 				</a>
+				<a href="package.html#minecrafter">
+					<div class="packageButton" id="minecrafter">
+						<div class="packageMask">
+						BE A MINECRAFTER
+						</div>
+					</div>
+				</a>
+				<a href="package.html#artist">
+					<div class="packageButton" id="artist">
+						<div class="packageMask">
+						BE AN ARTIST
+						</div>
+					</div>
+				</a>
+				<a href="package.html#maker">
+					<div class="packageButton" id="maker">
+						<div class="packageMask">
+						BE A MAKER
+						</div>
+					</div>
+				</a>
+				<a href="package.html#gamedesigner">
+					<div class="packageButton" id="gamedesigner">
+						<div class="packageMask">
+						BE A GAME DESIGNER
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div id="packagesCTA" >
 				<a href="schedule.html">
-					<div class="topBarButton">
-						CAMP/schedule
+					<div id="packagesCTA1">
+						A DAY AT CAMP/pixel
 					</div>
 				</a>
 				<a href="topics.html">
-					<div class="topBarButton">
-						CAMP/topics
-					</div>
-				</a>
-				<a href="https://hq.pixelacademy.org/tickets/camp-pixel">
-					<div id="signupButton" class="topBarButton">
-						SIGN UP
-					</div>
-				</a>
-			</div>
-			<div id="phoneNumber">
-				<div id="phone">
-					<img class="topBarContactIcon" height="20" src="images/phone-icon.png" />
-						(866) 771-6837
-					<div id="phoneSpacer">
-					</div>
-					<img class="topBarContactIcon"  height="20" src="images/email-icon.png" />
-						info@pixelacademy.org
+				<div id="packagesCTA2">
+					VIEW CAMP/topics
 				</div>
+				</a>
 			</div>
-		</div>
-		<div id="content">
-
-			<!-- THIS IS THE BUS IMAGE, you can delete this -->
-			<!-- <a href="about.html#location" id="busesSpecialOffer">
-				<img src="images/BusesHomePage.png" height="120"/>
-			</a> -->
-			<!-- OK, now stop deleting :) -->
-
-			<div id="mainSection">
-				<div id="mainSectionText">
-					<div id="mainSectionMainText">
-						What will you make?
-					</div>
-					<div id="mainSectionSubText">
-						NYC's best technology summer day camps:
-						Coding, design, programming, game design, Minecraft modding and more
-						for kids ages 7-14
-					</div>
-					<div id="mainSectionLocations">
-						<a href="about.html#location">
-						in Downtown Manhattan
+	</div>
+   	<!-- BOTTOM BAR -->
+		<div id="bottomBar">
+			<div id="bottomBarContainer">
+				<div id="bottomBarLogos">
+					<a href="home.html">
+						<div id="bottomBarCampLogo">
+						</div>
+					</a> 
+					<a href="http://www.pixelacademy.org/" target="_blank">
+						<div id="bottomBarPixelLogo">
+						</div>
+					</a>
+				</div>
+				<div id="bottomBarLinks">
+					<div id="topLinks">
+						<a href="about.html">
+							About CAMP/pixel
 						</a>
-					</div>
-					<div id="mainSectionCTA" >
 						<a href="schedule.html">
-							<div id="mainSectionCTA1">
-								A DAY AT CAMP/pixel
-							</div>
+							A Day at CAMP/pixel
 						</a>
 						<a href="topics.html">
-							<div id="mainSectionCTA2">
-								VIEW CAMP/topics
-							</div>
+							CAMP/pixel topics
 						</a>
-					</div>
-				</div>
-				<div id="mainSectionBanner">
-				</div>
-			</div>
-		</div>
-
-		<!-- BOTTOM BAR -->
-		<div id="bottomBar">
-				<div id="bottomBarContainer">
-					<div id="bottomBarLogos">
-						<a href="home.html">
-							<div id="bottomBarCampLogo">
-							</div>
-						</a> 
-						<a href="http://www.pixelacademy.org/" target="_blank">
-							<div id="bottomBarPixelLogo">
-							</div>
-						</a>
-					</div>
-					<div id="bottomBarLinks">
-						<div id="topLinks">
-							<a href="about.html">
-								About CAMP/pixel
-							</a>
-							<a href="schedule.html">
-								A Day at CAMP/pixel
-							</a>
-							<a href="topics.html">
-								CAMP/pixel topics
-							</a>
-							<a href="cit-program.html">
+						<a href="cit-program.html">
 							C.I.T. Program
 						</a>
-						</div>
-						<div id="bottomLinks">
-							<a href="about.html#location">
-								Location
-							</a>
-							<a href="about.html#cost">
-								Cost
-							</a>
-							<a href="http://www.pixelacademy.org/" target="_blank">
-								Pixel Academy Home Page
-							</a>
-						</div>
+					</div>
+					<div id="bottomLinks">
+						<a href="about.html#location">
+							Location
+						</a>
+						<a href="about.html#cost">
+							Cost
+						</a>
+						<a href="http://www.pixelacademy.org/" target="_blank">
+							Pixel Academy Home Page
+						</a>
 					</div>
 				</div>
+			</div>
 				<div id ="bottomBarButtons">
 					<a href="https://hq.pixelacademy.org/tickets/camp-pixel">
 						<div id="bottomBarSignUp">
@@ -200,8 +232,9 @@
 					</div>
 				</div>
 			</div>
-
-		</div>
+	</div>
 	<!-- END BOTTOM BAR -->
+	</div>
+
 </body>
 </html>

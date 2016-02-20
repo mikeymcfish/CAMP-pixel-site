@@ -162,15 +162,25 @@
 }
 @media screen and (max-width: 815px) {
   #topBarHome {
-    height: 90px;
+    height: 150px;
     padding: 0px 0px 0px 0px;
     z-index: 100; 
+  }
+  #mainSectionText{
+    top: 200px;
+  }
+  #mainSectionSubText{
+    font-size: 14px;
+    line-height: 16px;
+  }
+  #mainSectionBanner{
+    height: 60px;
   }
   #topBarHome div {
     line-height: 45px; 
   }
    #topBarHome #phoneNumber{
-    top: 90px;
+    top: 150px;
     text-align: center;
   }
   #topBarHome #phone{
@@ -179,8 +189,8 @@
   }
   #busesSpecialOffer{
     position: absolute;
-    top: 8px;
-    left: 10px;
+    top: 15px;
+    left: 15px;
     z-index: 1000;
   }
 }

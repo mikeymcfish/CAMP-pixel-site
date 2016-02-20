@@ -1,0 +1,122 @@
+#packagesSectionHeader .mainSectionImage {
+  background-image: url("images/topics-header.jpg") !important;
+  background-position: right center; 
+}
+
+#packagesBlurb{
+    font-family: "Body";
+    line-height: 24px;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.packageButton{
+  width: 100%;
+  background-color: #555;
+  height: 150px;
+  color: #ffffff !important;
+  margin-bottom: 30px;
+  text-align: center;line-height: 150px;
+  font-family: "Header";
+  font-size: 36px;
+  position: relative;
+}
+
+.packageButton:hover{
+  color: #ff017e !important;
+}
+
+#minecrafter:hover{
+  background-image: url("images/minecrafter.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+
+#coder:hover{
+  background-image: url("images/coder.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+
+#maker:hover{
+  background-image: url("images/maker.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+
+#artist:hover{
+  background-image: url("images/artist.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+
+#gamedesigner:hover{
+  background-image: url("images/gamedesigner.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+
+
+.packageMask{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.packageButton:hover{
+  cursor: pointer;
+  background-color: #999;
+}
+
+
+#packagesCTA {
+    margin: auto;
+    clear: both;
+    position: relative;
+    top: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+#packagesCTA a {
+    text-decoration: none;
+}
+#packagesCTA1,
+#packagesCTA2 {
+    font-family: "Header";
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+    font-size: 18px;
+    line-height: 60px;
+    height: 60px;
+    background: #ff017e;
+    font-weight: normal;
+    margin: auto;
+    color: white;
+}
+#packagesCTA1:hover,
+#packagesCTA2:hover {
+    background: #e54785;
+    cursor: pointer;
+    color: #ccc;
+}
+#packagesCTA1 {
+    margin-right: 15px;
+}
+
+
+@media screen and (max-width: 785px) {
+  #packagesCTA1 {
+      margin-right: 0px;
+      margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .packageButton {
+      font-size: 28px;
+  }
+}

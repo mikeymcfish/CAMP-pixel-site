@@ -1,0 +1,402 @@
+#minecrafter .packageHeader{
+  background-image: url("images/minecrafter.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+
+#coder .packageHeader{
+  background-image: url("images/coder.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+
+
+#artist .packageHeader{
+  background-image: url("images/artist.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+
+#maker .packageHeader{
+  background-image: url("images/maker.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+
+#gamedesigner .packageHeader{
+  background-image: url("images/gamedesigner.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+
+
+
+
+.headerMask{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, .5);
+  padding: 0px 75px;
+}
+
+#mainSection {
+  position: relative;
+  top: 60px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center; 
+}
+#content {
+  padding-bottom: 160px; 
+}
+
+
+.topicsPicture img{
+  height: 180px;
+}
+
+.template{
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.packageHeader{
+  position: relative;
+  width: 100%;
+  background-color: #999;
+  height: 150px;
+  margin-bottom: 30px;
+  padding: 0px 75px;
+  line-height: 150px;
+  font-family: "Header";
+  font-size: 36px;
+  color: #eee;
+}
+
+.packageContent{
+  padding: 0px 75px;
+}
+
+.packageTitle{
+  color: #1b2325;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: 'Header';
+}
+
+.packageBlurb{
+  margin: auto;
+  font-family: "Body";
+  font-size:16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.packageCost{
+  vertical-align: middle;
+  margin-bottom: 35px;
+    color: #59a4a3;
+    font-size: 28px;
+    font-family: "Special";
+}
+
+.save{
+  margin-top: 10px;
+  color: #666;
+  font-family: "Body";
+  font-size: 16px;
+}
+
+.packageSchedule{
+    vertical-align: middle;
+    color: #59a4a3;
+    font-size: 26px;
+    font-family: "Special";
+}
+
+.suggestion{
+  color: #666;
+  font-family: "Body";
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+
+.packageSchedule table{
+   width: 100%;
+}
+
+.packageSchedule table td{
+  font-family: "Header";
+  font-size: 14px;
+  color: #000;
+  height: 40px;
+  vertical-align: middle;
+}
+
+.className, .dates{
+  padding: 10px;
+}
+
+.packageSchedule table .dates{
+  color: #000;
+  font-family: "Special";
+}
+
+.packageSchedule table .ageLabel td{
+  background-color: #EBECE0;
+  height: 40px;
+  font-size: 20px;
+  color: #e54785;
+  font-family: "Header";
+  line-height: 40px;
+  vertical-align: middle;
+  text-align: center;
+}
+.packageSchedule table .greyRow{
+  background-color: #eee;
+  font-size: 24px;
+  font-family: "Body";
+  vertical-align: middle;
+}
+
+.contenttd{
+  display: inline-block;
+  width: 32%;
+  margin-bottom: 15px;
+}
+
+.contenttd.smaller{
+  display: inline-block;
+  width: 30%;
+  margin-bottom: 15px;
+}
+
+.contenttd.smaller td{
+  font-family: "Body";
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 10px;
+  vertical-align: top;
+}
+
+
+.topic{
+  width: 32%;
+}
+
+
+
+.topic.left{
+  margin-right: 1%;
+}
+
+.topicsTitle{
+  font-size: 22px;
+}
+
+
+.ready{
+  font-size: 22px;
+  font-family: "Header";
+  display: block;
+  margin-bottom: 5px;
+}
+
+#otherPackagesLabel{
+  font-family: "Header";
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+
+.packagePurchase{
+
+  background-color: #ff017e;
+  height: 60px;
+  text-align: center;
+  cursor: pointer;
+}
+
+table .packagePurchase td, .contenttd.smaller tr.packagePurchase td{
+  font-size: 16px;
+  font-family: "Header";
+  position: relative;
+  color: white;
+  vertical-align: middle;
+  padding:0px;
+}
+
+.packagePurchase:hover{
+  background-color: #e54785;
+}
+
+.packageButton{
+  width: 100%;
+  background-color: #555;
+  height: 75px;
+  color: #ffffff !important;
+  margin-bottom: 15px;
+  text-align: center;
+  line-height: 75px;
+  font-family: "Header";
+  font-size: 36px;
+  position: relative;
+}
+
+.packageButton:hover{
+  color: #ff017e !important;
+}
+
+#otherPackages{
+  margin: 0px 75px;
+  padding-top: 50px;
+  margin-top: 50px;
+  border-top: solid 10px #7fcca8;
+}
+
+.packageMask{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.packageButton:hover{
+  cursor: pointer;
+  background-color: #999;
+}
+
+.packagePurchaseLink{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  line-height: 60px;
+  display: inline-block;
+  color: white;
+}
+
+.packagePurchaseLink:hover{
+  color: white;
+}
+
+@media screen and (max-width: 1240px) { 
+   .topicsDescription{
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 1100px) { 
+  .topicsDescription{
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .topicsTitle{
+    font-size: 18px;
+  }
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 420px) { 
+  .packageButton{
+    font-size: 22px;
+  }
+
+}
+
+
+@media screen and (max-width: 815px) {
+  .packageContent{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .topicsPicture img{
+    height: 200px;
+  }
+  .packageHeader{
+    font-size: 36px;
+  }
+}
+
+
+@media screen and (max-width: 960px) {
+  .topicsPicture img{
+    height: 200px;
+  }
+
+  .contenttd, .contenttd.smaller{
+    display: block;
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 815px) {
+  .template{
+    padding-top: 180px;
+  }
+  .packageHeader{
+    text-align: center;
+    padding: 0px;
+  }
+  #otherPackages{
+    margin: 0px 15px;
+  }
+
+}
+
+@media screen and (max-width: 670px) { 
+  .contenttd{
+    display: inline-block;
+    width: 100%;
+  }
+  .topicsPicture img{
+    height: 160px;
+  }
+
+  .topic{
+    width: 100%;
+  }
+
+}
+
+
+@media screen and (max-width: 420px) { 
+ .topicsDescription{
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .topicsPicture img{
+    height: 150px;
+  }
+}
+
+
+
+@media screen and (max-width: 550px) { 
+  .packageHeader{
+    font-size: 26px;
+  }
+  .headerMask{
+    padding: 0px;
+  }
+}
