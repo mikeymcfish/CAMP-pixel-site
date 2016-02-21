@@ -19,34 +19,29 @@ $(document).ready(function(){
 		}
 	}
 	else{
+		console.log("yep")
 		$(".template").each(function(){
-	 			$(this).css("display", "none");
+			console.log(this)
+	 		$(this).css("display", "none");
  		});
+ 		console.log(topics[0]);
 		$("#"+topics[0]).css("display", "block");
 	}
 	
- 	prevTopic = function(topic){
- 		var currentIndex = topics.indexOf(topic);
- 		if (currentIndex !== -1){
-	 		$(".template").each(function(){
-	 			$(this).css("display", "none");
-	 		});
-	 		var newIndex = ((currentIndex+topicCount)-1)%(topicCount);
-			$("#"+topics[newIndex]).css("display", "block");
-		}
-		console.log("success");
-	}
-
-	nextTopic = function(topic){
- 		var currentIndex = topics.indexOf(topic);
- 		if (currentIndex !== -1){
-	 		$(".template").each(function(){
-	 			$(this).css("display", "none");
-	 		});
-	 		var newIndex = (currentIndex+1)%(topicCount);
-			$("#"+topics[newIndex]).css("display", "block");
-		}
-		console.log("success");
+ 	gotoTopic = function(topic){
+ 		console.log("well");
+ 	// 	var currentIndex = topics.indexOf(topic);
+ 	// 	if (currentIndex !== -1){
+	 // 		$(".template").each(function(){
+	 // 			$(this).css("display", "none");
+	 // 		});
+	 // 		var newIndex = ((currentIndex+topicCount)-1)%(topicCount);
+		// 	$("#"+topics[newIndex]).css("display", "block");
+		// }
+		// console.log("success");
+		window.location.href = "package.html#"+topic;
+		window.scrollTo(0, 0);
+		location.reload();
 	}
 });
 
