@@ -1,7 +1,17 @@
+
+
+.mainSection {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center; 
+}
+
 #minecrafter .packageHeader{
   background-image: url("images/minecrafter.jpg");
   background-size: cover;
-  background-position: 50%;
+  background-position: 75%;
 }
 
 #coder .packageHeader{
@@ -29,27 +39,34 @@
   background-position: 50%;
 }
 
-
-
-
-.headerMask{
+.headerText{
+  background: rgba(0, 0, 0, .7);
   position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
   bottom: 0px;
-  background-color: rgba(0, 0, 0, .5);
-  padding: 0px 75px;
+  font-size: 36px;
+  line-height: 42px;
+  font-family: "Header";
+  color: #eee;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30% 75px 35px 75px;
+
+  background: rgba(0, 0, 0, .5); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)); /* Standard syntax */
 }
 
-#mainSection {
-  position: relative;
-  top: 60px;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center; 
+
+.headerSubText{
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 15px;
+  font-family: "Body";
 }
+
+
 #content {
   padding-bottom: 160px; 
 }
@@ -60,21 +77,79 @@
 }
 
 .template{
-  padding-top: 90px;
   padding-bottom: 90px;
 }
 
 .packageHeader{
-  position: relative;
-  width: 100%;
+  position: absolute;
+  top: 0px;
+  bottom: 30%;
+  left: 0px;
+  right: 0px;
   background-color: #999;
-  height: 150px;
-  margin-bottom: 30px;
-  padding: 0px 75px;
-  line-height: 150px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, .3);
+}
+
+.skills{
+  padding-left: 75px;
+}
+
+.skill{
+  width: 20%;
+  float: left;
+  margin: 0 10px;
+}
+.skillIcon{
+  height: 70px;
+  margin: 15px auto;
+}
+
+.skillLabel{
+  font-size: 13px;
   font-family: "Header";
-  font-size: 36px;
-  color: #eee;
+  text-align: center;
+}
+
+.extraInfo{
+  float: right;
+  text-align: left;
+  color: white;
+  font-family: "Header";
+  margin-right: 75px;
+  margin-top: 100px;
+  line-height: 22px;
+  font-size: 16px;
+}
+
+.green{
+  color: #91BE4A;
+}
+
+.orange{
+  color: #F4783B;
+}
+
+.blue{
+  color: #0083CA;
+}
+
+.purple{
+  color: #A967AA;
+}
+
+.yellow{
+  color: #FFEC5F;
+}
+
+.packageInfo{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  top: 70%;
+  background-image: url("images/crumples.png");
+  background: #313743;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, .3);
 }
 
 .packageContent{
@@ -94,14 +169,14 @@
   font-size:16px;
   line-height: 24px;
   margin-bottom: 20px;
+  padding-top: 50px;
 }
 
 .packageCost{
   vertical-align: middle;
-  margin-bottom: 35px;
-    color: #59a4a3;
-    font-size: 28px;
-    font-family: "Special";
+  color: #59a4a3;
+  font-size: 28px;
+  font-family: "Special";
 }
 
 .save{
@@ -116,6 +191,7 @@
     color: #59a4a3;
     font-size: 26px;
     font-family: "Special";
+    margin-bottom: 50px;
 }
 
 .suggestion{
@@ -256,7 +332,6 @@ table .packagePurchase td, .contenttd.smaller tr.packagePurchase td{
 #otherPackages{
   margin: 0px 75px;
   padding-top: 50px;
-  margin-top: 50px;
   border-top: solid 10px #7fcca8;
 }
 
@@ -288,6 +363,76 @@ table .packagePurchase td, .contenttd.smaller tr.packagePurchase td{
 .packagePurchaseLink:hover{
   color: white;
 }
+
+
+#learningImage {
+  background-image: url("images/Learning.jpg");
+  background-size: cover;
+  background-position: center 81%; 
+}
+#dropOffImage {
+  background-image: url("images/DropOff.jpg");
+  background-size: cover;
+  background-position: center 50%; 
+}
+#screenBreaksImage {
+  background-image: url("images/ScreenBreaks.jpg");
+  background-size: cover;
+  background-position: center 50%; 
+}
+ .label {
+  font-family: "Header";
+  height: 100px;
+  background-color: #7fcca8;
+  color: #1b2325;
+  font-size: 32px;
+  margin-bottom: 25px;
+  margin-top: 50px;
+  position: relative; 
+}
+ .label .labelImage {
+  background-color: #999999;
+  height: 100px;
+  width: 58%;
+  display: inline-block;
+  position: absolute;
+  right: 0px; 
+}
+ .label .slashImage {
+  height: 100%;
+  width: 10%;
+  background: url("images/scheduleSlash.png");
+  background-size: cover;
+  position: absolute;
+  left: 40%;
+  top: 0px; 
+}
+ .label .labelText {
+  display: inline-block;
+  position: relative;
+  top: 35px;
+  width: 40%;
+  left: 20px;
+  color: white; 
+}
+ .label .labelText.twoLines {
+  top: 20px; 
+}
+
+#costSection{
+  padding-bottom: 0px;
+}
+
+#detailsSection{
+  padding: 0px 75px;
+}
+
+#aboutSection{
+  line-height: 24px;
+  padding: 0px 0px 50px 0px;
+}
+
+
 
 @media screen and (max-width: 1240px) { 
    .topicsDescription{
@@ -335,6 +480,35 @@ table .packagePurchase td, .contenttd.smaller tr.packagePurchase td{
   .packageHeader{
     font-size: 36px;
   }
+  #detailsSection{
+  padding: 0px 15px;
+}
+
+}
+
+@media screen and (max-width: 850px) {
+  #DetailsSection .label {
+    height: 100px;
+    background-color: #7fcca8;
+    color: #1b2325;
+    font-size: 32px;
+    margin-bottom: 25px;
+    margin-top: 50px;
+    position: relative; 
+    text-align: left;
+  }
+  #DetailsSection .label .labelImage {
+    width: 30%;
+    top: 0px; 
+  }
+  #DetailsSection .label .slashImage {
+    width: 20%;
+    left: 70%; 
+  }
+  #DetailsSection .label .labelText {
+    font-size: 28px;
+    width: 100%; 
+  } 
 }
 
 
@@ -351,9 +525,7 @@ table .packagePurchase td, .contenttd.smaller tr.packagePurchase td{
 }
 
 @media screen and (max-width: 815px) {
-  .template{
-    padding-top: 180px;
-  }
+
   .packageHeader{
     text-align: center;
     padding: 0px;
@@ -361,8 +533,10 @@ table .packagePurchase td, .contenttd.smaller tr.packagePurchase td{
   #otherPackages{
     margin: 0px 15px;
   }
-
-}
+  .mainSection {
+    position: relative;
+    width: 100%;
+  }
 
 @media screen and (max-width: 670px) { 
   .contenttd{

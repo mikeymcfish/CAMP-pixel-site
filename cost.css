@@ -13,9 +13,7 @@
 
 
 .tableLabel{
-  margin-bottom: 20px;
   font-family: 'Header';
-
 }
 
 .detailColumn{
@@ -47,19 +45,21 @@ td{
 }
 
 .discount{
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .discountsTableLabel{
   color: #59a4a3;
   font-size: 18px;
-  margin-bottom: 10px;
   font-family: "Subheader";
+  display: inline-block;
 }
 
 .discountsTableInfo{
   font-family: "Body";
   line-height: 20px;
+  font-size: 16px;
+  color: #000;
 }
 
 li{
@@ -70,6 +70,7 @@ li{
   font-family: "Body";
   color: #666;
   font-size: 12px;
+  line-height: 14px;
 }
 
 #costColumn{

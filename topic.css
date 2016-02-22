@@ -87,7 +87,7 @@
   background-size: cover;
   background-position: top;
 }
-#SPORTSmechanicsPic{
+#SPORTSdesignPic{
   background: url("images/sports_topic.jpg");
   background-size: cover;
   background-position: top;
@@ -307,6 +307,7 @@
     margin-bottom: 25px;
     margin-top: 50px;
     position: relative; 
+    text-align: left;
   }
   #DetailsSection .label .labelImage {
     width: 30%;
