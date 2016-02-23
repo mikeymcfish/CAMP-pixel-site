@@ -3,7 +3,7 @@
 .mainSection {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 500px;
   background-size: cover;
   background-position: center; 
 }
@@ -76,14 +76,11 @@
   height: 180px;
 }
 
-.template{
-  padding-bottom: 90px;
-}
 
 .packageHeader{
   position: absolute;
   top: 0px;
-  bottom: 30%;
+  height: 350px;
   left: 0px;
   right: 0px;
   background-color: #999;
@@ -91,17 +88,28 @@
 }
 
 .skills{
+  text-align: center;
   padding-left: 75px;
+  height: 150px;
+  padding-right: 75px;
 }
 
+.skillContainer{
+  height: 100%;
+  display: inline-block;
+  margin: auto;
+}
 .skill{
-  width: 20%;
+  width: 12%;
+  min-width: 100px;
   float: left;
   margin: 0 10px;
+  text-align: center;
+
 }
 .skillIcon{
   height: 70px;
-  margin: 15px auto;
+  margin: 23px auto 10px auto;
 }
 
 .skillLabel{
@@ -143,12 +151,11 @@
 
 .packageInfo{
   position: absolute;
-  bottom: 0px;
+  height: 150px;
   left: 0px;
   right: 0px;
-  top: 70%;
+  top: 350px;
   background-image: url("images/crumples.png");
-  background: #313743;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, .3);
 }
 
@@ -163,13 +170,28 @@
   font-family: 'Header';
 }
 
+.packageDeets{
+  font-weight: bold;
+  font-family: "Special";
+  margin-top: -5px;
+  font-size: 18px;
+}
+
+.packageDeet{
+  display: inline-block;
+}
+
+.packageDeets span{
+  font-weight: bold;
+  font-family: "Header";
+}
+
 .packageBlurb{
   margin: auto;
   font-family: "Body";
   font-size:16px;
   line-height: 24px;
-  margin-bottom: 20px;
-  padding-top: 50px;
+  margin-bottom: 35px;
 }
 
 .packageCost{
@@ -276,12 +298,20 @@
   font-size: 22px;
 }
 
+#topicsTable{
+  margin-bottom: 15px;
+}
 
 .ready{
   font-size: 22px;
   font-family: "Header";
   display: block;
   margin-bottom: 5px;
+}
+
+.topicsWeeks{
+  font-size: 16px;
+  font-family: "Body";
 }
 
 #otherPackagesLabel{
@@ -332,6 +362,7 @@ table .packagePurchase td, .contenttd.smaller tr.packagePurchase td{
 #otherPackages{
   margin: 0px 75px;
   padding-top: 50px;
+  padding-bottom: 50px;
   border-top: solid 10px #7fcca8;
 }
 
@@ -483,6 +514,23 @@ table .packagePurchase td, .contenttd.smaller tr.packagePurchase td{
   #detailsSection{
   padding: 0px 15px;
 }
+.template{
+  padding-top: 150px;
+}
+
+.headerText{
+  font-size: 28px;
+  line-height: 32px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.skills{
+  padding: 0px 15px;
+}
+.skillContainer{
+  width: 600px;
+}
+
 
 }
 
@@ -524,6 +572,32 @@ table .packagePurchase td, .contenttd.smaller tr.packagePurchase td{
 
 }
 
+
+@media screen and (max-width: 890px) {
+  .skill{
+    width: 175px;
+    margin: 0px 10px;
+    text-align: left;
+    height: 60px;
+  }
+  .skillIcon{
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    display: inline-block;
+  }
+
+  .skillLabel{
+    display: inline-block;
+    position: relative;
+    top: -28px;
+    left: 10px;
+    text-align: left;
+  }
+}
+
+
+
 @media screen and (max-width: 815px) {
 
   .packageHeader{
@@ -537,6 +611,7 @@ table .packagePurchase td, .contenttd.smaller tr.packagePurchase td{
     position: relative;
     width: 100%;
   }
+}
 
 @media screen and (max-width: 670px) { 
   .contenttd{
@@ -553,6 +628,31 @@ table .packagePurchase td, .contenttd.smaller tr.packagePurchase td{
 
 }
 
+@media screen and (max-width: 600px) {
+  .skillIcon{
+    height: 35px;
+    width: 35px;
+    min-width: 35px;
+  }
+  .skill{
+    width: 140px;
+    height: 45px;
+    position: relative;
+    top: -10px;
+
+  }
+  .skillLabel{
+    top: -21px;
+    left: 3px;
+  }
+  .skillContainer{
+    width: 350px;
+  }
+  .skills{
+    padding: 0px;
+  }
+}
+
 
 @media screen and (max-width: 420px) { 
  .topicsDescription{
@@ -562,6 +662,30 @@ table .packagePurchase td, .contenttd.smaller tr.packagePurchase td{
   .topicsPicture img{
     height: 150px;
   }
+
+  .template{
+  padding-top: 170px;
+  padding-bottom: 50px;
+}
+
+.headerText{
+  font-size: 24px;
+  line-height: 28px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: rgba(0, 0, 0, .9); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)); /* Standard syntax */
+}
+.headerSubText{
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 }
 
 

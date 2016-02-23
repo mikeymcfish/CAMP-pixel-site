@@ -117,7 +117,7 @@
   }
   #bottomBarLogos{
     width: 250px;
-    top: 8px;
+    top: 12px;
     display: inline-block;
   }
   #bottomBarLinks {
@@ -168,6 +168,9 @@
 
 
 @media screen and (max-width: 435px) {
+  #bottomBar{
+    text-align: center;
+  }
   #bottomBarCampLogo{
     display: inline-block;
     margin: 0px;
@@ -180,6 +183,7 @@
     text-align: left;
     top: 5px;
     position: relative;
+    margin: auto;
   }
   #bottomBarSignUp{
     display: inline-block;
