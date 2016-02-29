@@ -8,7 +8,7 @@
   background-position: center; 
 }
 
-#minecrafter .packageHeader{
+#minecraftmaster .packageHeader{
   background-image: url("images/minecrafter.jpg");
   background-size: cover;
   background-position: 75%;
@@ -130,7 +130,7 @@
 }
 
 .green{
-  color: #91BE4A;
+  color: #F4783B;
 }
 
 .orange{
@@ -138,15 +138,15 @@
 }
 
 .blue{
-  color: #0083CA;
+  color: #F4783B;
 }
 
 .purple{
-  color: #A967AA;
+  color: #F4783B;
 }
 
 .yellow{
-  color: #FFEC5F;
+  color: #F4783B;
 }
 
 .packageInfo{
@@ -299,7 +299,7 @@
 }
 
 #topicsTable{
-  margin-bottom: 15px;
+  margin: 15px;
 }
 
 .ready{
@@ -555,6 +555,7 @@ table .packagePurchase td, .contenttd.smaller tr.packagePurchase td{
   }
   #DetailsSection .label .labelText {
     font-size: 28px;
+    top: 0px;
     width: 100%; 
   } 
 }

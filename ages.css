@@ -2,18 +2,117 @@
     display: none;
 }
 
+.well{
+    margin-bottom: 100px;
+}
+
+.ages79{
+    background-image: url("images/gamedesigner.jpg");
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+}
+
+#skillsTable{
+    margin-bottom: 35px;
+    display: inline-block;
+}
+
+#topicsTable{
+    margin: 0px;
+}
+
+#skillsTable span{
+    display: inline-block;
+    width: 8%;
+    height: 125px;
+    vertical-align: top;
+}
+
+#skillsTable img{
+    padding: 1%;
+    width: 100%;
+}
+
+#skillsTable span div{
+    margin-top: 15px;
+    font-size: 14px;
+    position: relative;
+    color: orange;
+    font-family: "Header";
+    text-align: center;
+    display: none;
+}
+
+
+#skillsTable span:hover div{
+    display: inline-block;
+}
+
+
+
+.topic{
+  width: 32%;
+}
+
+
+
+.topic.left{
+  margin-right: 1%;
+}
+
+.topicsTitle{
+  font-size: 22px;
+}
+
+#topicsTable{
+  margin-bottom: 35px;
+}
+
+.topic{
+    margin-bottom: 0px;
+}
+
+.ready{
+  font-size: 22px;
+  font-family: "Header";
+  display: block;
+  margin-bottom: 5px;
+}
+
+.topicsWeeks{
+  font-size: 16px;
+  font-family: "Body";
+}
+
+
+#image79{
+    background-size: cover;
+    background-image: url("images/gamedesigner.jpg") !important;
+    background-position: right center; 
+}
+
 #scheduleSectionHeader .mainSectionImage {
   background-image: url("images/schedule-header.jpg") !important;
   background-position: right center; }
 
-
+.topicTable{
+    width: 100%;
+    margin-bottom: 35px;
+}
+.topicTable td{
+    vertical-align: middle;
+}
 #citHeader-left{
     display: inline-block;
-    width: 50%;}
+    width: 50%;
+    margin-bottom: 35px;
+}
 #citHeader-right{
     float:right;
     display: inline-block;
-    width: 45%;}
+    width: 45%;
+    margin-bottom: 35px;}
 .citHeaderLabel {
     font-family: "Header";
     font-size: 24px;
@@ -21,6 +120,10 @@
     background-color: #CCCCCC;
     color: #59a4a3;
     text-align: center;}
+    .citHeaderImage{
+        text-align: center;
+        width: 100%;
+    }
 .citSubheaderLabel{
     font-size: 16px; 
     padding-top: 10px;}
@@ -31,6 +134,9 @@
     line-height: 120%;}
 .rowHighlight {
     background-color:#eee;}
+    #topApplyButton{
+        margin-bottom: 35px;
+    }
 .applyButton {
     background-color: #ff017e;
     border: none;
@@ -39,8 +145,7 @@
     line-height: 60px;
     height: 60px;
     width:100%;
-    color: white;
-    margin-bottom: 50px;}
+    color: white;}
 .applyButton:hover {
     background-color: #e54785;
     cursor: pointer;
@@ -135,6 +240,89 @@ font-family: "Header";
 }
 
 
+#viewAllTopics{
+    height: 70px;
+}
+
+
+
+.packageButton{
+  width: 100%;
+  background-color: #555;
+  height: 75px;
+  color: #ffffff !important;
+  margin-bottom: 15px;
+  text-align: center;
+  line-height: 75px;
+  font-family: "Header";
+  font-size: 36px;
+  position: relative;
+}
+
+
+.packageButton:hover{
+  color: #ff017e !important;
+}
+
+#minecrafter:hover{
+  background-image: url("images/minecrafter.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+
+#coder:hover{
+  background-image: url("images/coder.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+
+#maker:hover{
+  background-image: url("images/maker.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+
+#artist:hover{
+  background-image: url("images/artist.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+
+#gamedesigner:hover{
+  background-image: url("images/gamedesigner.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+
+
+.blurbHeader{
+    font-family: "Header";
+    padding-bottom: 5px;
+    vertical-align: bottom;
+    padding-right: 30%;
+    text-align: left;
+    color: #1b2325;
+    font-size: 24px;
+    margin-bottom: 15px
+}
+
+.packageMask{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.packageButton:hover{
+  cursor: pointer;
+  background-color: #999;
+}
+
+#packageList{
+    margin-bottom: 35px;
+}
 #citCTA {
     padding-bottom: 30px;
     clear: right;
@@ -173,19 +361,20 @@ font-family: "Header";
 }
 
 .label {
-     height: 100px;
+    height: 100px;
     background-color: #7fcca8;
     color: #1b2325;
     font-size: 32px;
-    margin-bottom: 25px;
-    margin-top: 50px;
-    position: relative; }
+    margin-bottom: 50px;
+    position: relative; 
+}
 
 
 #sliderAges{
-    width: 90%;
+    width: 100%;
     height: 50px;
     position: relative;
+    top: 62px;
     left: -10px;
 }
 
@@ -196,33 +385,147 @@ font-family: "Header";
 
 }
 
+#agesHeaderText{
+    margin: auto;
+    font-family: "Body";
+    font-size:22px;
+    line-height: 28px;
+    text-align: center;
+}
+
 #slider1{
-    left: 0%;
+    left: 1.5%;
 }
 
 #slider2{
-    left: 20%;
+    left: 21.5%;
 }
 
 #slider3{
-    left: 40%;
+    left: 41%;
 }
 
 #slider4{
-    left: 60%;
+    left: 60.5%;
 }
 
 #slider5{
-    left: 80%;
+    left: 80.5%;
 }
 
 #slider6{
-    left: 100%;
+    left: 101.5%;
 }
 
 
 
+
+#learningImage {
+  background-image: url("images/Learning.jpg");
+  background-size: cover;
+  background-position: center 81%; 
+}
+#dropOffImage {
+  background-image: url("images/DropOff.jpg");
+  background-size: cover;
+  background-position: center 50%; 
+}
+#screenBreaksImage {
+  background-image: url("images/ScreenBreaks.jpg");
+  background-size: cover;
+  background-position: center 50%; 
+}
+ .label {
+  font-family: "Header";
+  height: 100px;
+  background-color: #7fcca8;
+  color: #1b2325;
+  font-size: 32px;
+  margin-bottom: 35px;
+  position: relative; 
+  clear: both;
+}
+ .label .labelImage {
+  background-color: #999999;
+  height: 100px;
+  width: 58%;
+  display: inline-block;
+  position: absolute;
+  right: 0px; 
+}
+ .label .slashImage {
+  height: 100%;
+  width: 10%;
+  background: url("images/scheduleSlash.png");
+  background-size: cover;
+  position: absolute;
+  left: 40%;
+  top: 0px; 
+}
+ .label .labelText {
+  display: inline-block;
+  position: relative;
+  top: 35px;
+  width: 40%;
+  left: 20px;
+  color: white; 
+}
+
+.blurb{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.blurbTop{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 35px;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+ #skillsTable span{
+    height: 85px;
+}
+}
+
+
+@media screen and (max-width: 870px) {
+ .label {
+    height: 100px;
+    background-color: #7fcca8;
+    color: #1b2325;
+    font-size: 32px;
+    margin-bottom: 35px;
+    position: relative; 
+    text-align: center;
+    clear: both;
+  }
+ .label .labelImage {
+    width: 0%;
+    top: 0px; 
+    display: none;
+  }
+ .label .slashImage {
+    display: none;
+  }
+ .label .labelText {
+    font-size: 28px;
+    text-align: center;
+    width: 100%;
+    left: 0px;
+  } 
+}
+
+
 @media screen and (max-width: 815px) {
+    #sliderAges{
+        width: 90%;
+        height: 50px;
+        position: relative;
+        left: -10px;
+    }
 
     .applySchedule{
         width: 100%;
@@ -232,6 +535,13 @@ font-family: "Header";
     margin-bottom: 40px;
     display: inline-block;
 }
+#skillsTable span:hover div{
+    display: none;
+}
+#skillsTable span{
+    height: auto;
+}
+
 .applyColumn.left{
      width: 100%;
     position: relative;
@@ -254,11 +564,15 @@ font-family: "Header";
 #citHeader-left{
     float: none;
     display: inline-block;
-    width: 100%;}
+    width: 100%;
+    margin-bottom: 35px;
+    }
 #citHeader-right{
     float:none;
     display: inline-block;
-    width: 100%;}
+    width: 100%;
+    margin-bottom: 35px;
+    }
 #citHeader-right table{
     width: 100%;
 }
@@ -278,3 +592,10 @@ margin-bottom: 50px;}
   #citCTA1 {
     margin-right: 0px;
     margin-bottom: 15px; } }
+
+@media screen and (max-width: 500px) {
+    .sliderAge{
+        font-size: 22px;
+    }
+
+}
