@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 
 	$(".sliderAge").each(function(){
-		$(this).css("color", "#999999");
+		$(this).css("color", "#e3b49e");
 	});
 
 	var hash = window.location.hash;
@@ -12,21 +12,28 @@ $(document).ready(function(){
  		if (age >= 0 && age <= 5){
  			$("#slider"+(parseInt(age)+1)).css("color", "#000000");
 	 		$(".ageTemplate").each(function(index, obj){
+	 		$("#fullSlider").css("top", "-35px");
+			$("#agesHeaderText").css("display", "none");
 	 			if (index == age){
 	 				$(this).css("display", "block");
 	 			}
 	 			else{
 		 			$(this).css("display", "none");
 		 		}
+
 	 		});
 	 	}
 		else{
+			$("#fullSlider").css("top", "-15px");
+			$("#agesHeaderText").css("display", "block");
 			$(".ageTemplate").each(function(index, obj){
 		 			$(this).css("display", "none");
 	 		});
 		}
 	}
 	else{
+		$("#fullSlider").css("top", "-15px");
+			$("#agesHeaderText").css("display", "block");
 		$(".ageTemplate").each(function(index, obj){
 		 			$(this).css("display", "none");
 	 	});

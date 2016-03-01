@@ -8,6 +8,11 @@
   background-position: center; 
 }
 
+.topicsDescription{
+    font-size: 18px;
+    line-height: 20px;
+  }
+
 #minecraftmaster .packageHeader{
   background-image: url("images/minecrafter.jpg");
   background-size: cover;
@@ -478,14 +483,13 @@ table .packagePurchase td, .contenttd.smaller tr.packagePurchase td{
 @media screen and (max-width: 1100px) { 
   .topicsDescription{
     font-size: 16px;
-    line-height: 20px;
+    line-height: 18px;
+    padding: 0px;
   }
 
   .topicsTitle{
     font-size: 18px;
   }
-
-
 
 }
 
@@ -530,6 +534,10 @@ table .packagePurchase td, .contenttd.smaller tr.packagePurchase td{
 .skillContainer{
   width: 600px;
 }
+.topicsDescription{
+  text-align: center;
+  padding: 10px;
+}
 
 
 }
@@ -555,7 +563,7 @@ table .packagePurchase td, .contenttd.smaller tr.packagePurchase td{
   }
   #DetailsSection .label .labelText {
     font-size: 28px;
-    top: 0px;
+    top: 35px;
     width: 100%; 
   } 
 }

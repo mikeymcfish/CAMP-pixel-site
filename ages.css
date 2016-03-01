@@ -3,7 +3,9 @@
 }
 
 .well{
+  position: relative;
     margin-bottom: 100px;
+    text-align: center;
 }
 
 .ages79{
@@ -11,6 +13,19 @@
     width: 100%;
     height: 300px;
     background-size: cover;
+}
+
+.ages911{
+  background-image: url("images/IMG_3615.jpg");
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+
+}
+
+#fullSlider{
+  position: relative;
+  top: -15px;
 }
 
 #skillsTable{
@@ -92,6 +107,19 @@
     background-position: right center; 
 }
 
+
+#image911{
+    background-size: cover;
+    background-image: url("images/IMG_3615.jpg") !important;
+    background-position: left 40%; 
+}
+
+#image1214{
+    background-size: cover;
+    background-image: url("images/Minecraft Coding Plus.jpg") !important;
+    background-position: left 90%; 
+}
+
 #scheduleSectionHeader .mainSectionImage {
   background-image: url("images/schedule-header.jpg") !important;
   background-position: right center; }
@@ -120,23 +148,25 @@
     background-color: #CCCCCC;
     color: #59a4a3;
     text-align: center;}
-    .citHeaderImage{
-        text-align: center;
-        width: 100%;
-    }
+.citHeaderImage{
+    text-align: center;
+    width: 100%;
+}
 .citSubheaderLabel{
     font-size: 16px; 
-    padding-top: 10px;}
+    padding-top: 10px;
+}
 #citHeader table td {
     font-size: 15px;
     padding: 12px;
     font-style: "Body";
-    line-height: 120%;}
+    line-height: 120%;
+}
 .rowHighlight {
     background-color:#eee;}
-    #topApplyButton{
-        margin-bottom: 35px;
-    }
+#topApplyButton{
+    margin-bottom: 35px;
+}
 .applyButton {
     background-color: #ff017e;
     border: none;
@@ -158,8 +188,6 @@
     font-size: 16px;
     margin-bottom: 50px;
     clear: both; }
-
-
 #midSection{
     clear: both;
     position: relative;}
@@ -371,11 +399,11 @@ font-family: "Header";
 
 
 #sliderAges{
-    width: 100%;
+    width: 90%;
     height: 50px;
     position: relative;
     top: 62px;
-    left: -10px;
+    left: -35px;
 }
 
 .sliderAge{
@@ -402,15 +430,15 @@ font-family: "Header";
 }
 
 #slider3{
-    left: 41%;
+    left: 41.5%;
 }
 
 #slider4{
-    left: 60.5%;
+    left: 60.8%;
 }
 
 #slider5{
-    left: 80.5%;
+    left: 81%;
 }
 
 #slider6{
@@ -418,6 +446,20 @@ font-family: "Header";
 }
 
 
+#sliderBg{
+  height: 150px;
+  width: 100%;
+  position: relative;
+}
+
+#actualSlider{
+  position: absolute;
+  border-radius: 25px;
+  height: 70px;
+  top: 50px;
+  width: 100%;
+  background: #e5d7d0;
+}
 
 
 #learningImage {
@@ -520,6 +562,12 @@ font-family: "Header";
 
 
 @media screen and (max-width: 815px) {
+    .topicsPicture img{
+    height: 200px;
+  }
+  #skillHover{
+    display: none;
+  }
     #sliderAges{
         width: 90%;
         height: 50px;
@@ -586,12 +634,17 @@ margin-bottom: 50px;}
 margin-bottom: 50px;}
 
 
+
 }
+
+
 
 @media screen and (max-width: 690px) {
   #citCTA1 {
     margin-right: 0px;
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; 
+  } 
+}
 
 @media screen and (max-width: 500px) {
     .sliderAge{
@@ -599,3 +652,103 @@ margin-bottom: 50px;}
     }
 
 }
+
+
+@media screen and (max-width: 1240px) { 
+   .topicsDescription{
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 1100px) { 
+  .topicsDescription{
+    font-size: 16px;
+    line-height: 18px;
+    padding: 0px;
+  }
+
+  .topicsTitle{
+    font-size: 18px;
+  }
+
+
+
+}
+
+
+@media screen and (max-width: 960px) {
+  .topicsPicture img{
+    height: 200px;
+  }
+}
+
+
+@media screen and (max-width: 670px) { 
+  .topicsPicture img{
+    height: 160px;
+  }
+
+  .topic{
+    width: 100%;
+  }
+  .packageMask{
+    font-size: 24px;
+  } 
+  .topicsDescription{
+    font-size: 18px;
+    line-height: 20px;
+    padding: 5px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 420px) { 
+ .topicsDescription{
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .topicsPicture img{
+    height: 150px;
+  }
+
+  .template{
+  padding-top: 170px;
+  padding-bottom: 50px;
+}
+
+.headerText{
+  font-size: 24px;
+  line-height: 28px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: rgba(0, 0, 0, .9); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)); /* Standard syntax */
+}
+.headerSubText{
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+}
+
+
+
+@media screen and (max-width: 550px) { 
+  .packageHeader{
+    font-size: 26px;
+  }
+  .headerMask{
+    padding: 0px;
+  }
+}
+
