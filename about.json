@@ -1,0 +1,16 @@
+{
+  "supplies": [
+    1,
+    2,
+    3
+  ],
+  "title": "YEP!",
+  "null": null,
+  "number": 123,
+  "object": {
+    "a": "b",
+    "c": "d",
+    "e": "f"
+  },
+  "string": "Hello World"
+}
