@@ -1,41 +1,180 @@
 <div id="topBar">
-		<div id="topBarLogo">
-			<a href="home.html">
-				<img src="images/topbar-camplogo.png" style="padding-top: 15px;" height="30px;" />
-			</a>
-		</div>
-		<div id="topBarButtons">
-			<a href="about.html">
-				<div class="topBarButton thisPageLink">
-					CAMP/about
-				</div>
-			</a>
-			<a href="schedule.html">
-				<div class="topBarButton">
-					CAMP/schedule
-				</div>
-			</a>
-			<a href="topics.html">
-				<div class="topBarButton">
-					CAMP/topics
-				</div>
-			</a>
-			<a href="https://hq.pixelacademy.org/tickets/camp-pixel">
-				<div id="signupButton" class="topBarButton">
-					SIGN UP
-				</div>
-			</a>
-		</div>
-		<div id="phoneNumber">
-			<div id="phone">
-				
-					<img class="topBarContactIcon" height="20" src="images/phone-icon.png" />
-						(866) 771-6837
+	<div id="topBarLogo">
+		<a href="home.html">
+			<img src="images/top_bar_camp_logo.png" style="padding-top: 15px;height:30px;" id="topBarLogoImg" />
+		</a>
+	</div>
+	<div id="topBarButtons">
 
-				<div id="phoneSpacer">
-				</div>
-					<img class="topBarContactIcon"  height="20" src="images/email-icon.png" />
-						info@pixelacademy.org
+		<!-- FIRST MENU ITEM -->
+			<div class="topBarButton" data-href="about.html">
+				<span class="desktop">CAMP/about</span>
+				<span class="mobile">ABOUT</span>
+				<img style="padding-left:2px;" height="12px" src="images/icon_arrow_down.png"  />
+				<span class="submenu">
+					<ul>
+						<a class="submenuChoice" href="about.html">
+							<li>About CAMP/pixel</li>
+						</a>
+						<a class="submenuChoice" href="ages.html">
+							<li>Ages</li>
+						</a>
+						<a class="submenuChoice" href="about.html#location">
+							<li>Location</li>
+						</a>
+						<a class="submenuChoice" href="about.html#cost">
+							<li>Cost</li>
+						</a>
+						<a class="submenuChoice" href="schedule.html">
+							<li>Schedule</li>
+						</a>
+						<a class="submenuChoice" href="contactfaq.html">
+							<li>FAQ/contact</li>
+						</a>
+					</ul>
+				</span>
 			</div>
+
+		<!-- SECOND MENU ITEM -->
+			<div class="topBarButton" data-href="topics.html">
+				<span class="desktop">CAMP/topics</span>
+				<span class="mobile">TOPICS</span>
+				<img style="padding-left:2px;" height="12px" src="images/icon_arrow_down.png"  />
+				<span class="submenu">
+					<ul>
+						<a class="submenuChoice" href="topics.html">
+							<li>CAMP/pixel topics</li>
+						</a>
+						<a class="submenuChoice" href="topic.html#ARCADEdesign">
+							<li>ARCADE/design</li>
+						</a>
+						<a class="submenuChoice" href="topic.html#CUTscenes">
+							<li>CUT/scenes</li>
+						</a>
+						<a class="submenuChoice" href="topic.html#DJproduction">
+							<li>DJ/production</li>
+						</a>
+						<a class="submenuChoice" href="topic.html#DRIVEdesign">
+							<li>DRIVE/design</li>
+						</a>
+						<a class="submenuChoice" href="topic.html#FASHIONdesign">
+							<li>FASHION/design</li>
+						</a>
+						<a class="submenuChoice" href="topic.html#FLIGHTdesign">
+							<li>FLIGHT/design</li>
+						</a>
+						<a class="submenuChoice" href="topic.html#JURASSICparts">
+							<li>JURASSIC/parts</li>
+						</a>
+						<a class="submenuChoice" href="topic.html#MINECRAFTarchitect">
+							<li>MINECRAFT/architect</li>
+						</a>
+						<a class="submenuChoice" href="topic.html#MINECRAFTcoding">
+							<li>MINECRAFT/coding</li>
+						</a>
+						<a class="submenuChoice" href="topic.html#MINECRAFTcodingplus">
+							<li>MINECRAFT/coding+</li>
+						</a>
+						<a class="submenuChoice" href="topic.html#MINECRAFTengineering">
+							<li>MINECRAFT/engineering</li>
+						</a>
+						<a class="submenuChoice" href="topic.html#SPORTSdesign">
+							<li>SPORTS/design</li>
+						</a>
+						<a class="submenuChoice" href="topic.html#VIRTUALreality">
+							<li>VIRTUAL/reality</li>
+						</a>
+					</ul>
+				</span>
+			</div>
+			
+		<!-- THIRD MENU ITEM -->
+		
+			<div class="topBarButton" data-href="packages.html">
+				<span class="desktop">CAMP/packages</span>
+				<span class="mobile">PACKAGES</span>
+				<img style="padding-left:2px;" height="12px" src="images/icon_arrow_down.png"  />
+				<span class="submenu">
+					<ul>
+						<a class="submenuChoice" href="packages.html">
+							<li>CAMP/pixel pacakges</li>
+						</a>
+						<a class="submenuChoice" href="package.html#minecraftmaster">
+							<li>BE A MINECRAFT MASTER</li>
+						</a>
+						<a class="submenuChoice" href="package.html#coder">
+							<li>BE A CODER</li>
+						</a>
+						<a class="submenuChoice" href="package.html#artist">
+							<li>BE AN ARTIST</li>
+						</a>
+						<a class="submenuChoice" href="package.html#maker">
+							<li>BE A MAKER</li>
+						</a>
+						<a class="submenuChoice" href="package.html#gamedesigner">
+							<li>BE A GAME DESIGNER</li>
+						</a>
+					</ul>
+				</span>
+			</div>
+
+		<!-- SIGNUP BUTTON -->
+		<a href="https://hq.pixelacademy.org/tickets/camp-pixel">
+			<div id="signupButton" class="topBarButton">
+				SIGN UP
+			</div>
+		</a>
+	</div>
+	<div id="phoneNumber">
+		<div id="phone">
+			<img class="topBarContactIcon" height="20" src="images/icon_phone.png" />
+				<a href="tel:866-771-6837">
+					(866) 771-6837
+				</a>
+
+			<div id="phoneSpacer">
+			</div>
+				
+			<img class="topBarContactIcon"  height="20" src="images/icon_email.png" />
+			<a href="mailto:info@pixelacademy.org" target="_top">
+				info@pixelacademy.org
+			</a>
+					
+			
+			<div id="phoneSpacer">
+			</div>
+
+			<a href="https://www.facebook.com/PixelAcademy" target="_blank">
+				<img class="topBarSocialIcon"  height="20" src="images/icon_facebook.png" />
+			</a>
+			
+			<div id="phoneSpacerSmall">
+			</div>
+				
+			<a href="https://twitter.com/PixelAcademy" target="_blank">
+				<img class="topBarSocialIcon"  height="20" src="images/icon_twitter.png" />
+			</a>
+		</div>
+
+		<div id="promo" class="desktop">
+			<!-- CHANGE THIS LINK -->
+			<a href="about.html#location">
+			<img src="images/top_bar_promo_banner.png" height="30" id="promoBanner"/><span id="promoText">
+				LIMITED TIME ONLY: $10 BUSES
+				<img style="padding-left:2px;" height="12px" src="images/icon_arrow_right.png"  />
+				<!-- EDIT TEXT/LINK BELOW TOO -->
+			</span>
+			</a>
 		</div>
 	</div>
+	<div id="promo" class="mobile">
+		<!-- CHANGE THIS LINK -->
+		<a href="about.html#location">
+		<img src="images/top_bar_promo_banner.png" height="30" id="promoBanner"/><span id="promoText">
+			<!-- EDIT TEXT/LINK ABOVE TOO -->
+			LIMITED TIME ONLY: $10 BUSES
+			<img style="padding-left:2px;" height="12px" src="images/icon_arrow_right.png"  />
+		</span>
+		</a>
+	</div>
+</div>

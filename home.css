@@ -1,31 +1,10 @@
-#busesSpecialOffer{
-  position: absolute;
-  top: 130px;
-  left: 75px;
-  z-index: 10;
+#content{
+  padding-bottom: 160px;
 }
 
-#topBarHome {
+#topBar {
   background: rgba(80, 86, 100, 0.8);
-  color: white;
   position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  height: 60px;
-  padding: 0px 0px 0px 75px;
-  z-index: 100; 
-}
-
-#topBarHome #phoneNumber {
-  position: absolute;
-  background-color: #313743;
-  top: 60px;
-  left: 0px;
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, .3);
-  height: 30px;
-  width: 100%;
-  font-family: 'Subheader';
 }
 
 #topBarHome #phone{
@@ -42,14 +21,6 @@
   display: inline-block;
   height: 20px;
 
-}
-#topBarHome div {
-  line-height: 60px;
-  display: inline-block; 
-}
-#topBarHome a {
-  color: inherit;
-  text-decoration: none; 
 }
 
 /* MAIN SECTION */
@@ -81,7 +52,7 @@
   bottom: 0px;
   left: 0px;
   right: 0px;
-  background-image: url("images/banner.jpg");
+  background-image: url("images/home_page_banner.jpg");
   background-size: cover; 
 }
 #mainSectionMainText {
@@ -127,87 +98,51 @@
   cursor: pointer;
   color: #fff;
 }
-#content {
-  padding-bottom: 190px; 
+
+@media screen and (max-width: 768px) {
+  #topBar{
+    background: rgb(80, 86, 100);
+  }
+
 }
 
 
 /* HOME PAGE MOBILE */
 @media screen and (max-width: 815px) {
-  #mainSection {
-    text-align: center; 
-  }
-  #mainSectionText {
-    padding: 15px;
-    position: relative;
-    left: 0px;
-    width: 275px;
-    top: 25%;
-    margin: auto;
-    bottom: 0;
-    font-size: 24px; 
-  }
-  #mainSectionCTA #mainSectionCTA1 {
-    margin-bottom: 15px; 
-  }
-  #mainSectionCTA #mainSectionCTA1, #mainSectionCTA #mainSectionCTA2 {
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    width: 100%;
-    font-size: 18px;
-    line-height: 45px;
-    height: 45px; 
-  } 
-}
-@media screen and (max-width: 815px) {
-  #topBarHome {
-    height: 150px;
-    padding: 0px 0px 0px 0px;
-    z-index: 100; 
-  }
-  #mainSectionText{
-    top: 200px;
-  }
-  #mainSectionSubText{
-    font-size: 14px;
-    line-height: 16px;
-  }
-  #mainSectionBanner{
-    height: 60px;
-  }
-  #topBarHome div {
-    line-height: 45px; 
-  }
-   #topBarHome #phoneNumber{
-    top: 150px;
-    text-align: center;
-  }
-  #topBarHome #phone{
-    margin: auto;
-    float: none;
-  }
-  #busesSpecialOffer{
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    z-index: 1000;
-  }
-}
-
-@media screen and (max-width: 615px) {
-  #busesSpecialOffer{
-   display: none;
-  }
+    #mainSection {
+      text-align: center; 
+    }
+    #mainSectionText {
+      padding: 15px;
+      position: relative;
+      left: 0px;
+      width: 275px;
+      top: 225px;
+      margin: auto;
+      bottom: 0;
+      font-size: 24px; 
+    }
+    #mainSectionSubText{
+      font-size: 14px;
+      line-height: 16px;
+    }
+    #mainSectionCTA #mainSectionCTA1 {
+      margin-bottom: 15px; 
+    }
+    #mainSectionCTA #mainSectionCTA1, #mainSectionCTA #mainSectionCTA2 {
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      width: 100%;
+      font-size: 18px;
+      line-height: 45px;
+      height: 45px; 
+    } 
+    #mainSectionBanner{
+      height: 60px;
+    }
 }
 
 
-@media screen and (max-width: 330px) {
-  #topBarHome #phone{
-    margin: auto;
-    float: none;
-    font-size: 12px;
-  }
-}
 
 /*# sourceMappingURL=home.css.map */

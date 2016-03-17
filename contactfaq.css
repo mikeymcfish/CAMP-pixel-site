@@ -1,123 +1,141 @@
-
 #contactSectionHeader .mainSectionImage {
-  background-image: url("images/contact-header.jpg") !important;
-  background-position: center 25%; }
-
+    background-image: url("images/header_contact.jpg") !important;
+    background-position: center 25%;
+}
 #contactSectionImage {
-  display: inline;
-  vertical-align: top; }
-  #contactSectionImage img {
-    width: 40%; }
-
+    display: inline;
+    vertical-align: top;
+}
+#contactSectionImage img {
+    width: 40%;
+}
 #contactSection {
-  padding-bottom: 50px;
-  width: 100%;
-  margin: auto;
-  margin-bottom: 50px;
-  font-family: "Header";
-  background: white;
-  border-bottom: solid 10px #7fcca8; }
-  #contactSection .label {
+    padding-bottom: 50px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    font-family: "Header";
+    background: white;
+    border-bottom: solid 10px #7fcca8;
+}
+#contactSection .label {
     color: #1b2325;
     font-size: 32px;
-    margin-bottom: 50px; }
-  #contactSection #contactTable {
+    margin-bottom: 50px;
+}
+#contactSection #contactTable {
     width: 55%;
     margin-right: 15px;
     display: inline-block;
-    vertical-align: top; }
-    #contactSection #contactTable .contactTableLeft {
-      font-family: "Header";
-      font-size: 18px;
-      color: #59a4a3;
-      width: 100px; }
-    #contactSection #contactTable .contactTableRight {
-      padding-right: 20px;
-      font-family: "Special";
-      font-size: 14px;
-      padding-bottom: 25px; }
-
+    vertical-align: top;
+}
+#contactSection #contactTable .contactTableLeft {
+    font-family: "Header";
+    font-size: 18px;
+    color: #59a4a3;
+    width: 100px;
+}
+#contactSection #contactTable .contactTableRight {
+    padding-right: 20px;
+    font-family: "Special";
+    font-size: 14px;
+    padding-bottom: 25px;
+}
 #FAQSection {
-  padding-bottom: 50px;
-  width: 100%;
-  margin: auto;
-  font-family: "Header"; }
-  #FAQSection .label {
+    width: 100%;
+    margin: auto;
+    font-family: "Header";
+}
+#FAQSection .label {
     color: #1b2325;
     font-size: 32px;
-    margin-bottom: 25px; }
-  #FAQSection #searchBarText {
+    margin-bottom: 25px;
+}
+#FAQSection #searchBarText {
     height: 35px;
     font-size: 14px;
     padding: 0px 7px;
     border-radius: 5px 0 0 5px;
     border: 1px solid #cccccc;
-    font-family: 'Body'; }
-  #FAQSection #searchBarButton {
+    font-family: 'Body';
+}
+#FAQSection #searchBarButton {
     width: 35px;
     height: 35px;
     display: inline-block;
     background: #59a4a3;
-    background-image: url("images/searchIcon.png");
+    background-image: url("images/icon_search.png");
     position: relative;
     top: 12px;
     left: -7px;
     border-radius: 0 5px 5px 0;
-    cursor: pointer; }
-    #FAQSection #searchBarButton:hover {
-      background-color: #7fcca8; }
-  #FAQSection #tableOfContents {
-    margin: 25px 0; }
-    #FAQSection #tableOfContents a {
-      color: #59a4a3;
-      display: block;
-      width: 180px;
-      margin: 7px 0;
-      text-decoration: underline;
-      cursor: pointer; }
-      #FAQSection #tableOfContents a:hover {
-        color: #7fcca8; }
-  #FAQSection .FAQSubsection {
-    margin: 50px 0; }
-    #FAQSection .FAQSubsection .FAQSubsectionLabel {
-      font-size: 26px;
-      color: #59a4a3;
-      margin-bottom: 25px;
-      overflow: hidden;
-      max-height: 200px; }
-    #FAQSection .FAQSubsection .FAQQuestion {
-      overflow: hidden;
-      border-left: 10px solid #7fcca8;
-      padding-left: 25px;
-      margin-bottom: 25px;
-      line-height: 22px; }
-      #FAQSection .FAQSubsection .FAQQuestion .question {
-        font-weight: bold;
-        margin-bottom: 10px;
-        font-family: "Body"; }
-      #FAQSection .FAQSubsection .FAQQuestion .answer {
-        font-family: "Body";
-        font-size: 14px; }
-#noResultsMessage{
-  margin-top: 25px;
-  display: none;
+    cursor: pointer;
 }
-
+#FAQSection #searchBarButton:hover {
+    background-color: #7fcca8;
+}
+#FAQSection #tableOfContents {
+    margin: 25px 0;
+}
+#FAQSection #tableOfContents a {
+    color: #59a4a3;
+    display: block;
+    width: 180px;
+    margin: 7px 0;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#FAQSection #tableOfContents a:hover {
+    color: #7fcca8;
+}
+#FAQSection .FAQSubsection {
+    margin: 50px 0;
+    padding-bottom: 20px;
+}
+#FAQSection .FAQSubsection .FAQSubsectionLabel {
+    font-size: 26px;
+    color: #59a4a3;
+    margin-bottom: 25px;
+    overflow: hidden;
+    max-height: 200px;
+}
+#FAQSection .FAQSubsection .FAQQuestion {
+    overflow: hidden;
+    border-left: 10px solid #7fcca8;
+    padding-left: 25px;
+    margin-bottom: 25px;
+    line-height: 22px;
+}
+#FAQSection .FAQSubsection .FAQQuestion .question {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: "Body";
+}
+#FAQSection .FAQSubsection .FAQQuestion .answer {
+    font-family: "Body";
+    font-size: 14px;
+}
+#noResultsMessage {
+    margin-top: 25px;
+    display: none;
+}
 @media screen and (max-width: 850px) {
-  #contactSection {
-    color: #1b2325;
-    font-size: 32px;
-    margin-bottom: 50px; }
+    #contactSection {
+        color: #1b2325;
+        font-size: 32px;
+        margin-bottom: 50px;
+    }
     #contactSection #contactTable {
-      width: 100%; }
+        width: 100%;
+    }
     #contactSection #contactSectionImage {
-      display: none; } }
-
-      .scrollToTop{
-        color: #ff017e;
-      }
-      .scrollToTop:hover{
-        color: #e54785;
-      }
-
+        display: none;
+    }
+}
+.scrollToTop {
+    color: #ff017e;
+}
+.scrollToTop:hover {
+    color: #e54785;
+}
 /*# sourceMappingURL=contact.css.map */

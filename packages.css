@@ -1,5 +1,5 @@
 #packagesSectionHeader .mainSectionImage {
-  background-image: url("images/topics-header.jpg") !important;
+  background-image: url("images/header_topics.jpg") !important;
   background-position: right center; 
 }
 
@@ -30,31 +30,31 @@
 }
 
 #minecraftmaster:hover{
-  background-image: url("images/minecrafter.jpg");
+  background-image: url("images/packages_minecraft_master_background.jpg");
   background-size: cover;
   background-position: 50%;
 }
 
 #coder:hover{
-  background-image: url("images/coder.jpg");
+  background-image: url("images/packages_coder_background.jpg");
   background-size: cover;
   background-position: 50%;
 }
 
 #maker:hover{
-  background-image: url("images/maker.jpg");
+  background-image: url("images/packages_maker_background.jpg");
   background-size: cover;
   background-position: 50%;
 }
 
 #artist:hover{
-  background-image: url("images/artist.jpg");
+  background-image: url("images/packages_artist_background.jpg");
   background-size: cover;
   background-position: 50%;
 }
 
 #gamedesigner:hover{
-  background-image: url("images/gamedesigner.jpg");
+  background-image: url("images/topics_arcade_design.jpg");
   background-size: cover;
   background-position: 50%;
 }
@@ -82,7 +82,7 @@
     margin: auto;
     clear: both;
     position: relative;
-    top: 50px;
+    top: 30px;
     margin-bottom: 100px;
     text-align: center;
 }
@@ -114,7 +114,20 @@
 }
 
 @media screen and (max-width: 1135px) {
+ .packageButton{
+    font-size: 22px;
+ }
+}
+
+@media screen and (max-width: 910px) {
   .packageButton{
+    font-size: 18px;
+ }
+}
+
+
+@media screen and (max-width: 768px) {
+    .packageButton{
     margin-right: 0%;
     display: block;
     width: 100%;
@@ -130,12 +143,11 @@
 }
 
 
-
-@media screen and (max-width: 785px) {
-  #packagesCTA1 {
-      margin-right: 0px;
-      margin-bottom: 15px;
-  }
+@media screen and (max-width: 519px) {
+#packagesCTA1 {
+    margin-right: 0px;
+    margin-bottom: 5px;
+}
 }
 
 @media screen and (max-width: 420px) {

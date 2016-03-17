@@ -1,5 +1,5 @@
 #topicsSectionHeader .mainSectionImage {
-  background-image: url("images/topics-header.jpg") !important;
+  background-image: url("images/header_topics.jpg") !important;
   background-position: right center; 
 }
 
@@ -232,10 +232,6 @@
     margin-bottom: 25px;
   }
   
-  .topicsDescription{
-    font-size: 14px;
-    line-height: 16px;
-  }
   .topicDates{
     display: none;
   }

@@ -6,51 +6,14 @@
   } 
 }
 
-@media screen and (max-width: 815px) {
-  #content{
-    padding-bottom: 350px
+@media screen and (max-width: 768px) {
+
+  #content {
+    padding-bottom: 160px; 
   }
 
-  #topBar {
-    height: 150px;
-    padding: 0px 0px 0px 0px;
-    z-index: 100; 
-  }
-  #topBar #phoneNumber{
-    top: 150px;
-    text-align: center;
-  }
-  #topBar #phone{
-    margin: auto;
-    float: none;
-  }
-  #topBar div {
-    line-height: 45px; 
-  }
-  #topBar a {
-    color: inherit;
-    text-decoration: none; 
-  }
-  #topBarLogo {
-    float: none;
-    width: 100%;
-    text-align: center; 
-  }
-  #topBarButtons {
-    width: 100%;
-    text-align: center;
-    float: none;
-    font-size: 14px; 
-  }
-  #topBarButtons .topBarButton {
-    margin: 0px 5px; 
-  }
-  #topBarButtons #signupButton {
-    display: block;
-    margin: auto;
-  }
   .section {
-    top: 180px; 
+    top: 23px; 
   }
   .section .sectionContent {
     padding: 15px 15px; 
@@ -207,13 +170,3 @@
   }
 }
 
-@media screen and (max-width: 330px) {
-  .topBarButton{
-    font-size: 12px;
-  }
-  #topBar #phone, #bottomBar #phone{
-    margin: auto;
-    float: none;
-    font-size: 12px;
-  }
-}

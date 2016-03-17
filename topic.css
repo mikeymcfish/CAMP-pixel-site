@@ -1,6 +1,6 @@
 #mainSection {
   position: relative;
-  top: 60px;
+  top: 30px;
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -17,6 +17,10 @@
   right: 0px;
   bottom: 0px;
 }
+
+.costTableLabel {
+  padding-bottom: 10px;
+}
 .topicTemplateInner{
   position: absolute;
   width: 100%;
@@ -24,76 +28,77 @@
   top: 0px;
   left: 0px;
   right: 0px;
-  bottom: 60px;
+  bottom: 0px;
+  padding-bottom: 80px;
 }
 .blackMask{
   position: absolute;
-  top: 0px;
-  bottom: 60px;
+  top: 50px;
+  bottom: 30px;
   left: 0px;
   right: 0px;
   background: rgba(25, 37, 35, .3);
 }
 #DJproductionPic{
-  background: url("images/topicDJmusicproduction.jpg");
+  background: url("images/topics_dj_production.jpg");
   background-size: cover;
 }
 #CUTscenesPic{
-  background: url("images/Vinyl topic.jpg");
+  background: url("images/topics_cut_scenes.jpg");
   background-size: cover;
   background-position: bottom;
 }
 #JURASSICpartsPic{
-  background: url("images/dino topic.jpg");
+  background: url("images/topics_jurassic_parts.jpg");
   background-size: cover;
 }
 
 #MINECRAFTarchitectPic{
-  background: url("images/ComputerCraft1.png");
+  background: url("images/topics_minecraft_architect.png");
   background-size: cover;
 }
 #MINECRAFTcodingPic{
-  background: url("images/Minecraft coding.jpg");
+  background: url("images/topics_minecraft_coding.jpg");
   background-size: cover;
   background-position: bottom;
 }
 #MINECRAFTcodingplusPic{
-  background: url("images/Minecraft Coding plus.jpg");
+  background: url("images/topics_minecraft_coding_plus.jpg");
   background-size: cover;
   background-position: bottom;
 }
 #MINECRAFTengineeringPic{
-  background: url("images/Minecraft engineering.png");
+  background: url("images/topics_minecraft_engineering.png");
   background-size: cover;
   background-position: bottom;
 }
 #VIRTUALrealityPic{
-  background: url("images/vr2.jpg");
+  background: url("images/topics_virtual_reality.jpg");
   background-size: cover;
   background-position: bottom;
 }
 #DRIVEdesignPic{
-  background: url("images/DriveDesign.jpg");
+  background: url("images/topics_drive_design.jpg");
   background-size: cover;
   background-position: top;
 }
 #FLIGHTdesignPic{
-  background: url("images/plane topic.jpg");
+  background: url("images/topics_flight_design.jpg");
   background-size: cover;
   background-position: top;
 }
 #FASHIONdesignPic{
-  background: url("images/fashion_topic.jpg");
+  background: url("images/topics_fashion_design.jpg");
   background-size: cover;
   background-position: top;
 }
 #SPORTSdesignPic{
-  background: url("images/sports_topic.jpg");
+  background: url("images/topics_sports_design.jpg");
   background-size: cover;
   background-position: top;
 }
 #ARCADEcontrolPic{
-  background: url("images/arcade_topic.jpg");
+  background: url("images/topics_arcade_design.jpg");
   background-size: cover;
   background-position: top;
 }
@@ -150,7 +155,7 @@
   background-size: cover;
   position: relative;
   top: 0px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   bottom: 0px;
   left: 0px;
   right: 0px;
@@ -221,17 +226,17 @@
   font-family: "Header"; 
 }
 #DetailsSection #learningImage {
-  background-image: url("images/Learning.jpg");
+  background-image: url("images/header_drop_off.jpg");
   background-size: cover;
-  background-position: center 81%; 
+  background-position: center 55%; 
 }
 #DetailsSection #dropOffImage {
-  background-image: url("images/DropOff.jpg");
+  background-image: url("images/header-cost.jpg");
   background-size: cover;
-  background-position: center 50%; 
+  background-position: center 65%; 
 }
 #DetailsSection #screenBreaksImage {
-  background-image: url("images/ScreenBreaks.jpg");
+  background-image: url("images/header-location.jpg");
   background-size: cover;
   background-position: center 50%; 
 }
@@ -255,7 +260,7 @@
 #DetailsSection .label .slashImage {
   height: 100%;
   width: 10%;
-  background: url("images/scheduleSlash.png");
+  background: url("images/slash_4.png");
   background-size: cover;
   position: absolute;
   left: 40%;
@@ -296,6 +301,12 @@
   padding: 0px;
   position: relative;
   font-family: "Body";
+}
+
+@media screen and (max-width: 768px) {
+  .blackMask{
+    top: -60px;
+  }
 }
 
 @media screen and (max-width: 850px) {

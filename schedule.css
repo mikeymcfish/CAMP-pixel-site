@@ -1,6 +1,6 @@
 
 #scheduleSectionHeader .mainSectionImage {
-  background-image: url("images/schedule-header.jpg") !important;
+  background-image: url("images/header_schedule.jpg") !important;
   background-position: right center; }
 
 #scheduleCTA {
@@ -121,19 +121,19 @@
   margin: auto;
   font-family: "Header"; }
   #DetailsSection #mealsImage {
-    background-image: url("images/Meals.jpg");
+    background-image: url("images/header_meals.jpg");
     background-size: cover;
     background-position: bottom; }
   #DetailsSection #screenBreaksImage {
-    background-image: url("images/ScreenBreaks.jpg");
+    background-image: url("images/header_screenbreaks.jpg");
     background-size: cover;
     background-position: center 52%; }
   #DetailsSection #learningImage {
-    background-image: url("images/Learning.jpg");
+    background-image: url("images/header-location.jpg");
     background-size: cover;
-    background-position: center 81%; }
+    background-position: center 60%; }
   #DetailsSection #dropOffImage {
-    background-image: url("images/DropOff.jpg");
+    background-image: url("images/header_drop_off.jpg");
     background-size: cover;
     background-position: center 50%; }
   #DetailsSection .label {
@@ -155,7 +155,7 @@
       /* height: 125px; */
       height: 100%;
       width: 10%;
-      background: url("images/scheduleSlash.png");
+      background: url("images/slash_4.png");
       background-size: cover;
       /* background-position: center; */
       position: absolute;

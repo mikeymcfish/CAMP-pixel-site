@@ -56,14 +56,9 @@ $(document).ready(function(){
 	  	var ageValue = $('#sl1').slider('getValue');
 	    console.log(ev.value);
 	    window.location.href = "ages.html#"+ev.value;
-		location.reload();
+		//location.reload();
 	});
-        
 
-   
-
-	
- 	
 });
 
 

@@ -13,33 +13,34 @@
     line-height: 20px;
   }
 
+#packageList{
+  padding: 0 75px;
+  padding-bottom: 35px;
+}
+
+
 #minecraftmaster .packageHeader{
-  background-image: url("images/minecrafter.jpg");
   background-size: cover;
   background-position: 75%;
 }
 
 #coder .packageHeader{
-  background-image: url("images/coder.jpg");
   background-size: cover;
   background-position: 50%;
 }
 
 
 #artist .packageHeader{
-  background-image: url("images/artist.jpg");
   background-size: cover;
   background-position: 50%;
 }
 
 #maker .packageHeader{
-  background-image: url("images/maker.jpg");
   background-size: cover;
   background-position: 50%;
 }
 
 #gamedesigner .packageHeader{
-  background-image: url("images/gamedesigner.jpg");
   background-size: cover;
   background-position: 50%;
 }
@@ -166,6 +167,7 @@
 
 .packageContent{
   padding: 0px 75px;
+  padding-top: 20px;
 }
 
 .packageTitle{
@@ -402,19 +404,19 @@ table .packagePurchase td, .contenttd.smaller tr.packagePurchase td{
 
 
 #learningImage {
-  background-image: url("images/Learning.jpg");
+  background-image: url("images/header-location.jpg");
   background-size: cover;
-  background-position: center 81%; 
+  background-position: center 50%; 
 }
 #dropOffImage {
-  background-image: url("images/DropOff.jpg");
+  background-image: url("images/header_about.jpg");
   background-size: cover;
-  background-position: center 50%; 
+  background-position: center 20%; 
 }
 #screenBreaksImage {
-  background-image: url("images/ScreenBreaks.jpg");
+  background-image: url("images/facts-header2.jpg");
   background-size: cover;
-  background-position: center 50%; 
+  background-position: center 20%; 
 }
  .label {
   font-family: "Header";
@@ -437,7 +439,7 @@ table .packagePurchase td, .contenttd.smaller tr.packagePurchase td{
  .label .slashImage {
   height: 100%;
   width: 10%;
-  background: url("images/scheduleSlash.png");
+  background: url("images/slash_4.png");
   background-size: cover;
   position: absolute;
   left: 40%;
@@ -505,6 +507,9 @@ table .packagePurchase td, .contenttd.smaller tr.packagePurchase td{
 
 
 @media screen and (max-width: 815px) {
+  #packageList{
+  padding: 0 15px;
+}
   .packageContent{
     padding-left: 15px;
     padding-right: 15px;
@@ -517,9 +522,6 @@ table .packagePurchase td, .contenttd.smaller tr.packagePurchase td{
   }
   #detailsSection{
   padding: 0px 15px;
-}
-.template{
-  padding-top: 150px;
 }
 
 .headerText{
@@ -672,10 +674,6 @@ table .packagePurchase td, .contenttd.smaller tr.packagePurchase td{
     height: 150px;
   }
 
-  .template{
-  padding-top: 170px;
-  padding-bottom: 50px;
-}
 
 .headerText{
   font-size: 24px;

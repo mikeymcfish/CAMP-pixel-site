@@ -1,1251 +1,838 @@
 <html>
-<head>
-	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-	<link rel="manifest" href="favicon/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
-	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
-	<link rel="stylesheet" type="text/css" href="cssReset.css">
-	<link rel="stylesheet" type="text/css" href="sharedStyle.css">
-	<link rel="stylesheet" type="text/css" href="sharedStyleMobile.css">
-    <link rel="stylesheet" type ="text/css" href="location.css">
-    <link rel="stylesheet" type ="text/css" href="topics.css">
-    <link rel="stylesheet" type ="text/css" href="ages.css">
-    <link rel="stylesheet" type ="text/css" href="slider/css/slider.css">
-	<script src="jquery-1.11.3.min.js"></script>
-	<script src="ages.js"></script>
-	<script src="slider/js/bootstrap-slider.js"></script>
-	<!--Start of Zopim Live Chat Script-->
-    <script type="text/javascript">
-        window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
-                d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
-                _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
-            $.src="//v2.zopim.com/?154sLdSAaw4zX6Hoq65ZMP28r6UXYRlH";z.t=+new Date;$.
-                    type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
-    </script>
-    <!--End of Zopim Live Chat Script-->
-    <!-- Google Analytics -->
-  	<script>
-    	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    	ga('create', 'UA-31308117-1', 'auto');
-    	ga('require', 'linkid', 'linkid.js');
-    	ga('send', 'pageview');
+    <head>
+        <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+        <link rel="stylesheet" type="text/css" href="cssReset.css">
+        <link rel="stylesheet" type="text/css" href="sharedStyle.css">
+        <link rel="stylesheet" type="text/css" href="sharedStyleMobile.css">
+        <link rel="stylesheet" type="text/css" href="topBar.css">
+        <link rel="stylesheet" type="text/css" href="cost.css">
+        <link rel="stylesheet" type="text/css" href="location.css">
+        <link rel="stylesheet" type="text/css" href="topics.css">
+        <link rel="stylesheet" type="text/css" href="slider/css/slider.css">
+        <link rel="stylesheet" type="text/css" href="ages.css">
+        <script src="jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="ejs_production.js">	</script>
+        <!-- Renders the page -->
+        <!-- EJS HERE -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+            	var topBar = new EJS({url: 'topBar.ejs'}).render();
+            	var bottomBar = new EJS({url: 'bottomBar.ejs'}).render();
+            	var aboutBlurb = new EJS({url: 'aboutBlurb.ejs'}).render();
+            	var packageBlurb = new EJS({url: 'packageBlurb.ejs'}).render();
+            	var locationBlurb = new EJS({url: 'locationBlurb.ejs'}).render();
+            
+            $("#wrapper").prepend(topBar);
+            $("#wrapper").append(bottomBar);
+            
+            
+            $(".packageSpot").each(function(){
+            $(this).append(packageBlurb);
+            });
+            
+            $(".aboutSpot").each(function(){
+            $(this).append(aboutBlurb);
+            });
+            
+            $(".locationSpot").each(function(){
+            $(this).append(locationBlurb);
+            });
+            });
+        </script>
 
-    	var trackOutboundLink = function(url) {
-       		ga('send', 'event', url, 'click', url, {'hitCallback':
-         	function () {
-         
-         	}
-       	});
-   	 }
-  	</script>
-	<!-- End Google Analytics -->
-	<title> C.I.T. program</title>
-</head>
-<body>
-	<div id="wrapper">
-	<a name="top"></a>
-	<div id="topBar">
-		<div id="topBarLogo">
-			<a href="home.html">
-				<img src="images/topbar-camplogo.png" style="padding-top: 15px;" height="30px;" />
-			</a>
-		</div>
-		<div id="topBarButtons">
-			<a href="about.html">
-				<div class="topBarButton">
-					CAMP/about
-				</div>
-			</a>
-			<a href="schedule.html">
-				<div class="topBarButton">
-					CAMP/schedule
-				</div>
-			</a>
-			<a href="topics.html">
-				<div class="topBarButton">
-					CAMP/topics
-				</div>
-			</a>
-			<a href="https://hq.pixelacademy.org/tickets/camp-pixel">
-				<div id="signupButton" class="topBarButton">
-					SIGN UP
-				</div>
-			</a>
-		</div>
-		<div id="phoneNumber">
-			<div id="phone">
-				
-					<img class="topBarContactIcon" height="20" src="images/phone-icon.png" />
-						(866) 771-6837
-
-				<div id="phoneSpacer">
-				</div>
-					<img class="topBarContactIcon"  height="20" src="images/email-icon.png" />
-						info@pixelacademy.org
-			</div>
-		</div>
-	</div>
-	<div id="content">
-	<!-- CONTACT/FAQ SECTION -->
-	<div class="section">
-		<div class="mainSectionHeader" id="scheduleSectionHeader">
-			<div class="mainSectionText">
-				<span>
-				CAMP/ages
-				</span>
-			</div>
-			<div class="mainSectionImageContainer">
-				<div class="mainSectionImage" ></div>
-				<div class="mainSectionImageSlash"></div>
-			</div>
-		</div>
-		<div class="sectionContent">
-			<div id="agesHeaderText">How can you join CAMP/pixel? Select an age range using the slider below to learn more.
-			</div>
-
-			<div id="fullSlider">
-				<center>
-					<div id="sliderBg">
-						<div id="actualSlider">
-						</div>
-					<div>
-					<div id="sliderAges">
-						<span class="sliderAge" id="slider1">
-							<div style="font-family:'Body';font-size:16px;padding-bottom:5px;">
-							Ages
-							</div>
-							< 7
-						</span>
-						<span class="sliderAge" id="slider2">
-							<div style="font-family:'Body';font-size:16px;padding-bottom:5px;">
-							Ages
-							</div>
-							7-9
-						</span>
-						<span class="sliderAge" id="slider3">
-							<div style="font-family:'Body';font-size:16px;padding-bottom:5px;">
-							Ages
-							</div>
-							9-11
-						</span>
-						<span class="sliderAge" id="slider4">
-							<div style="font-family:'Body';font-size:16px;padding-bottom:5px;">
-							Ages
-							</div>
-							12-14
-						</span>
-						<span class="sliderAge" id="slider5">
-							<div style="font-family:'Body';font-size:16px;padding-bottom:5px;">
-							Ages
-							</div>
-							15-17
-						</span>
-						<span class="sliderAge" id="slider6">
-							<div style="font-family:'Body';font-size:16px;padding-bottom:5px;">
-							Ages
-							</div>
-							18+
-						</span>
-					</div>
-					<div class="well">
-		            	<input type="text" class="span2" value="4" id="sl1" data-slider-min="0" data-slider-max="5" data-slider-value="1" data-slider-selection="none" data-slider-tooltip="hide">
-		         	</div>
-	         	</center>
-	        </div>
-
-
-		<!-- BEGIN AGES TEMPLATE -->
-     	<!-- UNDER 7 -->
-        <div id="0" class="ageTemplate">
-			<div class="label">
-				<div class="labelImage" id="dropOffImage">
-				</div>
-				<div class="slashImage">
-				</div>
-				<div class="labelText twoLines">
-				UNDER 7
-				</div>
-			</div>
-			<!--cit Header-->
-			<div id = "citHeader">
-			    <!--left position on Header-->
-			    <div id = "citHeader-left">
-			        <div class = "citHeaderImage"><img src = "images/standby.jpg" style = "width:100%;"></div>
-			    </div>
-			    
-			    <!--right position on Header-->
-			    <div id = "citHeader-right">
-			        <p class="blurbTop">
-			        	CAMP/pixel programs are for kids and teens ages 7 and up. If you have a younger child who wants to join CAMP/pixel, or have any questions about our summer camp age groups, please shoot us an email at <a href="mailto:info@pixelacademy.org">info@pixelacademy.org</a>
-			        </p>
-			        <p class="blurb">
-			        	Our after-school programs during the academic year involve more locations and age groups! For more information, you can visit <a href="http://www.pixelacademy.org">www.pixelacademy.org</a>
-			        </p>
-			    </div>
-			</div>  
-				<div class="label">
-					<div class="labelImage" id="learningImage">
-					</div>
-					<div class="slashImage">
-					</div>
-					<div class="labelText">
-					About CAMP/pixel
-					</div>
-				</div>
-				<div id="aboutSection" class="blurbTop">
-					Technology is becoming more and more necessary for future jobs, rendering the utility of early STEM education at a critically high level. Don't just take our word for it, take the <a href="http://www.ed.gov/stem" target="_blank">U.S. Department of Education</a>, or <a target="_blank" href="https://www.ncwit.org/edjobsmap">NCWIT</a>, or <a  target="_blank" href="http://blog.linkedin.com/2013/12/18/the-25-hottest-skills-that-got-people-hired-in-2013/?utm_source=buffer&utm_campaign=Buffer&utm_content=bufferc1275&utm_medium=twitter">LinkedIn</a>. CAMP/pixel brings cutting-edge, relevant topics of technology recognizable in A.P. and college-level Computer Science classes and breaks them down into intriguing, hands-on experiences for kids ages 7-14. Campers are introduced to a new world of imagination and creativity through inquiry-based learning using professional-grade technology and methods that most students don't get at school.. Whether it's designing on a 3D plane, experimenting with virtual reality, producing creative digital art, or any of our other time-tested curriculum, our project-based approach encourages exploration and creativity while always promoting our Rule #1: Have Fun. <br><br>
-			We use technology of the present to help kids create ideas for the future.
-			<div id="locationBlurb">
-								For more information, visit <a href="about.html">CAMP/about</a>.
-							</div>
-				</div>
-				<div class="label">
-					<div class="labelImage" id="screenBreaksImage">
-					</div>
-					<div class="slashImage">
-					</div>
-					<div class="labelText">
-					 CAMP/location
-					</div>
-				</div>
-				<div id="locationSection">
-					<div id="mapAddresses">
-						<div class="addressBlock" >
-							<div class="addressTitle">
-								CAMP/pixel New York
-							</div>		
-							
-							<a target="_blank" style="text-decoration:underline;" href="https://www.google.com/maps/place/25+Pine+St,+New+York,+NY+10005/@40.7073823,-74.0120413,17z/data=!3m1!4b1!4m2!3m1!1s0x89c25a1705a7aeaf:0x4cc1e7553e970dec">
-							25 Pine St<br> New York, NY 10005 
-							</a> <br>
-							<div id="locationsNote">
-							[Opens in Google Maps]
-							</div>
-							<div class="subwayIcons">
-								<img src="images/subways_1.jpg" />
-								<img src="images/subways_2.jpg" />
-								<img src="images/subways_3.jpg" />
-								<img src="images/subways_4.jpg" />
-								<img src="images/subways_5.jpg" />
-								<img src="images/subways_A.jpg" />
-								<img src="images/subways_C.jpg" />
-								<img src="images/subways_R.jpg" />
-								<img src="images/subways_J.jpg" />
-								<img src="images/subways_Z.jpg" />
-							</div>
-							<div id="locationBlurb">
-								CAMP/pixel is taking over an entire, 25,000 sq. ft. floor of Pine Street School, a new, state-of-the-art private school in the Financial District for an immersive and totally unique technology camp experience. For full information on the school, visit <a href="http://www.pinestreetschool.com/" target="_blank">www.pinestreetschool.com</a>.
-							</div>
-							<div id="locationBlurb">
-								For more location information, visit <a href="about.html#location">CAMP/about</a>.
-							</div>
-						</div>
-					</div>	
-				</div>
-		</div>
-		<!-- END AGE TEMPLATE -->
-
-		<!-- BEGIN AGES TEMPLATE -->
-     	<!-- AGES 7-9 -->
-        <div id="1" class="ageTemplate">
-			<div class="label">
-				<div class="labelImage" id="image79">
-				</div>
-				<div class="slashImage">
-				</div>
-				<div class="labelText twoLines">
-				AGES 7-9
-				</div>
-			</div>
-			<center>
-				<p class="blurb" id="skillHover" style="padding-bottom: 10px;font-style:italic;">
-	        		Hover over an icon to reveal skill: 
-	        	</p>
-				<div id="skillsTable">
-					<span class="rolloverSkill">
-						<img width="100%" src="images/skill_3d.png" />
-						<div>
-							3D PRINTING
-						</div>
-					</span>
-					<span class="rolloverSkill">
-						<img width="100%" src="images/skill_animation.png" />
-						<div>
-							STOP-MOTION <br/>
-							ANIMATION
-						</div>
-					</span>
-					<span class="rolloverSkill">
-						<img width="100%" src="images/skill_coding.png" />
-						<div>
-							CODING
-						</div>
-					</span>
-					<span class="rolloverSkill">
-						<img width="100%" src="images/skill_controller.png" />
-						<div>
-							CONTROLLER </br>
-							PROGRAMMING
-						</div>
-					</span>
-					<span class="rolloverSkill">
-						<img width="100%" src="images/skill_digitalart.png" />
-						<div>
-							DIGITAL </br>
-							ART
-						</div>
-					</span>
-					<span class="rolloverSkill">
-						<img width="100%" src="images/skill_digitalmusic.png" />
-						<div>
-							DIGITAL </br>
-							MUSIC
-						</div>
-					</span>
-					<span class="rolloverSkill">
-						<img width="100%" src="images/skill_electronics.png" />
-						<div>
-							ELECTRONICS
-						</div>
-					</span>
-					<span class="rolloverSkill">
-						<img width="100%" src="images/skill_gamedesign.png" />
-						<div>
-							GAME DESIGN
-						</div>
-					</span>
-					<span class="rolloverSkill">
-						<img width="100%" src="images/skill_lasercutting.png" />
-						<div>
-							LASER </br>
-							CUTTING
-						</div>
-					</span>
-					<span class="rolloverSkill">
-						<img width="100%" src="images/skill_minecraft.png" />
-						<div>
-							PROGRAMMING </br>
-							FOR MINECRAFT
-						</div>
-					</span>
-					<span class="rolloverSkill">
-						<img width="100%" src="images/skill_vr.png" />
-						<div>
-							VIRTUAL </br>
-							REALITY
-						</div>
-					</span>
-				</div>
-			</center>
-        	<p class="blurbTop">
-        		CAMP/pixel offers programs for our youngest learners, ages 7-9. We align with early elementary-level academic and reading levels to create a visual, hands-on learning experience for kids ready to imagine with us. 
-        	</p>
-        	<p class="blurbTop">
-        		Each of our topics is available in fun, intriguing, inquiry-based activities. Every camper will spend his or her learning time asking questions, imagining and building projects, and being assisted by our expert instructors. Built into the camp day are plenty of screen breaks, physical activities, food breaks, and opportunity to learn and play with one another.
-        	</p>
-        	<p class="blurbHeader">
-        		View our topics for ages 7-9:
-        	</p>
-			<div id="topicsTable">
-				<div class="topic left" id="topic11">
-					<a href="topic.html#SPORTSdesign">
-					<div class="topicsTitle">
-						SPORTS/design
-						<div class="topicsWeeks">
-							1 week
-						</div>
-					</div>
-					<div class="topicsPicture">	
-						<img src="images/SPORTS_design_large.jpg">
-						<div class="topicsInformation" id="topicDescription11">
-							<div class="topicsDescription">
-								<span>Digital Project:</span><br/>
-									Create a sports video game
-								<div class="spacer">
-								</div>
-								<span>Physical Project:</span> <br/>
-									Play and hack competitive sports
-								
-							</div>
-						</div>
-					</div>
-					</a>
-				</div>
-				<div class="topic left" id="topic05">
-					<a href="topic.html#JURASSICparts">
-					<div class="topicsTitle">
-						JURASSIC/parts
-						<div class="topicsWeeks">
-							1 week
-						</div>
-					</div>
-					<div class="topicsPicture">	
-						<img src="images/JURASSIC_parts_large.jpg">
-						<div class="topicsInformation" id="topicDescription05">
-							<div class="topicsDescription">
-								<span>Digital Project:</span><br/>
-								Make Dinosaur-Themed Digital-Art
-								<div class="spacer">
-								</div>
-								<span>Physical Project:</span><br/>
-								Make a Dinosaur-Themed 3D Puzzle
-							</div>
-						</div>
-					</div>
-					</a>
-				</div>
-				<div class="topic" id="topic10">
-					<center>
-				  		<a href="topics.html">
-							<button id= "viewAllTopics" class ="applyButton"><font color=white>VIEW ALL TOPICS</font></button><!--insert link for button-->
-						</a>
-					</center>
-				</div>
-			</div>
-			<p class="blurbHeader">
-        		or, take a look at one of our curated packages:
-        	</p>
-			<div id="packageList">
-				<a href="package.html#coder">
-					<div class="packageButton" id="coder">
-						<div class="packageMask">
-						BE A CODER
-						</div>
-					</div>
-				</a>
-				<a href="package.html#minecrafter">
-					<div class="packageButton" id="minecrafter">
-						<div class="packageMask">
-						BE A MINECRAFTER
-						</div>
-					</div>
-				</a>
-				<a href="package.html#artist">
-					<div class="packageButton" id="artist">
-						<div class="packageMask">
-						BE AN ARTIST
-						</div>
-					</div>
-				</a>
-				<a href="package.html#maker">
-					<div class="packageButton" id="maker">
-						<div class="packageMask">
-						BE A MAKER
-						</div>
-					</div>
-				</a>
-				<a href="package.html#gamedesigner">
-					<div class="packageButton" id="gamedesigner">
-						<div class="packageMask">
-						BE A GAME DESIGNER
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="label">
-				<div class="labelImage" id="learningImage">
-				</div>
-				<div class="slashImage">
-				</div>
-				<div class="labelText">
-				About CAMP/pixel
-				</div>
-			</div>
-				<div id="aboutSection" class="blurbTop">
-					Technology is becoming more and more necessary for future jobs, rendering the utility of early STEM education at a critically high level. Don't just take our word for it, take the <a href="http://www.ed.gov/stem" target="_blank">U.S. Department of Education</a>, or <a target="_blank" href="https://www.ncwit.org/edjobsmap">NCWIT</a>, or <a  target="_blank" href="http://blog.linkedin.com/2013/12/18/the-25-hottest-skills-that-got-people-hired-in-2013/?utm_source=buffer&utm_campaign=Buffer&utm_content=bufferc1275&utm_medium=twitter">LinkedIn</a>. CAMP/pixel brings cutting-edge, relevant topics of technology recognizable in A.P. and college-level Computer Science classes and breaks them down into intriguing, hands-on experiences for kids ages 7-14. Campers are introduced to a new world of imagination and creativity through inquiry-based learning using professional-grade technology and methods that most students don't get at school.. Whether it's designing on a 3D plane, experimenting with virtual reality, producing creative digital art, or any of our other time-tested curriculum, our project-based approach encourages exploration and creativity while always promoting our Rule #1: Have Fun. <br><br>
-					We use technology of the present to help kids create ideas for the future.
-					<div id="locationBlurb">
-						For more information, visit <a href="about.html">CAMP/about</a>.
-					</div>
-				</div>
-				<!--Apply Section End-->
-				<div class="label">
-					<div class="labelImage" id="screenBreaksImage">
-					</div>
-					<div class="slashImage">
-					</div>
-					<div class="labelText">
-					 CAMP/location
-					</div>
-				</div>
-				<div id="locationSection">
-					<div id="mapAddresses">
-						<div class="addressBlock" >
-							<div class="addressTitle">
-								CAMP/pixel New York
-							</div>		
-							
-							<a target="_blank" style="text-decoration:underline;" href="https://www.google.com/maps/place/25+Pine+St,+New+York,+NY+10005/@40.7073823,-74.0120413,17z/data=!3m1!4b1!4m2!3m1!1s0x89c25a1705a7aeaf:0x4cc1e7553e970dec">
-							25 Pine St<br> New York, NY 10005 
-							</a> <br>
-							<div id="locationsNote">
-							[Opens in Google Maps]
-							</div>
-							<div class="subwayIcons">
-								<img src="images/subways_1.jpg" />
-								<img src="images/subways_2.jpg" />
-								<img src="images/subways_3.jpg" />
-								<img src="images/subways_4.jpg" />
-								<img src="images/subways_5.jpg" />
-								<img src="images/subways_A.jpg" />
-								<img src="images/subways_C.jpg" />
-								<img src="images/subways_R.jpg" />
-								<img src="images/subways_J.jpg" />
-								<img src="images/subways_Z.jpg" />
-							</div>
-							<div id="locationBlurb">
-								CAMP/pixel is taking over an entire, 25,000 sq. ft. floor of Pine Street School, a new, state-of-the-art private school in the Financial District for an immersive and totally unique technology camp experience. For full information on the school, visit <a href="http://www.pinestreetschool.com/" target="_blank">www.pinestreetschool.com</a>.
-							</div>
-							<div id="locationBlurb">
-								For more location information, visit <a href="about.html#location">CAMP/about</a>.
-							</div>
-						</div>
-					</div>	
-				</div>
-			</div>
-		<!-- END AGE TEMPLATE -->
-
-		<!-- BEGIN AGES TEMPLATE -->
-     	<!-- AGES 9-11 -->
-        <div id="1" class="ageTemplate">
-			<div class="label">
-				<div class="labelImage" id="image911">
-				</div>
-				<div class="slashImage">
-				</div>
-				<div class="labelText twoLines">
-				AGES 9-11
-				</div>
-			</div>
-			<center>
-				<p class="blurb" id="skillHover" style="padding-bottom: 10px;font-style:italic;">
-	        		Hover over an icon to reveal skill: 
-	        	</p>
-				<div id="skillsTable">
-					<span class="rolloverSkill">
-						<img width="100%" src="images/skill_3d.png" />
-						<div>
-							3D PRINTING
-						</div>
-					</span>
-					<span class="rolloverSkill">
-						<img width="100%" src="images/skill_animation.png" />
-						<div>
-							STOP-MOTION <br/>
-							ANIMATION
-						</div>
-					</span>
-					<span class="rolloverSkill">
-						<img width="100%" src="images/skill_coding.png" />
-						<div>
-							CODING
-						</div>
-					</span>
-					<span class="rolloverSkill">
-						<img width="100%" src="images/skill_controller.png" />
-						<div>
-							CONTROLLER </br>
-							PROGRAMMING
-						</div>
-					</span>
-					<span class="rolloverSkill">
-						<img width="100%" src="images/skill_digitalart.png" />
-						<div>
-							DIGITAL </br>
-							ART
-						</div>
-					</span>
-					<span class="rolloverSkill">
-						<img width="100%" src="images/skill_digitalmusic.png" />
-						<div>
-							DIGITAL </br>
-							MUSIC
-						</div>
-					</span>
-					<span class="rolloverSkill">
-						<img width="100%" src="images/skill_electronics.png" />
-						<div>
-							ELECTRONICS
-						</div>
-					</span>
-					<span class="rolloverSkill">
-						<img width="100%" src="images/skill_gamedesign.png" />
-						<div>
-							GAME DESIGN
-						</div>
-					</span>
-					<span class="rolloverSkill">
-						<img width="100%" src="images/skill_lasercutting.png" />
-						<div>
-							LASER </br>
-							CUTTING
-						</div>
-					</span>
-					<span class="rolloverSkill">
-						<img width="100%" src="images/skill_minecraft.png" />
-						<div>
-							PROGRAMMING </br>
-							FOR MINECRAFT
-						</div>
-					</span>
-					<span class="rolloverSkill">
-						<img width="100%" src="images/skill_vr.png" />
-						<div>
-							VIRTUAL </br>
-							REALITY
-						</div>
-					</span>
-				</div>
-			</center>
-        	<p class="blurbTop">
-        		Join our middle group (ages 9-11) for an immersive, project-fueled next step into technology! Campers learn topics that they often haven't yet experienced in school, but will see again years down the road in high school and college.
-        	</p>
-        	<p class="blurbTop">
-        		Each of our topics is accessible for a new learner, but surveys the fundamentals of various technology skills. Every camper will spend his or her learning time asking questions, imagining and building projects, and being assisted by our expert instructors. Built into the camp day are plenty of screen breaks, physical activities, food breaks, and opportunity to learn and play with one another.
-        	</p>
-        	<p class="blurbHeader">
-        		View our topics for ages 9-11:
-        	</p>
-			<div id="topicsTable">
-				<div class="topic left" id="topic01">
-					<a href="topic.html#CUTscenes">
-					<div class="topicsTitle">
-						CUT/scenes
-						<div class="topicsWeeks">
-							1 week
-						</div>
-					</div>
-					<div class="topicsPicture">	
-						<img src="images/CUT_scenes_large.jpg">
-						<div class="topicsInformation" id="topicDescription01">
-							<div class="topicsDescription">
-								<span>Digital Project:</span><br/>
-								Create a Stop-Motion Animation 
-								<div class="spacer">
-								</div>
-								<span>Physical Project:</span><br/>
-								Design and Produce Vinyl Stickers
-							</div>
-						</div>
-					</div>
-					</a>
-				</div>
-				<div class="topic left" id="topic07">
-					<a href="topic.html#MINECRAFTcoding">
-					<div class="topicsTitle">
-						MINECRAFT/coding
-						<div class="topicsWeeks">
-							2 weeks
-						</div>
-					</div>
-					<div class="topicsPicture">	
-						<img src="images/MINECRAFT_coding_large.jpg">
-						<div class="topicsInformation" id="topicDescription07">
-							<div class="topicsDescription">
-								<span>Digital Project:</span><br/>
-								Make a Minecraft Mod
-								<div class="spacer">
-								</div>
-								<span>Physical Project:</span><br/>
-								Code a Game Controller
-							</div>
-						</div>
-					</div>
-					</a>
-				</div>
-				<div class="topic" id="topic10">
-					<center>
-				  		<a href="topics.html">
-							<button id= "viewAllTopics" class ="applyButton"><font color=white>VIEW ALL TOPICS</font></button><!--insert link for button-->
-						</a>
-					</center>
-				</div>
-			</div>
-			<p class="blurbHeader">
-        		or, take a look at one of our curated packages:
-        	</p>
-			<div id="packageList">
-				<a href="package.html#coder">
-					<div class="packageButton" id="coder">
-						<div class="packageMask">
-						BE A CODER
-						</div>
-					</div>
-				</a>
-				<a href="package.html#minecrafter">
-					<div class="packageButton" id="minecrafter">
-						<div class="packageMask">
-						BE A MINECRAFTER
-						</div>
-					</div>
-				</a>
-				<a href="package.html#artist">
-					<div class="packageButton" id="artist">
-						<div class="packageMask">
-						BE AN ARTIST
-						</div>
-					</div>
-				</a>
-				<a href="package.html#maker">
-					<div class="packageButton" id="maker">
-						<div class="packageMask">
-						BE A MAKER
-						</div>
-					</div>
-				</a>
-				<a href="package.html#gamedesigner">
-					<div class="packageButton" id="gamedesigner">
-						<div class="packageMask">
-						BE A GAME DESIGNER
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="label">
-				<div class="labelImage" id="learningImage">
-				</div>
-				<div class="slashImage">
-				</div>
-				<div class="labelText">
-				About CAMP/pixel
-				</div>
-			</div>
-				<div id="aboutSection" class="blurbTop">
-					Technology is becoming more and more necessary for future jobs, rendering the utility of early STEM education at a critically high level. Don't just take our word for it, take the <a href="http://www.ed.gov/stem" target="_blank">U.S. Department of Education</a>, or <a target="_blank" href="https://www.ncwit.org/edjobsmap">NCWIT</a>, or <a  target="_blank" href="http://blog.linkedin.com/2013/12/18/the-25-hottest-skills-that-got-people-hired-in-2013/?utm_source=buffer&utm_campaign=Buffer&utm_content=bufferc1275&utm_medium=twitter">LinkedIn</a>. CAMP/pixel brings cutting-edge, relevant topics of technology recognizable in A.P. and college-level Computer Science classes and breaks them down into intriguing, hands-on experiences for kids ages 7-14. Campers are introduced to a new world of imagination and creativity through inquiry-based learning using professional-grade technology and methods that most students don't get at school.. Whether it's designing on a 3D plane, experimenting with virtual reality, producing creative digital art, or any of our other time-tested curriculum, our project-based approach encourages exploration and creativity while always promoting our Rule #1: Have Fun. <br><br>
-					We use technology of the present to help kids create ideas for the future.
-					<div id="locationBlurb">
-						For more information, visit <a href="about.html">CAMP/about</a>.
-					</div>
-				</div>
-				<!--Apply Section End-->
-				<div class="label">
-					<div class="labelImage" id="screenBreaksImage">
-					</div>
-					<div class="slashImage">
-					</div>
-					<div class="labelText">
-					 CAMP/location
-					</div>
-				</div>
-				<div id="locationSection">
-					<div id="mapAddresses">
-						<div class="addressBlock" >
-							<div class="addressTitle">
-								CAMP/pixel New York
-							</div>		
-							
-							<a target="_blank" style="text-decoration:underline;" href="https://www.google.com/maps/place/25+Pine+St,+New+York,+NY+10005/@40.7073823,-74.0120413,17z/data=!3m1!4b1!4m2!3m1!1s0x89c25a1705a7aeaf:0x4cc1e7553e970dec">
-							25 Pine St<br> New York, NY 10005 
-							</a> <br>
-							<div id="locationsNote">
-							[Opens in Google Maps]
-							</div>
-							<div class="subwayIcons">
-								<img src="images/subways_1.jpg" />
-								<img src="images/subways_2.jpg" />
-								<img src="images/subways_3.jpg" />
-								<img src="images/subways_4.jpg" />
-								<img src="images/subways_5.jpg" />
-								<img src="images/subways_A.jpg" />
-								<img src="images/subways_C.jpg" />
-								<img src="images/subways_R.jpg" />
-								<img src="images/subways_J.jpg" />
-								<img src="images/subways_Z.jpg" />
-							</div>
-							<div id="locationBlurb">
-								CAMP/pixel is taking over an entire, 25,000 sq. ft. floor of Pine Street School, a new, state-of-the-art private school in the Financial District for an immersive and totally unique technology camp experience. For full information on the school, visit <a href="http://www.pinestreetschool.com/" target="_blank">www.pinestreetschool.com</a>.
-							</div>
-							<div id="locationBlurb">
-								For more location information, visit <a href="about.html#location">CAMP/about</a>.
-							</div>
-						</div>
-					</div>	
-				</div>
-			</div>
-		<!-- END AGE TEMPLATE -->
-
-
-		<!-- BEGIN AGES TEMPLATE -->
-     	<!-- AGES 11-14 -->
-        <div id="1" class="ageTemplate">
-			<div class="label">
-				<div class="labelImage" id="image1214">
-				</div>
-				<div class="slashImage">
-				</div>
-				<div class="labelText twoLines">
-				AGES 12-14
-				</div>
-			</div>
-			<center>
-				<p class="blurb" id="skillHover" style="padding-bottom: 10px;font-style:italic;">
-	        		Hover over an icon to reveal skill: 
-	        	</p>
-				<div id="skillsTable">
-					<span class="rolloverSkill">
-						<img width="100%" src="images/skill_3d.png" />
-						<div>
-							3D PRINTING
-						</div>
-					</span>
-					<span class="rolloverSkill">
-						<img width="100%" src="images/skill_animation.png" />
-						<div>
-							STOP-MOTION <br/>
-							ANIMATION
-						</div>
-					</span>
-					<span class="rolloverSkill">
-						<img width="100%" src="images/skill_coding.png" />
-						<div>
-							CODING
-						</div>
-					</span>
-					<span class="rolloverSkill">
-						<img width="100%" src="images/skill_controller.png" />
-						<div>
-							CONTROLLER </br>
-							PROGRAMMING
-						</div>
-					</span>
-					<span class="rolloverSkill">
-						<img width="100%" src="images/skill_digitalart.png" />
-						<div>
-							DIGITAL </br>
-							ART
-						</div>
-					</span>
-					<span class="rolloverSkill">
-						<img width="100%" src="images/skill_digitalmusic.png" />
-						<div>
-							DIGITAL </br>
-							MUSIC
-						</div>
-					</span>
-					<span class="rolloverSkill">
-						<img width="100%" src="images/skill_electronics.png" />
-						<div>
-							ELECTRONICS
-						</div>
-					</span>
-					<span class="rolloverSkill">
-						<img width="100%" src="images/skill_gamedesign.png" />
-						<div>
-							GAME DESIGN
-						</div>
-					</span>
-					<span class="rolloverSkill">
-						<img width="100%" src="images/skill_lasercutting.png" />
-						<div>
-							LASER </br>
-							CUTTING
-						</div>
-					</span>
-					<span class="rolloverSkill">
-						<img width="100%" src="images/skill_minecraft.png" />
-						<div>
-							PROGRAMMING </br>
-							FOR MINECRAFT
-						</div>
-					</span>
-					<span class="rolloverSkill">
-						<img width="100%" src="images/skill_vr.png" />
-						<div>
-							VIRTUAL </br>
-							REALITY
-						</div>
-					</span>
-				</div>
-			</center>
-        	<p class="blurbTop">
-        		Our early teen campers (ages 12-14) features intensive, comprehensive, project-heavy journeys into realms of technology! Teen campers start with the fundamentals, quickly charging into individualized creation on their own projects, to be completed by the end of the session. These finished projects are perfect for portfolios, school applications, and inspiration to keep working at home!
-        	</p>
-        	<p class="blurbTop">
-        		Each of our topics is accessible for a new learner, but surveys the fundamentals of various technology skills. Every teen camper will spend his or her learning time on new skills, project work, and 8:1 assistance by our expert instructors. Built into the camp day are plenty of screen breaks, physical activities, food breaks, and opportunity to learn and play with one another.
-        	</p>
-        	<p class="blurbHeader">
-        		View our topics for ages 12-14:
-        	</p>
-			<div id="topicsTable">
-				<div class="topic left" id="topic10">
-					<a href="topic.html#VIRTUALreality">
-					<div class="topicsTitle">
-						VIRTUAL/reality
-						<div class="topicsWeeks">
-							2 weeks
-						</div>
-					</div>
-					<div class="topicsPicture">	
-						<img src="images/VIRTUAL_reality_large.jpg">
-						<div class="topicsInformation" id="topicDescription10">
-							<div class="topicsDescription">
-								<span>Digital Project:</span><br/>
-								Make a 3D Video Game for Virtual Reality
-								<div class="spacer">
-								</div>
-								<span>Physical Project:</span> <br/>
-									Create an Augmented Reality Experience
-							</div>
-						</div>
-					</div>
-					</a>
-				</div>
-				<div class="topic left" id="topic07">
-					<a href="topic.html#MINECRAFTcoding">
-					<div class="topicsTitle">
-						MINECRAFT/coding
-						<div class="topicsWeeks">
-							2 weeks
-						</div>
-					</div>
-					<div class="topicsPicture">	
-						<img src="images/MINECRAFT_coding_large.jpg">
-						<div class="topicsInformation" id="topicDescription07">
-							<div class="topicsDescription">
-								<span>Digital Project:</span><br/>
-								Make a Minecraft Mod
-								<div class="spacer">
-								</div>
-								<span>Physical Project:</span><br/>
-								Code a Game Controller
-							</div>
-						</div>
-					</div>
-					</a>
-				</div>
-				<div class="topic" id="topic10">
-					<center>
-				  		<a href="topics.html">
-							<button id= "viewAllTopics" class ="applyButton"><font color=white>VIEW ALL TOPICS</font></button><!--insert link for button-->
-						</a>
-					</center>
-				</div>
-			</div>
-			<p class="blurbHeader">
-        		or, take a look at one of our curated packages:
-        	</p>
-			<div id="packageList">
-				<a href="package.html#coder">
-					<div class="packageButton" id="coder">
-						<div class="packageMask">
-						BE A CODER
-						</div>
-					</div>
-				</a>
-				<a href="package.html#minecrafter">
-					<div class="packageButton" id="minecrafter">
-						<div class="packageMask">
-						BE A MINECRAFTER
-						</div>
-					</div>
-				</a>
-				<a href="package.html#artist">
-					<div class="packageButton" id="artist">
-						<div class="packageMask">
-						BE AN ARTIST
-						</div>
-					</div>
-				</a>
-				<a href="package.html#maker">
-					<div class="packageButton" id="maker">
-						<div class="packageMask">
-						BE A MAKER
-						</div>
-					</div>
-				</a>
-				<a href="package.html#gamedesigner">
-					<div class="packageButton" id="gamedesigner">
-						<div class="packageMask">
-						BE A GAME DESIGNER
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="label">
-				<div class="labelImage" id="learningImage">
-				</div>
-				<div class="slashImage">
-				</div>
-				<div class="labelText">
-				About CAMP/pixel
-				</div>
-			</div>
-				<div id="aboutSection" class="blurbTop">
-					Technology is becoming more and more necessary for future jobs, rendering the utility of early STEM education at a critically high level. Don't just take our word for it, take the <a href="http://www.ed.gov/stem" target="_blank">U.S. Department of Education</a>, or <a target="_blank" href="https://www.ncwit.org/edjobsmap">NCWIT</a>, or <a  target="_blank" href="http://blog.linkedin.com/2013/12/18/the-25-hottest-skills-that-got-people-hired-in-2013/?utm_source=buffer&utm_campaign=Buffer&utm_content=bufferc1275&utm_medium=twitter">LinkedIn</a>. CAMP/pixel brings cutting-edge, relevant topics of technology recognizable in A.P. and college-level Computer Science classes and breaks them down into intriguing, hands-on experiences for kids ages 7-14. Campers are introduced to a new world of imagination and creativity through inquiry-based learning using professional-grade technology and methods that most students don't get at school.. Whether it's designing on a 3D plane, experimenting with virtual reality, producing creative digital art, or any of our other time-tested curriculum, our project-based approach encourages exploration and creativity while always promoting our Rule #1: Have Fun. <br><br>
-					We use technology of the present to help kids create ideas for the future.
-					<div id="locationBlurb">
-						For more information, visit <a href="about.html">CAMP/about</a>.
-					</div>
-				</div>
-				<!--Apply Section End-->
-				<div class="label">
-					<div class="labelImage" id="screenBreaksImage">
-					</div>
-					<div class="slashImage">
-					</div>
-					<div class="labelText">
-					 CAMP/location
-					</div>
-				</div>
-				<div id="locationSection">
-					<div id="mapAddresses">
-						<div class="addressBlock" >
-							<div class="addressTitle">
-								CAMP/pixel New York
-							</div>		
-							
-							<a target="_blank" style="text-decoration:underline;" href="https://www.google.com/maps/place/25+Pine+St,+New+York,+NY+10005/@40.7073823,-74.0120413,17z/data=!3m1!4b1!4m2!3m1!1s0x89c25a1705a7aeaf:0x4cc1e7553e970dec">
-							25 Pine St<br> New York, NY 10005 
-							</a> <br>
-							<div id="locationsNote">
-							[Opens in Google Maps]
-							</div>
-							<div class="subwayIcons">
-								<img src="images/subways_1.jpg" />
-								<img src="images/subways_2.jpg" />
-								<img src="images/subways_3.jpg" />
-								<img src="images/subways_4.jpg" />
-								<img src="images/subways_5.jpg" />
-								<img src="images/subways_A.jpg" />
-								<img src="images/subways_C.jpg" />
-								<img src="images/subways_R.jpg" />
-								<img src="images/subways_J.jpg" />
-								<img src="images/subways_Z.jpg" />
-							</div>
-							<div id="locationBlurb">
-								CAMP/pixel is taking over an entire, 25,000 sq. ft. floor of Pine Street School, a new, state-of-the-art private school in the Financial District for an immersive and totally unique technology camp experience. For full information on the school, visit <a href="http://www.pinestreetschool.com/" target="_blank">www.pinestreetschool.com</a>.
-							</div>
-							<div id="locationBlurb">
-								For more location information, visit <a href="about.html#location">CAMP/about</a>.
-							</div>
-						</div>
-					</div>	
-				</div>
-			</div>
-		<!-- END AGE TEMPLATE -->
-
-		
-
-     	<!-- BEGIN AGES TEMPLATE -->
-     	<!-- AGES 15-17 -->
-        <div id="5" class="ageTemplate">
-			<div class="label">
-				<div class="labelImage" id="dropOffImage">
-				</div>
-				<div class="slashImage">
-				</div>
-				<div class="labelText twoLines">
-				C.I.T. Program
-				</div>
-			</div>
-		    <div class = "applyDetails">
-		        <div class = "applyBlurb">
-			        <div class="applyColumn left">
-			        	<div class = "applySchedule">
-			        		<div class="applyScheduleSession">
-				                <div class = "scheduleTitle">Session 1</div>
-				                <div class = "scheduleDate">July 4-29</div>
-				            </div>
-				            <div class="applyScheduleSession">
-				                <div class = "scheduleTitle">Session 2</div>
-				                <div class = "scheduleDate second">August 1-26</div>    
-				            </div>
-				           
-				        </div>
-				    </div>
-			    	<div class="applyColumn right">
-			            <p>CAMP/pixel is building an elite team of well-qualified high-school students ages 15 - 17. Join us to master an aspect of technology, gain relevant future application material, learn some crucial early job skills, and have a ton of fun working with kids and like-minded teens while you're at it. We're running this program to assist teens in acquiring leadership skills, giving them valuable training and helping them to set personal goals and work towards achieving them.</p>
-			        </div>
-		        </div>
-    		</div>
-			<!--Apply Section Details-->
-			<center>
-		  		<a href="https://pixelacademy.workable.com/jobs/190146" target="_blank">
-					<button id= "topApplyButton" class = "applyButton"><font color=white>APPLY NOW</font></button><!--insert link for button-->
-				</a>
-			</center>
-			<!--Apply Section End-->
-			<!--cit Header-->
-			<div id = "citHeader">
-			    <!--left position on Header-->
-			    <div id = "citHeader-left">
-			        <div class = "citHeaderImage"><img src = "images/teens.jpg" style = "width:100%;"></div>
-			    </div>
-			    
-			    <!--right position on Header-->
-			    <div id = "citHeader-right">
-			        <div class = "citHeaderLabel">Counselor In Training <br/>(C.I.T.) Position
-			            <div class ="citSubheaderLabel">Teens ages 15 - 17</div>
-			        </div>
-			            <table>
-			                <tr><td class = "rowHighlight">4-week project-based summer program for tech-loving teens</td></tr>
-			                <tr><td>No cost to apply or participate</td></tr>
-			                <tr><td class = "rowHighlight">Hands-on experience with cool, cutting-edge technology</td></tr>
-			                <tr><td>Experience and training that will help you in school, college, and beyond</td></tr>
-			            </table>
-			        <a href="https://pixelacademy.workable.com/jobs/190146" target="_blank"><button class = "applyButton"><font color=white>APPLY TO BE A C.I.T.</font></button></a><!--insert link for button-->
-			    </div>
-			</div>  
-			<p class = "citHeaderBlurb">The CAMP/pixel C.I.T. position is a perfect blend of LEARNING and LEADING for teens with a passion for technology and education. Our C.I.T.'s spend some of their day honed in on technology projects, learning new skills and working with our expert instructors to program, code, produce, design, and invent new products. The rest of the day is spent working with campers in a leadership role to help them learn a new skill, complete a camp challenge, or just have fun.  </p>
-			<!--citHeader End-->
-			<!--Leading & Learning Columns-->    
-			<div id = "midSection">
-		        <div class = "learning">
-		            <div class = "midSectionLabel">
-		            	Learning
-		            </div>       
-	                <ul class = "midSectionList">
-	                    <li>Cutting-edge and professional grade technology.</li>
-	                    <li>Mentoring and skills tutoring from our expert instructors.</li>
-	                    <li>Leadership training and teamwork experience </li>
-	                    <li>Guidance towards personal goal-setting and self-efficiency.</li>
-	            	</ul>
-		        </div>
-		        <div class = "leading">
-		            <div class = "midSectionLabel">Leading</div>
-	                <ul class = "midSectionList">
-	                    <li>Hands-on skill development, helping kids learn technology.</li>
-	                    <li>Opportunities to lead activities and screen-breaks during camp.</li>
-	                    <li>Job-relevant experience leading and managing tasks.</li>
-	                    <li>Assisting instructors, learning teaching and leadership skills.</li>
-	                </ul>
-		        </div>
-		        <!--Apply Section End-->
-			   	<div id="citCTA" >
-		            <a href="about.html">
-		                <div id="citCTA1">
-		                    ABOUT CAMP/pixel
-		                </div>
-		            </a>
-		            <a href="topics.html">
-			            <div id="citCTA2">
-			                VIEW CAMP/topics
-			            </div>
-		            </a>
-		        </div>
-			</div>
-		</div>
-		<!-- END AGE TEMPLATE -->
-
-	    <!-- BEGIN AGES TEMPLATE -->
-     	<!-- AGES  18+ -->
-        <div id="5" class="ageTemplate">
-			<div class="label">
-				<div class="labelImage" id="dropOffImage">
-				</div>
-				<div class="slashImage">
-				</div>
-				<div class="labelText twoLines">
-				Jobs & Internships
-				</div>
-			</div>
-		    <div class="blurbTop">
-		    	Interested in joining the awesome Pixel Academy team of expert instructors, staff, and interns? Check out our current job openings below for aspiring kid-lovers and tech-experts. Check back often, as this list will only grow!
-		    </div>
-			<center>
-		  		<a href="https://pixelacademy.workable.com/jobs/190146" target="_blank">
-					<button id= "topApplyButton" class = "applyButton"><font color=white>APPLY NOW</font></button><!--insert link for button-->
-				</a>
-			</center>
-			
-			        <div class = "citHeaderImage"><img src = "images/teens.jpg" style = "width:100%;"></div>
-			    
-		</div>
-		<!-- END AGE TEMPLATE -->
-
-
-
-	</div>
-				
-	<!-- END CONTACT/FAQ SECTION -->
-	</div>
-
-	<!-- BOTTOM BAR -->
-		<div id="bottomBar">
-			<div id="bottomBarContainer">
-				<div id="bottomBarLogos">
-					<a href="home.html">
-						<div id="bottomBarCampLogo">
-						</div>
-					</a> 
-					<a href="http://www.pixelacademy.org/" target="_blank">
-						<div id="bottomBarPixelLogo">
-						</div>
-					</a>
-				</div>
-				<div id="bottomBarLinks">
-					<div id="topLinks">
-						<a href="about.html">
-							About CAMP/pixel
-						</a>
-						<a href="schedule.html">
-							A Day at CAMP/pixel
-						</a>
-						<a href="topics.html">
-							CAMP/pixel topics
-						</a>
-						<a href="packages.html">
-							CAMP/packages
-						</a>
-					</div>
-					<div id="bottomLinks">
-						<a href="about.html#location">
-							Location
-						</a>
-						<a href="about.html#cost">
-							Cost
-						</a>
-						<a href="cit-program.html">
-							C.I.T. Program
-						</a>
-						<a href="http://www.pixelacademy.org/" target="_blank">
-							Pixel Academy Home Page
-						</a>
-					</div>
-				</div>
-			</div>
-				<div id ="bottomBarButtons">
-					<a href="https://hq.pixelacademy.org/tickets/camp-pixel">
-						<div id="bottomBarSignUp">
-							SIGN UP
-						</div>
-					</a>
-					<a href="contactfaq.html">
-						<div id="bottomBarSignUp">
-							CONTACT/faq
-						</div>
-					</a>
-				</div>
-				<div id="phoneNumber">
-					<div id="phone">
-						<img class="topBarContactIcon" height="20" src="images/phone-icon.png" />
-							(866) 771-6837
-						<div id="phoneSpacer">
-						</div>
-						<img class="topBarContactIcon"  height="20" src="images/email-icon.png" />
-							info@pixelacademy.org
-					</div>
-				</div>
-			</div>
-	</div>
-	<!-- END BOTTOM BAR -->
-	</div>
-</body>
+        <script src="slider/js/bootstrap-slider.js"></script>
+        <script src="allPages.js"></script>
+        <script src="ages.js"></script>
+        <!-- Embedded affirm logo (cost page) -->
+        <script>
+            var _affirm_config = {
+              public_api_key:  "XXXXXXXXXXXXXXX",
+              script:          "https://cdn1-sandbox.affirm.com/js/v2/affirm.js"
+            };
+            (function(l,g,m,e,a,f,b){var d,c=l[m]||{},h=document.createElement(f),n=document.getElementsByTagName(f)[0],k=function(a,b,c){return function(){a[b]._.push([c,arguments])}};c[e]=k(c,e,"set");d=c[e];c[a]={};c[a]._=[];d._=[];c[a][b]=k(c,a,b);a=0;for(b="set add save post open empty reset on off trigger ready setProduct".split(" ");a<b.length;a++)d[b[a]]=k(c,e,b[a]);a=0;for(b=["get","token","url","items"];a<b.length;a++)d[b[a]]=function(){};h.async=!0;h.src=g[f];n.parentNode.insertBefore(h,n);delete g[f];d(g);l[m]=c})(window,_affirm_config,"affirm","checkout","ui","script","ready");
+        </script>
+        <!--Start of Zopim Live Chat Script-->
+        <script type="text/javascript">
+            window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+                    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+                    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+                $.src="//v2.zopim.com/?154sLdSAaw4zX6Hoq65ZMP28r6UXYRlH";z.t=+new Date;$.
+                        type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+        </script>
+        <!-- Google Analytics -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-31308117-1', 'auto');
+            ga('require', 'linkid', 'linkid.js');
+            ga('send', 'pageview');
+            
+            var trackOutboundLink = function(url) {
+              		ga('send', 'event', url, 'click', url, {'hitCallback':
+                	function () {
+                
+                	}
+              	});
+            }
+        </script>
+        <!-- Google Code for CIT App Complete Conversion Page
+		In your html page, add the snippet and call
+		goog_report_conversion when someone clicks on the
+		chosen link or button. -->
+		<script type="text/javascript">
+		  /* <![CDATA[ */
+		  goog_snippet_vars = function() {
+		    var w = window;
+		    w.google_conversion_id = 933601897;
+		    w.google_conversion_label = "_GlkCJjPzGQQ6cSWvQM";
+		    w.google_remarketing_only = false;
+		  }
+		  // DO NOT CHANGE THE CODE BELOW.
+		  goog_report_conversion = function(url) {
+		    goog_snippet_vars();
+		    window.google_conversion_format = "3";
+		    var opt = new Object();
+		    opt.onload_callback = function() {
+		    if (typeof(url) != 'undefined') {
+		      window.location = url;
+		    }
+		  }
+		  var conv_handler = window['google_trackConversion'];
+		  if (typeof(conv_handler) == 'function') {
+		    conv_handler(opt);
+		  }
+		}
+		/* ]]> */
+		</script>
+		<script type="text/javascript"
+		  src="//www.googleadservices.com/pagead/conversion_async.js">
+		</script>
+        <!-- Page Title -->
+        <title> CAMP/pixel: CAMP/ages: NYC's Best Technology Day Camp</title>
+    </head>
+    <body>
+        <div id="wrapper">
+        <div id="content">
+            <!-- CONTACT/FAQ SECTION -->
+            <div class="section">
+                <div class="mainSectionHeader" id="scheduleSectionHeader">
+                    <div class="mainSectionText">
+                        <span>
+                        CAMP/ages
+                        </span>
+                    </div>
+                    <div class="mainSectionImageContainer">
+                        <div class="mainSectionImage" ></div>
+                        <div class="mainSectionImageSlash"></div>
+                    </div>
+                </div>
+                <div class="sectionContent">
+                    <div id="agesHeaderText">How can you join CAMP/pixel? Select an age range using the slider below to learn more.
+                    </div>
+                    <div id="fullSlider">
+                        <center>
+                            <div id="sliderBg">
+                                <div id="actualSlider">
+                                </div>
+                                <div>
+                                    <div id="sliderAges">
+                                        <span class="sliderAge" id="slider1">
+                                            <div style="font-family:'Body';font-size:16px;padding-bottom:5px;">
+                                                Ages
+                                            </div>
+                                            < 7
+                                        </span>
+                                        <span class="sliderAge" id="slider2">
+                                            <div style="font-family:'Body';font-size:16px;padding-bottom:5px;">
+                                                Ages
+                                            </div>
+                                            7-9
+                                        </span>
+                                        <span class="sliderAge" id="slider3">
+                                            <div style="font-family:'Body';font-size:16px;padding-bottom:5px;">
+                                                Ages
+                                            </div>
+                                            9-11
+                                        </span>
+                                        <span class="sliderAge" id="slider4">
+                                            <div style="font-family:'Body';font-size:16px;padding-bottom:5px;">
+                                                Ages
+                                            </div>
+                                            12-14
+                                        </span>
+                                        <span class="sliderAge" id="slider5">
+                                            <div style="font-family:'Body';font-size:16px;padding-bottom:5px;">
+                                                Ages
+                                            </div>
+                                            15-17
+                                        </span>
+                                        <span class="sliderAge" id="slider6">
+                                            <div style="font-family:'Body';font-size:16px;padding-bottom:5px;">
+                                                Ages
+                                            </div>
+                                            18+
+                                        </span>
+                                    </div>
+                                    <div class="well">
+                                        <input type="text" class="span2" value="4" id="sl1" data-slider-min="0" data-slider-max="5" data-slider-value="1" data-slider-selection="none" data-slider-tooltip="hide">
+                                    </div>
+                                </div>
+                            </div>
+                        </center>
+                        <!-- BEGIN AGES TEMPLATE -->
+                        <!-- UNDER 7 -->
+                        <div id="0" class="ageTemplate">
+                            <div class="label">
+                                <div class="labelImage" id="dropOffImage">
+                                </div>
+                                <div class="slashImage">
+                                </div>
+                                <div class="labelText twoLines">
+                                    UNDER 7
+                                </div>
+                            </div>
+                            <!--cit Header-->
+                            <div id = "citHeader">
+                                <!--left position on Header-->
+                                <div id = "citHeader-left">
+                                    <div class = "citHeaderImage"><img src = "images/standby.jpg" style = "width:100%;"></div>
+                                </div>
+                                <!--right position on Header-->
+                                <div id = "citHeader-right">
+                                    <p class="blurbTop">
+                                        CAMP/pixel programs are for kids and teens ages 7 and up. If you have a younger child who wants to join CAMP/pixel, or have any questions about our summer camp age groups, please shoot us an email at <a href="mailto:info@pixelacademy.org">info@pixelacademy.org</a>.
+                                    </p>
+                                    <p class="blurb">
+                                        Our after-school programs during the academic year involve more locations and age groups! For more information, you can visit <a href="http://www.pixelacademy.org">www.pixelacademy.org</a>.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="aboutSpot">
+                            </div>
+                            <div class="locationSpot">
+                            </div>
+                        </div>
+                        <!-- END AGE TEMPLATE -->
+                        <!-- BEGIN AGES TEMPLATE -->
+                        <!-- AGES 7-9 -->
+                        <div id="1" class="ageTemplate">
+                            <div class="label">
+                                <div class="labelImage" id="image79">
+                                </div>
+                                <div class="slashImage">
+                                </div>
+                                <div class="labelText twoLines">
+                                    AGES 7-9
+                                </div>
+                            </div>
+                            <center>
+                                <p class="blurb" id="skillHover" style="padding-bottom: 10px;font-style:italic;">
+                                    Hover over an icon to reveal skill: 
+                                </p>
+                                <div id="skillsTable" >
+                                    <span class="rolloverSkill">
+                                        <img width="100%" src="images/skill_3d.png" />
+                                        <div>
+                                            3D PRINTING
+                                        </div>
+                                    </span>
+                                    <span class="rolloverSkill">
+                                        <img width="100%" src="images/skill_animation.png" />
+                                        <div>
+                                            STOP-MOTION <br/>
+                                            ANIMATION
+                                        </div>
+                                    </span>
+                                    <span class="rolloverSkill">
+                                        <img width="100%" src="images/skill_coding.png" />
+                                        <div>
+                                            CODING
+                                        </div>
+                                    </span>
+                                    <span class="rolloverSkill">
+                                        <img width="100%" src="images/skill_controller.png" />
+                                        <div>
+                                            CONTROLLER </br>
+                                            PROGRAMMING
+                                        </div>
+                                    </span>
+                                    <span class="rolloverSkill">
+                                        <img width="100%" src="images/skill_digitalart.png" />
+                                        <div>
+                                            DIGITAL </br>
+                                            ART
+                                        </div>
+                                    </span>
+                                    <span class="rolloverSkill">
+                                        <img width="100%" src="images/skill_digitalmusic.png" />
+                                        <div>
+                                            DIGITAL </br>
+                                            MUSIC
+                                        </div>
+                                    </span>
+                                    <span class="rolloverSkill">
+                                        <img width="100%" src="images/skill_electronics.png" />
+                                        <div>
+                                            ELECTRONICS
+                                        </div>
+                                    </span>
+                                    <span class="rolloverSkill">
+                                        <img width="100%" src="images/skill_gamedesign.png" />
+                                        <div>
+                                            GAME DESIGN
+                                        </div>
+                                    </span>
+                                    <span class="rolloverSkill">
+                                        <img width="100%" src="images/skill_lasercutting.png" />
+                                        <div>
+                                            LASER </br>
+                                            CUTTING
+                                        </div>
+                                    </span>
+                                    <span class="rolloverSkill">
+                                        <img width="100%" src="images/skill_minecraft.png" />
+                                        <div>
+                                            PROGRAMMING </br>
+                                            FOR MINECRAFT
+                                        </div>
+                                    </span>
+                                    <span class="rolloverSkill desktop">
+                                        <img width="100%" src="images/skill_vr.png" />
+                                        <div>
+                                            VIRTUAL </br>
+                                            REALITY
+                                        </div>
+                                    </span>
+                                </div>
+                            </center>
+                            <p class="blurbTop">
+                                CAMP/pixel offers programs for our youngest learners, ages 7-9. We align with early elementary-level academic and reading levels to create a visual, hands-on learning experience for kids ready to imagine with us. 
+                            </p>
+                            <p class="blurbTop">
+                                Each of our topics is available in fun, intriguing, inquiry-based activities. Every camper will spend his or her learning time asking questions, imagining and building projects, and being assisted by our expert instructors. Built into the camp day are plenty of screen breaks, physical activities, food breaks, and opportunity to learn and play with one another.
+                            </p>
+                            <p class="blurbHeader">
+                                View our topics for ages 7-9:
+                            </p>
+                            <div id="topicsTable">
+                                <div class="topic left" id="topic11">
+                                    <a href="topic.html#SPORTSdesign">
+                                        <div class="topicsTitle">
+                                            SPORTS/design
+                                            <div class="topicsWeeks">
+                                                1 week
+                                            </div>
+                                        </div>
+                                        <div class="topicsPicture">
+                                            <img src="images/topics_slash_sports_design.jpg">
+                                            <div class="topicsInformation" id="topicDescription11">
+                                                <div class="topicsDescription">
+                                                    <span>Digital Project:</span><br/>
+                                                    Create a sports video game
+                                                    <div class="spacer">
+                                                    </div>
+                                                    <span>Physical Project:</span> <br/>
+                                                    Play and hack competitive sports
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="topic left" id="topic05">
+                                    <a href="topic.html#JURASSICparts">
+                                        <div class="topicsTitle">
+                                            JURASSIC/parts
+                                            <div class="topicsWeeks">
+                                                1 week
+                                            </div>
+                                        </div>
+                                        <div class="topicsPicture">
+                                            <img src="images/topics_slash_jurassic_parts.jpg">
+                                            <div class="topicsInformation" id="topicDescription05">
+                                                <div class="topicsDescription">
+                                                    <span>Digital Project:</span><br/>
+                                                    Make Dinosaur-Themed Digital-Art
+                                                    <div class="spacer">
+                                                    </div>
+                                                    <span>Physical Project:</span><br/>
+                                                    Make a Dinosaur-Themed 3D Puzzle
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="topic" id="topic10">
+                                    <center>
+                                        <a href="topics.html">
+                                            <button id= "viewAllTopics" class ="applyButton"><font color=white>VIEW ALL TOPICS</font></button><!--insert link for button-->
+                                        </a>
+                                    </center>
+                                </div>
+                            </div>
+                            <p class="blurbHeader">
+                                or, take a look at one of our curated packages:
+                            </p>
+                            <div class="packageSpot">
+                            </div>
+                            <div class="aboutSpot">
+                            </div>
+                            <div class="locationSpot">
+                            </div>
+                        </div>
+                        <!-- END AGE TEMPLATE -->
+                        <!-- BEGIN AGES TEMPLATE -->
+                        <!-- AGES 9-11 -->
+                        <div id="1" class="ageTemplate">
+                            <div class="label">
+                                <div class="labelImage" id="image911">
+                                </div>
+                                <div class="slashImage">
+                                </div>
+                                <div class="labelText twoLines">
+                                    AGES 9-11
+                                </div>
+                            </div>
+                            <center>
+                                <p class="blurb" id="skillHover" style="padding-bottom: 10px;font-style:italic;">
+                                    Hover over an icon to reveal skill: 
+                                </p>
+                                <div id="skillsTable">
+                                    <span class="rolloverSkill">
+                                        <img width="100%" src="images/skill_3d.png" />
+                                        <div>
+                                            3D PRINTING
+                                        </div>
+                                    </span>
+                                    <span class="rolloverSkill">
+                                        <img width="100%" src="images/skill_animation.png" />
+                                        <div>
+                                            STOP-MOTION <br/>
+                                            ANIMATION
+                                        </div>
+                                    </span>
+                                    <span class="rolloverSkill">
+                                        <img width="100%" src="images/skill_coding.png" />
+                                        <div>
+                                            CODING
+                                        </div>
+                                    </span>
+                                    <span class="rolloverSkill">
+                                        <img width="100%" src="images/skill_controller.png" />
+                                        <div>
+                                            CONTROLLER </br>
+                                            PROGRAMMING
+                                        </div>
+                                    </span>
+                                    <span class="rolloverSkill">
+                                        <img width="100%" src="images/skill_digitalart.png" />
+                                        <div>
+                                            DIGITAL </br>
+                                            ART
+                                        </div>
+                                    </span>
+                                    <span class="rolloverSkill">
+                                        <img width="100%" src="images/skill_digitalmusic.png" />
+                                        <div>
+                                            DIGITAL </br>
+                                            MUSIC
+                                        </div>
+                                    </span>
+                                    <span class="rolloverSkill">
+                                        <img width="100%" src="images/skill_electronics.png" />
+                                        <div>
+                                            ELECTRONICS
+                                        </div>
+                                    </span>
+                                    <span class="rolloverSkill">
+                                        <img width="100%" src="images/skill_gamedesign.png" />
+                                        <div>
+                                            GAME DESIGN
+                                        </div>
+                                    </span>
+                                    <span class="rolloverSkill">
+                                        <img width="100%" src="images/skill_lasercutting.png" />
+                                        <div>
+                                            LASER </br>
+                                            CUTTING
+                                        </div>
+                                    </span>
+                                    <span class="rolloverSkill">
+                                        <img width="100%" src="images/skill_minecraft.png" />
+                                        <div>
+                                            PROGRAMMING </br>
+                                            FOR MINECRAFT
+                                        </div>
+                                    </span>
+                                    <span class="rolloverSkill desktop">
+                                        <img width="100%" src="images/skill_vr.png" />
+                                        <div>
+                                            VIRTUAL </br>
+                                            REALITY
+                                        </div>
+                                    </span>
+                                </div>
+                            </center>
+                            <p class="blurbTop">
+                                Join our middle group (ages 9-11) for an immersive, project-fueled next step into technology! Campers learn topics that they often haven't yet experienced in school, but will see again years down the road in high school and college.
+                            </p>
+                            <p class="blurbTop">
+                                Each of our topics is accessible for a new learner, but surveys the fundamentals of various technology skills. Every camper will spend his or her learning time asking questions, imagining and building projects, and being assisted by our expert instructors. Built into the camp day are plenty of screen breaks, physical activities, food breaks, and opportunity to learn and play with one another.
+                            </p>
+                            <p class="blurbHeader">
+                                View our topics for ages 9-11:
+                            </p>
+                            <div id="topicsTable">
+                                <div class="topic left" id="topic01">
+                                    <a href="topic.html#CUTscenes">
+                                        <div class="topicsTitle">
+                                            CUT/scenes
+                                            <div class="topicsWeeks">
+                                                1 week
+                                            </div>
+                                        </div>
+                                        <div class="topicsPicture">
+                                            <img src="images/topics_slash_cut_scenes.jpg">
+                                            <div class="topicsInformation" id="topicDescription01">
+                                                <div class="topicsDescription">
+                                                    <span>Digital Project:</span><br/>
+                                                    Create a Stop-Motion Animation 
+                                                    <div class="spacer">
+                                                    </div>
+                                                    <span>Physical Project:</span><br/>
+                                                    Design and Produce Vinyl Stickers
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="topic left" id="topic07">
+                                    <a href="topic.html#MINECRAFTcoding">
+                                        <div class="topicsTitle">
+                                            MINECRAFT/coding
+                                            <div class="topicsWeeks">
+                                                2 weeks
+                                            </div>
+                                        </div>
+                                        <div class="topicsPicture">
+                                            <img src="images/topics_slash_minecraft_coding.jpg">
+                                            <div class="topicsInformation" id="topicDescription07">
+                                                <div class="topicsDescription">
+                                                    <span>Digital Project:</span><br/>
+                                                    Make a Minecraft Mod
+                                                    <div class="spacer">
+                                                    </div>
+                                                    <span>Physical Project:</span><br/>
+                                                    Code a Game Controller
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="topic" id="topic10">
+                                    <center>
+                                        <a href="topics.html">
+                                            <button id= "viewAllTopics" class ="applyButton"><font color=white>VIEW ALL TOPICS</font></button><!--insert link for button-->
+                                        </a>
+                                    </center>
+                                </div>
+                            </div>
+                            <p class="blurbHeader">
+                                or, take a look at one of our curated packages:
+                            </p>
+                            <div class="packageSpot">
+                            </div>
+                            <div class="aboutSpot">
+                            </div>
+                            <div class="locationSpot">
+                            </div>
+                        </div>
+                        <!-- END AGE TEMPLATE -->
+                        <!-- BEGIN AGES TEMPLATE -->
+                        <!-- AGES 11-14 -->
+                        <div id="1" class="ageTemplate">
+                            <div class="label">
+                                <div class="labelImage" id="image1214">
+                                </div>
+                                <div class="slashImage">
+                                </div>
+                                <div class="labelText twoLines">
+                                    AGES 12-14
+                                </div>
+                            </div>
+                            <center>
+                                <p class="blurb" id="skillHover" style="padding-bottom: 10px;font-style:italic;">
+                                    Hover over an icon to reveal skill: 
+                                </p>
+                                <div id="skillsTable">
+                                    <span class="rolloverSkill">
+                                        <img width="100%" src="images/skill_coding.png" />
+                                        <div>
+                                            CODING
+                                        </div>
+                                    </span>
+                                    <span class="rolloverSkill">
+                                        <img width="100%" src="images/skill_controller.png" />
+                                        <div>
+                                            CONTROLLER </br>
+                                            PROGRAMMING
+                                        </div>
+                                    </span>
+                                    <span class="rolloverSkill">
+                                        <img width="100%" src="images/skill_digitalart.png" />
+                                        <div>
+                                            DIGITAL </br>
+                                            ART
+                                        </div>
+                                    </span>
+                                    <span class="rolloverSkill">
+                                        <img width="100%" src="images/skill_digitalmusic.png" />
+                                        <div>
+                                            DIGITAL </br>
+                                            MUSIC
+                                        </div>
+                                    </span>
+                                    <span class="rolloverSkill">
+                                        <img width="100%" src="images/skill_gamedesign.png" />
+                                        <div>
+                                            GAME DESIGN
+                                        </div>
+                                    </span>
+                                    <span class="rolloverSkill">
+                                        <img width="100%" src="images/skill_minecraft.png" />
+                                        <div>
+                                            PROGRAMMING </br>
+                                            FOR MINECRAFT
+                                        </div>
+                                    </span>
+                                    <span class="rolloverSkill desktop">
+                                        <img width="100%" src="images/skill_vr.png" />
+                                        <div>
+                                            VIRTUAL </br>
+                                            REALITY
+                                        </div>
+                                    </span>
+                                </div>
+                            </center>
+                            <p class="blurbTop">
+                                Our early teen camps (ages 12-14) feature intensive, comprehensive, project-heavy journeys into realms of technology! Teen campers start with the fundamentals, quickly charging into individualized creation on their own projects, to be completed by the end of the session. These finished projects are perfect for portfolios, school applications, and inspiration to keep working at home!
+                            </p>
+                            <p class="blurbTop">
+                                Each of our topics is accessible for a new learner, but surveys the fundamentals of various technology skills. Every teen camper will spend his or her learning time on new skills, project work, and 8:1 assistance by our expert instructors. Built into the camp day are plenty of screen breaks, physical activities, food breaks, and opportunity to learn and play with one another.
+                            </p>
+                            <p class="blurbHeader">
+                                View our topics for ages 12-14:
+                            </p>
+                            <div id="topicsTable">
+                                <div class="topic left" id="topic10">
+                                    <a href="topic.html#VIRTUALreality">
+                                        <div class="topicsTitle">
+                                            VIRTUAL/reality
+                                            <div class="topicsWeeks">
+                                                2 weeks
+                                            </div>
+                                        </div>
+                                        <div class="topicsPicture">
+                                            <img src="images/topics_slash_virtual_reality.jpg">
+                                            <div class="topicsInformation" id="topicDescription10">
+                                                <div class="topicsDescription">
+                                                    <span>Digital Project:</span><br/>
+                                                    Make a 3D Video Game for Virtual Reality
+                                                    <div class="spacer">
+                                                    </div>
+                                                    <span>Physical Project:</span> <br/>
+                                                    Create an Augmented Reality Experience
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="topic left" id="topic07">
+                                    <a href="topic.html#MINECRAFTcoding">
+                                        <div class="topicsTitle">
+                                            MINECRAFT/coding
+                                            <div class="topicsWeeks">
+                                                2 weeks
+                                            </div>
+                                        </div>
+                                        <div class="topicsPicture">
+                                            <img src="images/topics_slash_minecraft_coding.jpg">
+                                            <div class="topicsInformation" id="topicDescription07">
+                                                <div class="topicsDescription">
+                                                    <span>Digital Project:</span><br/>
+                                                    Make a Minecraft Mod
+                                                    <div class="spacer">
+                                                    </div>
+                                                    <span>Physical Project:</span><br/>
+                                                    Code a Game Controller
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="topic" id="topic10">
+                                    <center>
+                                        <a href="topics.html">
+                                            <button id= "viewAllTopics" class ="applyButton"><font color=white>VIEW ALL TOPICS</font></button><!--insert link for button-->
+                                        </a>
+                                    </center>
+                                </div>
+                            </div>                            <div class="aboutSpot">
+                            </div>
+                            <div class="locationSpot">
+                            </div>
+                        </div>
+                        <!-- END AGE TEMPLATE -->
+                        <!-- BEGIN AGES TEMPLATE -->
+                        <!-- AGES 15-17 -->
+                        <div id="5" class="ageTemplate">
+                            <div class="label">
+                                <div class="labelImage" id="citImage">
+                                </div>
+                                <div class="slashImage">
+                                </div>
+                                <div class="labelText twoLines">
+                                    C.I.T. Program
+                                </div>
+                            </div>
+                            <div class = "applyDetails">
+                                <div class = "applyBlurb">
+                                    <div class="applyColumn left">
+                                        <div class = "applySchedule">
+                                            <div class="applyScheduleSession">
+                                                <div class = "scheduleTitle">Session 1</div>
+                                                <div class = "scheduleDate">July 4-29</div>
+                                            </div>
+                                            <div class="applyScheduleSession">
+                                                <div class = "scheduleTitle">Session 2</div>
+                                                <div class = "scheduleDate second">August 1-26</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="applyColumn right">
+                                        <p>CAMP/pixel is building an elite team of motivated high-school students ages 15-17. Participating teens will develop fluency in 21st-century technology, build future portfolio and application materials, learn crucial early job skills, and work first-hand with kids and like-minded teens. Our goal is to help teens set goals both in their own work and with others, and to help them see those ideas become realities.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Apply Section Details-->
+                            <center>
+                                <a href="https://pixelacademy.workable.com/jobs/190146" target="_blank">
+                                    <button id= "topApplyButton" class = "applyButton" onclick="goog_report_conversion"><font color=white>APPLY NOW</font></button><!--insert link for button-->
+                                </a>
+                            </center>
+                            <!--Apply Section End-->
+                            <!--cit Header-->
+                            <div id = "citHeader">
+                                <!--left position on Header-->
+                                <div id = "citHeader-left">
+                                    <div class = "citHeaderImage"><img src = "images/ages_cit.jpg" style = "width:100%;"></div>
+                                </div>
+                                <!--right position on Header-->
+                                <div id = "citHeader-right">
+                                    <div class = "citHeaderLabel">
+                                        Counselor In Training <br/>(C.I.T.) Position
+                                        <div class ="citSubheaderLabel">Teens ages 15 - 17</div>
+                                    </div>
+                                    <table>
+                                        <tr>
+                                            <td class = "rowHighlight">4-week project-based summer program for tech-loving teens</td>
+                                        </tr>
+                                        <tr>
+                                            <td>No cost to apply or participate</td>
+                                        </tr>
+                                        <tr>
+                                            <td class = "rowHighlight">Hands-on experience with cool, cutting-edge technology</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Experience and training that will help you in school, college, and beyond</td>
+                                        </tr>
+                                    </table>
+                                    <a href="https://pixelacademy.workable.com/jobs/190146" target="_blank" onclick="goog_report_conversion"><button class = "applyButton"><font color=white>APPLY TO BE A C.I.T.</font></button></a><!--insert link for button-->
+                                </div>
+                            </div>
+                            <p class = "citHeaderBlurb">The CAMP/pixel C.I.T. position is a perfect blend of LEARNING and LEADING for teens with a passion for technology and education. Our C.I.T.'s spend some of each day learning new skills and working with our expert instructors to program, code, produce, design, and invent new products. The rest of the day is dedicated to working with campers in a leadership role to help them learn a new skill, complete a camp challenge, or just have fun.</p>
+                            <!--citHeader End-->
+                            <!--Leading & Learning Columns-->    
+                            <div id = "midSection">
+                                <div class = "learning">
+                                    <div class = "midSectionLabel">
+                                        Learning
+                                    </div>
+                                    <ul class = "midSectionList">
+                                        <li>Cutting-edge and professional grade technology.</li>
+                                        <li>Mentoring and skills tutoring from our expert instructors.</li>
+                                        <li>Leadership training and teamwork experience. </li>
+                                        <li>Guidance towards personal goal-setting and self-self-efficacy.</li>
+                                    </ul>
+                                </div>
+                                <div class = "leading">
+                                    <div class = "midSectionLabel">Leading</div>
+                                    <ul class = "midSectionList">
+                                        <li>Hands-on skill development, helping kids learn technology.</li>
+                                        <li>Opportunities to lead activities and screen-breaks during camp.</li>
+                                        <li>Job-relevant experience leading and managing tasks.</li>
+                                        <li>Assisting instructors, learning teaching and leadership skills.</li>
+                                    </ul>
+                                </div>
+                                <!--Apply Section End-->
+                                <div id="citCTA" >
+                                    <a href="about.html">
+                                        <div id="citCTA1">
+                                            ABOUT CAMP/pixel
+                                        </div>
+                                    </a>
+                                    <a href="topics.html">
+                                        <div id="citCTA2">
+                                            VIEW CAMP/topics
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END AGE TEMPLATE -->
+                        <!-- BEGIN AGES TEMPLATE -->
+                        <!-- AGES  18+ -->
+                        <div id="5" class="ageTemplate">
+                            <div class="label">
+                                <div class="labelImage" id="dropOffImage">
+                                </div>
+                                <div class="slashImage">
+                                </div>
+                                <div class="labelText twoLines">
+                                    Jobs & Internships
+                                </div>
+                            </div>
+                            <div class="blurbTop">
+                                Interested in joining the awesome Pixel Academy team of expert instructors, staff, and interns? Check out our current job openings below for aspiring kid-lovers and tech-experts. Check back often, as this list will only grow!
+                            </div>
+                            <center>
+                                <a href="https://pixelacademy.workable.com/" target="_blank">
+                                    <button id= "topApplyButton" class = "applyButton"><font color=white>APPLY NOW</font></button><!--insert link for button-->
+                                </a>
+                            </center>
+                        </div>
+                        <!-- END AGE TEMPLATE -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

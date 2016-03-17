@@ -1,3 +1,7 @@
+#content {
+    padding-bottom: 200px;
+}
+
 .hide{
     display: none;
 }
@@ -8,20 +12,6 @@
     text-align: center;
 }
 
-.ages79{
-    background-image: url("images/gamedesigner.jpg");
-    width: 100%;
-    height: 300px;
-    background-size: cover;
-}
-
-.ages911{
-  background-image: url("images/IMG_3615.jpg");
-    width: 100%;
-    height: 300px;
-    background-size: cover;
-
-}
 
 #fullSlider{
   position: relative;
@@ -59,18 +49,13 @@
     display: none;
 }
 
-
 #skillsTable span:hover div{
     display: inline-block;
 }
 
-
-
 .topic{
   width: 32%;
 }
-
-
 
 .topic.left{
   margin-right: 1%;
@@ -100,29 +85,27 @@
   font-family: "Body";
 }
 
-
 #image79{
     background-size: cover;
-    background-image: url("images/gamedesigner.jpg") !important;
-    background-position: right center; 
+    background-image: url("images/header_meals.jpg") !important;
+    background-position: right bottom; 
 }
-
 
 #image911{
     background-size: cover;
-    background-image: url("images/IMG_3615.jpg") !important;
+    background-image: url("images/header_topics.jpg") !important;
     background-position: left 40%; 
 }
 
 #image1214{
     background-size: cover;
-    background-image: url("images/Minecraft Coding Plus.jpg") !important;
-    background-position: left 90%; 
+    background-image: url("images/header_1214.jpg") !important;
+    background-position: left 80%; 
 }
 
 #scheduleSectionHeader .mainSectionImage {
-  background-image: url("images/schedule-header.jpg") !important;
-  background-position: right center; }
+  background-image: url("images/topics_dj_production.jpg") !important;
+  background-position: left 20%; }
 
 .topicTable{
     width: 100%;
@@ -293,33 +276,33 @@ font-family: "Header";
 }
 
 #minecrafter:hover{
-  background-image: url("images/minecrafter.jpg");
+  background-image: url("images/packages_minecraft_master_background.jpg");
   background-size: cover;
   background-position: 50%;
 }
 
 #coder:hover{
-  background-image: url("images/coder.jpg");
+  background-image: url("images/packages_coder_background.jpg");
   background-size: cover;
   background-position: 50%;
 }
 
 #maker:hover{
-  background-image: url("images/maker.jpg");
+  background-image: url("images/packages_maker_background.jpg");
   background-size: cover;
   background-position: 50%;
 }
 
 #artist:hover{
-  background-image: url("images/artist.jpg");
+  background-image: url("images/packages_artist_background.jpg");
   background-size: cover;
   background-position: 50%;
 }
 
 #gamedesigner:hover{
-  background-image: url("images/gamedesigner.jpg");
+  background-image: url("images/topics_minecraft_coding_plus.jpg");
   background-size: cover;
-  background-position: 50%;
+  background-position: center 85%;
 }
 
 
@@ -399,11 +382,10 @@ font-family: "Header";
 
 
 #sliderAges{
-    width: 90%;
+    width: 94%;
     height: 50px;
     position: relative;
     top: 62px;
-    left: -35px;
 }
 
 .sliderAge{
@@ -422,28 +404,35 @@ font-family: "Header";
 }
 
 #slider1{
-    left: 1.5%;
+    left: 0%;
+    margin-left: -3.75px;
 }
 
 #slider2{
-    left: 21.5%;
+    left: 19%;
+    margin-left: 3px;
 }
 
 #slider3{
-    left: 41.5%;
+    left: 39%;
+    margin-left: -10px;
 }
 
 #slider4{
-    left: 60.8%;
+    left: 58%;
+    margin-left: -12.5px;
 }
 
 #slider5{
-    left: 81%;
+    left: 77%;
+    margin-left: -10px;
 }
 
 #slider6{
-    left: 101.5%;
+    left: 97%;
+    margin-left: -10px;
 }
+
 
 
 #sliderBg{
@@ -463,17 +452,22 @@ font-family: "Header";
 
 
 #learningImage {
-  background-image: url("images/Learning.jpg");
+  background-image: url("images/facts-header2.jpg");
   background-size: cover;
-  background-position: center 81%; 
+  background-position: center 20%; 
 }
 #dropOffImage {
-  background-image: url("images/DropOff.jpg");
+  background-image: url("images/header-u7.png");
   background-size: cover;
-  background-position: center 50%; 
+  background-position: center 80%; 
+}
+#citImage {
+  background-image: url("images/ages_cit.jpg");
+  background-size: cover;
+  background-position: center 20%; 
 }
 #screenBreaksImage {
-  background-image: url("images/ScreenBreaks.jpg");
+  background-image: url("images/header-location.jpg");
   background-size: cover;
   background-position: center 50%; 
 }
@@ -498,7 +492,7 @@ font-family: "Header";
  .label .slashImage {
   height: 100%;
   width: 10%;
-  background: url("images/scheduleSlash.png");
+  background: url("images/slash_4.png");
   background-size: cover;
   position: absolute;
   left: 40%;
@@ -558,8 +552,47 @@ font-family: "Header";
     width: 100%;
     left: 0px;
   } 
-}
+  #sliderAges{
+    top: 64px;
+  }
+  .sliderAge {
+    font-family: "Header";
+    font-size: 20px;
+    position: absolute;
+  }
+  .slider-handle {
+      width: 55px;
+  }
+  #slider1{
+    left: 0%;
+    margin-left: -10px;
+  }
 
+  #slider2{
+      left: 18%;
+      margin-left: -4px;
+  }
+
+  #slider3{
+      left: 39%;
+      margin-left: -15px;
+  }
+
+  #slider4{
+      left: 58%;
+      margin-left: -15px;
+  }
+
+  #slider5{
+      left: 77%;
+      margin-left: -13px;
+  }
+
+  #slider6{
+      left: 97%;
+      margin-left: -15px;
+  }
+}
 
 @media screen and (max-width: 815px) {
     .topicsPicture img{
@@ -569,10 +602,9 @@ font-family: "Header";
     display: none;
   }
     #sliderAges{
-        width: 90%;
+        width: 94%;
         height: 50px;
         position: relative;
-        left: -10px;
     }
 
     .applySchedule{
@@ -691,6 +723,9 @@ margin-bottom: 50px;}
   .topicsPicture img{
     height: 160px;
   }
+  .desktop{
+    display: none;
+  }
 
   .topic{
     width: 100%;
@@ -741,6 +776,16 @@ margin-bottom: 50px;}
 
 }
 
+@media screen and (max-width: 500px) { 
+  .slider-handle {
+      width: 45px;
+      height: 65px;
+  }
+  .slider.slider-horizontal .slider-handle{
+
+      margin-left: -25px;
+}
+}
 
 
 @media screen and (max-width: 550px) { 

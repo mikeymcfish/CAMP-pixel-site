@@ -21,8 +21,33 @@
 	<link rel="stylesheet" type="text/css" href="cssReset.css">
 	<link rel="stylesheet" type="text/css" href="sharedStyle.css">
 	<link rel="stylesheet" type="text/css" href="sharedStyleMobile.css">
+	<link rel="stylesheet" type="text/css" href="topBar.css">
 	<link rel="stylesheet" type="text/css" href="topics.css">
 	<script src="jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="ejs_production.js"></script>
+
+	<!-- Renders the page -->
+	<!-- EJS HERE -->
+    <script type="text/javascript">
+	    $(document).ready(function(){
+	    	var topBar = new EJS({url: 'topBar.ejs'}).render();
+	    	var bottomBar = new EJS({url: 'bottomBar.ejs'}).render();
+
+			$("#wrapper").prepend(topBar);
+			$("#wrapper").append(bottomBar);
+	    });
+    </script>
+    <script src="allPages.js"></script>
+
+    <!-- Embedded affirm logo (cost page) -->
+	<script>
+	  var _affirm_config = {
+	    public_api_key:  "XXXXXXXXXXXXXXX",
+	    script:          "https://cdn1-sandbox.affirm.com/js/v2/affirm.js"
+	  };
+	  (function(l,g,m,e,a,f,b){var d,c=l[m]||{},h=document.createElement(f),n=document.getElementsByTagName(f)[0],k=function(a,b,c){return function(){a[b]._.push([c,arguments])}};c[e]=k(c,e,"set");d=c[e];c[a]={};c[a]._=[];d._=[];c[a][b]=k(c,a,b);a=0;for(b="set add save post open empty reset on off trigger ready setProduct".split(" ");a<b.length;a++)d[b[a]]=k(c,e,b[a]);a=0;for(b=["get","token","url","items"];a<b.length;a++)d[b[a]]=function(){};h.async=!0;h.src=g[f];n.parentNode.insertBefore(h,n);delete g[f];d(g);l[m]=c})(window,_affirm_config,"affirm","checkout","ui","script","ready");
+	</script>
+
 	<!--Start of Zopim Live Chat Script-->
     <script type="text/javascript">
         window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
@@ -31,7 +56,7 @@
             $.src="//v2.zopim.com/?154sLdSAaw4zX6Hoq65ZMP28r6UXYRlH";z.t=+new Date;$.
                     type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
     </script>
-    <!--End of Zopim Live Chat Script-->
+    
     <!-- Google Analytics -->
   	<script>
     	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -50,51 +75,13 @@
        	});
    	 }
   	</script>
-	<!-- End Google Analytics -->
-	<title> CAMP/topics </title>
+
+    <!-- Page Title -->
+	<title> CAMP/pixel: CAMP/topics: NYC's Best Technology Day Camp</title>
 </head>
 <body>
 	<div id="wrapper">
-	<div id="topBar">
-		<div id="topBarLogo">
-			<a href="home.html">
-				<img src="images/topbar-camplogo.png" style="padding-top: 15px;" height="30px;" />
-			</a>
-		</div>
-		<div id="topBarButtons">
-			<a href="about.html">
-				<div class="topBarButton">
-					CAMP/about
-				</div>
-			</a>
-			<a href="schedule.html">
-				<div class="topBarButton">
-					CAMP/schedule
-				</div>
-			</a>
-			<a href="topics.html">
-				<div class="topBarButton thisPageLink">
-					CAMP/topics
-				</div>
-			</a>
-			<a href="https://hq.pixelacademy.org/tickets/camp-pixel">
-				<div id="signupButton" class="topBarButton">
-					SIGN UP
-				</div>
-			</a>
-		</div>
-		<div id="phoneNumber">
-			<div id="phone">
-					<img class="topBarContactIcon" height="20" src="images/phone-icon.png" />
-						(866) 771-6837
-
-				<div id="phoneSpacer">
-				</div>
-					<img class="topBarContactIcon"  height="20" src="images/email-icon.png" />
-						info@pixelacademy.org
-			</div>
-		</div>
-	</div>
+	
 
 	<div id="content">
 	<!-- FACTS SECTION -->
@@ -128,7 +115,7 @@
 						</div>
 					</div>
 					<div class="topicsPicture">	
-						<img src="images/SPORTS_design_large.jpg">
+						<img src="images/topics_slash_sports_design.jpg">
 						<div class="topicsInformation" id="topicDescription11">
 							<div class="topicsDescription">
 								<span>Digital Project:</span><br/>
@@ -139,6 +126,9 @@
 									Play and hack competitive sports
 								<br/>
 								<div class="topicDates">
+									<div style="margin-bottom:10px;">
+										Ages 7-9, 9-11
+									</div>
 									Aug 1-5 / Aug 22-26
 								</div>
 							</div>
@@ -146,7 +136,7 @@
 					</div>
 					</a>
 					<div class="topicsSignUp">
-						<a href="topic.html#SPORTSmechanics">MORE INFO</a>
+						<a href="topic.html#SPORTSdesign">MORE INFO</a>
 						<a href="https://hq.pixelacademy.org/tickets/camp-pixel/index">SIGN UP</a>
 					</div>
 				</div>
@@ -162,7 +152,7 @@
 						</div>
 					</div>
 					<div class="topicsPicture">	
-						<img src="images/FASHION_design_large.jpg">
+						<img src="images/topics_slash_fashion_design.jpg">
 						<div class="topicsInformation" id="topicDescription12">
 							<div class="topicsDescription">
 								<span>Digital Project:</span><br/>
@@ -173,6 +163,9 @@
 									Prototype a small-scale fashion design
 								<br/>
 								<div class="topicDates">
+									<div style="margin-bottom:10px;">
+										Ages 7-9, 9-11
+									</div>
 									July 11-15 / Aug 8-12
 								</div>
 							</div>
@@ -196,7 +189,7 @@
 						</div>
 					</div>
 					<div class="topicsPicture">	
-						<img src="images/ARCADE_control_large.jpg">
+						<img src="images/topics_slash_arcade_design.jpg">
 						<div class="topicsInformation" id="topicDescription10">
 							<div class="topicsDescription">
 								<span>Digital Project:</span><br/>
@@ -207,6 +200,9 @@
 									Create a video game controller
 								<br/>
 								<div class="topicDates">
+									<div style="margin-bottom:10px;">
+										Ages 7-9, 9-11
+									</div>
 									July 4-8 / July 25-29
 								</div>
 							</div>
@@ -214,7 +210,7 @@
 					</div>
 					</a>
 					<div class="topicsSignUp">
-						<a href="topic.html#ARCADEcontrol">MORE INFO</a>
+						<a href="topic.html#ARCADEdesign">MORE INFO</a>
 						<a href="https://hq.pixelacademy.org/tickets/camp-pixel/index">SIGN UP</a>
 					</div>
 				</div>
@@ -227,7 +223,7 @@
 						</div>
 					</div>
 					<div class="topicsPicture">	
-						<img src="images/CUT_scenes_large.jpg">
+						<img src="images/topics_slash_cut_scenes.jpg">
 						<div class="topicsInformation" id="topicDescription01">
 							<div class="topicsDescription">
 								<span>Digital Project:</span><br/>
@@ -237,6 +233,9 @@
 								<span>Physical Project:</span><br/>
 								Design and Produce Vinyl Stickers <br/>
 								<div class="topicDates">
+									<div style="margin-bottom:10px;">
+										Ages 7-9, 9-11
+									</div>
 									July 4-8 / July 18-22 / Aug 1-5 / Aug 15-19 / Aug-Sep 29-2
 								</div>
 							</div>
@@ -257,7 +256,7 @@
 						</div>
 					</div>
 					<div class="topicsPicture">	
-						<img src="images/DJ_production_large.jpg">
+						<img src="images/topics_slash_dj_production.jpg">
 						<div class="topicsInformation" id="topicDescription02">
 							<div class="topicsDescription">
 								<span>Digital Project:</span><br/>
@@ -267,6 +266,9 @@
 								<span>Physical Project:</span><br/>
 								Perform on DJ Equipment<br/>
 								<div class="topicDates">
+									<div style="margin-bottom:10px;">
+										Ages 7-9, 9-11
+									</div>
 									Jun-Jul 27-1 / July 4-8 / July 18-22 / Aug 1-5 / Aug 15-19 / Aug-Sep 29-2
 								</div>
 							</div>
@@ -287,7 +289,7 @@
 						</div>
 					</div>
 					<div class="topicsPicture">	
-						<img src="images/DRIVE_design_large.jpg">
+						<img src="images/topics_slash_drive_design.jpg">
 						<div class="topicsInformation" id="topicDescription03">
 							<div class="topicsDescription" >
 								<span>Digital Project:</span><br/>
@@ -297,6 +299,9 @@
 								<span>Physical Project:</span><br/>
 								Design and 3D Print a Toy Car<br/>
 								<div class="topicDates">
+									<div style="margin-bottom:10px;">
+										Ages 7-9, 9-11
+									</div>
 									Jun-Jul 27-1 / July 11-15 / July 25-29 / Aug 8-12 / Aug 22-26 / Aug-Sep 29-2
 								</div>
 							</div>
@@ -317,7 +322,7 @@
 						</div>
 					</div>
 					<div class="topicsPicture">	
-						<img src="images/FLIGHT_design_large.jpg">
+						<img src="images/topics_slash_flight_design.jpg">
 						<div class="topicsInformation" id="topicDescription04">
 							<div class="topicsDescription">
 								<span>Digital Project:</span><br/>
@@ -327,6 +332,9 @@
 								<span>Physical Project:</span><br/>
 								Design and Develop a Classic Top-Down Video Game<br/>
 								<div class="topicDates">
+									<div style="margin-bottom:10px;">
+										Ages 7-9, 9-11
+									</div>
 									Jun-Jul 27-1 / July 4-8 / July 18-22 / Aug 1-5 / Aug 15-19 / Aug-Sep 29-2
 								</div>
 							</div>
@@ -347,7 +355,7 @@
 						</div>
 					</div>
 					<div class="topicsPicture">	
-						<img src="images/JURASSIC_parts_large.jpg">
+						<img src="images/topics_slash_jurassic_parts.jpg">
 						<div class="topicsInformation" id="topicDescription05">
 							<div class="topicsDescription">
 								<span>Digital Project:</span><br/>
@@ -357,6 +365,9 @@
 								<span>Physical Project:</span><br/>
 								Make a Dinosaur-Themed 3D Puzzle<br/>
 								<div class="topicDates">
+									<div style="margin-bottom:10px;">
+										Ages 7-9, 9-11
+									</div>
 									Jun-Jul 27-1 / July 11-15 / July 25-29 / Aug 8-12 / Aug 22-26 / Aug-Sep 29-2
 								</div>
 							</div>
@@ -377,7 +388,7 @@
 						</div>
 					</div>
 					<div class="topicsPicture">	
-						<img src="images/MINECRAFT_architect_large.jpg">
+						<img src="images/topics_slash_minecraft_architect.jpg">
 						<div class="topicsInformation" id="topicDescription06">
 							<div class="topicsDescription">
 								<span>Digital Project:</span><br/>
@@ -387,6 +398,9 @@
 								<span>Physical Project:</span><br/>
 								Become an Architect of the Future<br/>
 								<div class="topicDates">
+									<div style="margin-bottom:10px;">
+										Ages 7-9, 9-11
+									</div>
 									Jun/Jul 27-1 / July 11-15 / July 25-29 / Aug 8-12 / Aug 22-26 / Aug-Sep 29-2
 								</div>
 							</div>
@@ -407,7 +421,7 @@
 						</div>
 					</div>
 					<div class="topicsPicture">	
-						<img src="images/MINECRAFT_coding_large.jpg">
+						<img src="images/topics_slash_minecraft_coding.jpg">
 						<div class="topicsInformation" id="topicDescription07">
 							<div class="topicsDescription">
 								<span>Digital Project:</span><br/>
@@ -417,6 +431,9 @@
 								<span>Physical Project:</span><br/>
 								Code a Game Controller<br/>
 								<div class="topicDates">
+									<div style="margin-bottom:10px;">
+										Ages 7-9, 9-11, 12-14
+									</div>
 									July 4-15 / July 18-29 / Aug 1-12 / Aug 15-26
 								</div>
 							</div>
@@ -437,7 +454,7 @@
 						</div>
 					</div>
 					<div class="topicsPicture">	
-						<img src="images/MINECRAFT_coding +_large.jpg">
+						<img src="images/topics_slash_minecraft_coding_plus.jpg">
 						<div class="topicsInformation" id="topicDescription08">
 							<div class="topicsDescription">
 								<span>Digital Project:</span><br/>
@@ -447,6 +464,9 @@
 								<span>Physical Project:</span><br/>
 								Code an Interactive Arduino<br/>
 								<div class="topicDates">
+									<div style="margin-bottom:10px;">
+										Ages 9-11, 12-14
+									</div>
 									July 18-29 / Aug 15-26
 								</div>
 							</div>
@@ -467,7 +487,7 @@
 						</div>
 					</div>
 					<div class="topicsPicture">	
-						<img src="images/MINECRAFT_engineering_large.jpg">
+						<img src="images/topics_slash_minecraft_engineering.jpg">
 						<div class="topicsInformation" id="topicDescription09">
 							<div class="topicsDescription">
 								<span>Digital Project:</span><br/>
@@ -476,6 +496,9 @@
 								</div>
 								<span>Physical Project:</span><br/>Create a Game with littleBits<br/>
 								<div class="topicDates">
+									<div style="margin-bottom:10px;">
+										Ages 7-9, 9-11
+									</div>
 									Jun-Jul 27-1 / July 4-8 / July 11-15 /July 18-22 / July 25-29 / Aug 1-5 / Aug 8-12 / Aug 15-19 / Aug-Sep 29-2 
 								</div>
 							</div>
@@ -496,7 +519,7 @@
 						</div>
 					</div>
 					<div class="topicsPicture">	
-						<img src="images/VIRTUAL_reality_large.jpg">
+						<img src="images/topics_slash_virtual_reality.jpg">
 						<div class="topicsInformation" id="topicDescription10">
 							<div class="topicsDescription">
 								<span>Digital Project:</span><br/>
@@ -507,6 +530,9 @@
 									Create an Augmented Reality Experience
 								<br/>
 								<div class="topicDates">
+									<div style="margin-bottom:10px;">
+										Ages 7-9, 9-11, 12-14
+									</div>
 									July 4-15 / July 18-29 / Aug 1-12 / Aug 15-26
 								</div>
 							</div>
@@ -525,76 +551,7 @@
 			
 		</div>
 	</div>
-   	<!-- BOTTOM BAR -->
-		<div id="bottomBar">
-			<div id="bottomBarContainer">
-				<div id="bottomBarLogos">
-					<a href="home.html">
-						<div id="bottomBarCampLogo">
-						</div>
-					</a> 
-					<a href="http://www.pixelacademy.org/" target="_blank">
-						<div id="bottomBarPixelLogo">
-						</div>
-					</a>
-				</div>
-				<div id="bottomBarLinks">
-					<div id="topLinks">
-						<a href="about.html">
-							About CAMP/pixel
-						</a>
-						<a href="schedule.html">
-							A Day at CAMP/pixel
-						</a>
-						<a href="topics.html" class="thisPageLink">
-							CAMP/pixel topics
-						</a>
-						<a href="packages.html">
-							CAMP/packages
-						</a>
-					</div>
-					<div id="bottomLinks">
-						<a href="about.html#location">
-							Location
-						</a>
-						<a href="about.html#cost">
-							Cost
-						</a>
-						<a href="cit-program.html">
-							C.I.T. Program
-						</a>
-						<a href="http://www.pixelacademy.org/" target="_blank">
-							Pixel Academy Home Page
-						</a>
-					</div>
-				</div>
-			</div>
-				<div id ="bottomBarButtons">
-					<a href="https://hq.pixelacademy.org/tickets/camp-pixel">
-						<div id="bottomBarSignUp">
-							SIGN UP
-						</div>
-					</a>
-					<a href="contactfaq.html">
-						<div id="bottomBarSignUp">
-							CONTACT/faq
-						</div>
-					</a>
-				</div>
-				<div id="phoneNumber">
-					<div id="phone">
-						<img class="topBarContactIcon" height="20" src="images/phone-icon.png" />
-							(866) 771-6837
-						<div id="phoneSpacer">
-						</div>
-						<img class="topBarContactIcon"  height="20" src="images/email-icon.png" />
-							info@pixelacademy.org
-					</div>
-				</div>
-			</div>
 	</div>
-	<!-- END BOTTOM BAR -->
 	</div>
-
 </body>
 </html>

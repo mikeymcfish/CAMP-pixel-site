@@ -1,684 +1,575 @@
 <html>
-<head>
-	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-	<link rel="manifest" href="favicon/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
-	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
-	<link rel="stylesheet" type="text/css" href="cssReset.css">
-	<link rel="stylesheet" type="text/css" href="sharedStyle.css">
-	<link rel="stylesheet" type="text/css" href="sharedStyleMobile.css">
-	<link rel="stylesheet" type="text/css" href="about.css">
-	<link rel="stylesheet" type="text/css" href="cost.css">
-	<link rel="stylesheet" type="text/css" href="location.css">
-	<script src="jquery-1.11.3.min.js"></script>
-	<script src="about.js"></script>
-	<script>
-	  var _affirm_config = {
-	    public_api_key:  "XXXXXXXXXXXXXXX",
-	    script:          "https://cdn1-sandbox.affirm.com/js/v2/affirm.js"
-	  };
-	  (function(l,g,m,e,a,f,b){var d,c=l[m]||{},h=document.createElement(f),n=document.getElementsByTagName(f)[0],k=function(a,b,c){return function(){a[b]._.push([c,arguments])}};c[e]=k(c,e,"set");d=c[e];c[a]={};c[a]._=[];d._=[];c[a][b]=k(c,a,b);a=0;for(b="set add save post open empty reset on off trigger ready setProduct".split(" ");a<b.length;a++)d[b[a]]=k(c,e,b[a]);a=0;for(b=["get","token","url","items"];a<b.length;a++)d[b[a]]=function(){};h.async=!0;h.src=g[f];n.parentNode.insertBefore(h,n);delete g[f];d(g);l[m]=c})(window,_affirm_config,"affirm","checkout","ui","script","ready");
-	</script>
-	<!--Start of Zopim Live Chat Script-->
-    <script type="text/javascript">
-        window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
-                d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
-                _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
-            $.src="//v2.zopim.com/?154sLdSAaw4zX6Hoq65ZMP28r6UXYRlH";z.t=+new Date;$.
-                    type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
-    </script>
-    <!--End of Zopim Live Chat Script-->
-    <!-- Google Analytics -->
-  	<script>
-    	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    	ga('create', 'UA-31308117-1', 'auto');
-    	ga('require', 'linkid', 'linkid.js');
-    	ga('send', 'pageview');
-
-    	var trackOutboundLink = function(url) {
-       		ga('send', 'event', url, 'click', url, {'hitCallback':
-         	function () {
-         
-         	}
-       	});
-   	 }
-  	</script>
-	<!-- End Google Analytics -->
-	<title> CAMP/about </title>
-</head>
-<body>
-
-	<div id="wrapper">
-	<div id="topBar">
-		<div id="topBarLogo">
-			<a href="home.html">
-				<img src="images/topbar-camplogo.png" style="padding-top: 15px;" height="30px;" />
-			</a>
-		</div>
-		<div id="topBarButtons">
-			<a href="about.html">
-				<div class="topBarButton thisPageLink">
-					CAMP/about
-				</div>
-			</a>
-			<a href="schedule.html">
-				<div class="topBarButton">
-					CAMP/schedule
-				</div>
-			</a>
-			<a href="topics.html">
-				<div class="topBarButton">
-					CAMP/topics
-				</div>
-			</a>
-			<a href="https://hq.pixelacademy.org/tickets/camp-pixel">
-				<div id="signupButton" class="topBarButton">
-					SIGN UP
-				</div>
-			</a>
-		</div>
-		<div id="phoneNumber">
-			<div id="phone">
-				
-					<img class="topBarContactIcon" height="20" src="images/phone-icon.png" />
-						(866) 771-6837
-
-				<div id="phoneSpacer">
-				</div>
-					<img class="topBarContactIcon"  height="20" src="images/email-icon.png" />
-						info@pixelacademy.org
-			</div>
-		</div>
-	</div>
-
-	<div id="content">
-	<!-- FACTS SECTION -->
-	<div class="section">
-		<div class="mainSectionHeader" id="campFactsSectionHeader">
-			<div class="mainSectionText">
-				<span>
-				CAMP/about
-				</span>
-			</div>
-			<div class="mainSectionImageContainer">
-				<div class="mainSectionImage"></div>
-				<div class="mainSectionImageSlash"></div>
-			</div>
-		</div>
-
-		<div class="sectionContent">
-			 <div id="factTableHeader">New York's only technology day camp for kids that combines DIGITAL and PHYSICAL projects.</div>
-			 <div id="factTableContainerCTA">Click a fact to learn more.</div>
-			<div id="factTableContainer">
-			<table id="desktopTable">
-				<tr>
-					<td class="fact">
-						<div class="factHeader" data-title="8:1 STUDENT-INSTRUCTOR RATIO" data-description="Learning hands-on, advanced technology requires lots of individual attention. That's why we have a guaranteed ratio of one Pixel Academy instructor for every 8 participants during instruction time. CAMP/pixel instructors are experts in technology and we have years of experience working with kids and teens." data-picture="images/facts-81.jpg">
-						8:1 RATIO
-						</div>
-						<div class="factBlurb">
-						Our guaranteed camper-instructor ratio for our technology workshops.
-						</div>
-					</td>
-					<td class="fact">
-						<div class="factHeader" data-title="AGES 7-14" data-description="Our camp experiences are designed specifically for three time-proven age ranges: Ages 7-9, ages 9-11, and ages 12-14. Each age range has its own meticulously-created curriculum with age-appropriate material and goals. There is no prerequisite level of knowledge required to participate in any Camp Pixel session unless advertised with a '+' sign." data-picture="images/facts-ages.jpg">
-						AGES 7-14
-						</div>
-						<div class="factBlurb">
-						We design unique camp experiences for three age ranges: 7-9, 9-11, and 12-14.
-						</div>
-					</td>
-					<td class="fact">
-						<div class="factHeader" data-title="ALL-NEW AND ADVANCED TOPICS" data-description="This year, we've revamped CAMP/pixel to be better than ever. We've linked pairs of tech topics to make a CAMP/pixel learning experience that is complementary and interactive. Now, each camper works on two linked creative projects each week and comes away with a unique final product for each, one physical and one digital. We're also unveiling new advanced courses for our returning campers this summer, denoted by a '+.'" data-picture="images/facts-topics.jpg">
-						ALL-NEW TOPICS
-						</div>
-						<div class="factBlurb">
-						We're unleashing all-new and advanced topic pairs for both new and returning campers.
-						</div>
-					</td>
-					<td class="fact">
-						<div class="factHeader" data-title="THE LEARNING/PLAYING EXPERIENCE" data-description="We know how important it is to take a break from the screen, too. While your child will spend a part of the day focused on digital creation with our instructors and technology, he or she will have plenty of off-screen time as well to move around, have fun, and socialize with other awesome campers and staff." data-picture="images/facts-digPhys.jpg">
-						LEARNING/PLAYING
-						</div>
-						<div class="factBlurb">
-						Camp Pixel strikes a perfect balance between on- and off-screen inspiration.
-
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td class="fact">
-						<div class="factHeader" data-title="INDUSTRY-GRADE TECHNOLOGY" data-description="On day one of the Pixel Academy, we took a vow to always be on the forefront of the dynamic technology movement. Our unique curriculum uses industry-standard hardware and software and is expertly designed to be fun and challenging for each age group. Our campers end the summer with vast experience creating and problem-solving with cutting-edge technology, using skills that will only become more relevant in the future." data-picture="images/facts-tech.jpg">
-						INDUSTRY TECH
-						</div>
-						<div class="factBlurb">
-						We teach the ideas of the future through our carefully-chosen software.
-						</div>
-					</td>
-					<td class="fact">
-						<div class="factHeader" data-title="EXPERT INSTRUCTORS AND STAFF" data-description="Our year-round instructors are a professional team of kid-loving tech innovators. You'll find our staff teaching technology to kids at Pixel Academy's after-school programs and developing our curriculum during the academic year. During the summer, they're not only engaged in workshops but also during screen breaks and physical activities to continue the day-long bond with each camper." data-picture="images/facts-expert.jpg">
-						EXPERT STAFF
-						</div>
-						<div class="factBlurb">
-						Our instructors teach year-round at the Pixel Academy, not just at Camp.
-						</div>
-					</td>
-					<td class="fact">
-						<div class="factHeader" data-title="SAFETY FIRST" data-description="Each Pixel Academy staff member is thoroughly background-checked, certified in CPR and First-Aid, and receives camp-specific training. You'll see them year-round teaching technology to kids at our after-school programs and developing our curriculum. Safety is our highest priority because we know that ensuring safety is critical to having fun all summer." data-picture="images/facts-safety.jpg">
-						SAFETY FIRST
-						</div>
-						<div class="factBlurb">
-						Our entire team is certified in CPR/First Aid and passed thorough background checks.
-						</div>
-					</td>
-					<td class="fact">
-						<div class="factHeader" data-title="OUR EDUCATION PHILOSOPHY" data-description="From U.S. News: 'It is not a matter of choice: For the United States to remain the global innovation leader, we must make the most of all of the potential STEM talent this country has to offer.' The Pixel Academy's innovative programs jump-start our country's future leaders in technology through experiential, alternative education. Our curriculum is inspired by project-based learning and inquiry-based instruction strategies. We've worked to create a safe space where hundreds of young creators have learned to be themselves and encourage their imaginations to inspire endless creativity. Although we don't feel anything like school, campers are constantly learning and reinforcing fundamental academy skills."  data-picture="images/facts-philosophy.jpg">
-						EDUCATION PHILOSOPHY
-						</div>
-						<div class="factBlurb">
-						Our unique, hands-on education philosophy has helped hundreds of kids to learn in a new way.
-						</div>
-					</td>
-				</tr>
-			</table>
-			<table id="mobileTable">
-				<tr>
-					<td class="fact">
-						<div class="factHeader" data-title="8:1 STUDENT-INSTRUCTOR RATIO" data-description="Learning hands-on, advanced technology requires lots of individual attention. That's why we have a guaranteed ratio of one Pixel Academy instructor for every 8 participants during instruction time. CAMP/pixel instructors are experts in technology and we have years of experience working with kids and teens." data-picture="images/facts-81.jpg">
-						8:1 RATIO
-						</div>
-						<div class="factBlurb">
-						Our guaranteed camper-instructor ratio for our technology workshops.
-						</div>
-					</td>
-					<td class="fact">
-						<div class="factHeader" data-title="AGES 7-14" data-description="Our camp experiences are designed specifically for three time-proven age ranges: Ages 7-9, ages 9-11, and ages 12-14. Each age range has its own meticulously-created curriculum with age-appropriate material and goals. There is no prerequisite level of knowledge required to participate in any Camp Pixel session unless advertised with a '+' sign. " data-picture="images/facts-ages.jpg">
-						AGES 7-14
-						</div>
-						<div class="factBlurb">
-						We design unique camp experiences for three age ranges: 7-9, 9-11, and 12-14.
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td class="fact">
-						<div class="factHeader" data-title="ALL-NEW AND ADVANCED TOPICS" data-description="This year, we've revamped CAMP/pixel to be better than ever. We've linked pairs of tech topics to make a CAMP/pixel learning experience that is complementary and interactive. Now, each camper works on two linked creative projects each week and comes away with a unique final product for each, one physical and one digital. We're also unveiling new advanced courses for our returning campers this summer, denoted by a '+.'" data-picture="images/facts-topics.jpg">
-						ALL-NEW TOPICS
-						</div>
-						<div class="factBlurb">
-						We're unleashing all-new and advanced topic pairs for both new and returning campers.
-						</div>
-					</td>
-					<td class="fact">
-						<div class="factHeader" data-title="THE LEARNING/PLAYING EXPERIENCE" data-description="We know how important it is to take a break from the screen, too. While your child will spend a part of the day focused on digital creation with our instructors and technology, he or she will have plenty of off-screen time as well to move around, have fun, and socialize with other awesome campers and staff." data-picture="images/facts-digPhys.jpg">
-						LEARNING/PLAYING
-						</div>
-						<div class="factBlurb">
-						Camp Pixel strikes a perfect balance between on- and off-screen inspiration.
-
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td class="fact">
-						<div class="factHeader" data-title="INDUSTRY-GRADE TECHNOLOGY" data-description="On day one of the Pixel Academy, we took a vow to always be on the forefront of the dynamic technology movement. Our unique curriculum uses industry-standard hardware and software and is expertly designed to be fun and challenging for each age group. Our campers end the summer with vast experience creating and problem-solving with cutting-edge technology, using skills that will only become more relevant in the future." data-picture="images/facts-tech.jpg">
-						INDUSTRY TECH
-						</div>
-						<div class="factBlurb">
-						We teach the ideas of the future through our carefully-chosen software.
-						</div>
-					</td>
-					<td class="fact">
-						<div class="factHeader" data-title="EXPERT INSTRUCTORS AND STAFF" data-description="Our year-round instructors are a professional team of kid-loving tech innovators. You'll find our staff teaching technology to kids at Pixel Academy's after-school programs and developing our curriculum during the academic year. During the summer, they're not only engaged in workshops but also during screen breaks and physical activities to continue the day-long bond with each camper." data-picture="images/facts-expert.jpg">
-						EXPERT STAFF
-						</div>
-						<div class="factBlurb">
-						Our instructors teach year-round at the Pixel Academy, not just at Camp.
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td class="fact">
-						<div class="factHeader" data-title="SAFETY FIRST" data-description="Each Pixel Academy staff member is thoroughly background-checked, certified in CPR and First-Aid, and receives camp-specific training. You'll see them year-round teaching technology to kids at our after-school programs and developing our curriculum. Safety is our highest priority because we know that ensuring safety is critical to having fun all summer." data-picture="images/facts-safety.jpg">
-						SAFETY FIRST
-						</div>
-						<div class="factBlurb">
-						Our entire team is certified in CPR/First Aid and passed thorough background checks.
-						</div>
-					</td>
-					<td class="fact">
-						<div class="factHeader" data-title="OUR EDUCATION PHILOSOPHY" data-description="From U.S. News: 'It is not a matter of choice: For the United States to remain the global innovation leader, we must make the most of all of the potential STEM talent this country has to offer.' The Pixel Academy's innovative programs jump-start our country's future leaders in technology through experiential, alternative education. Our curriculum is inspired by project-based learning and inquiry-based instruction strategies. We've worked to create a safe space where hundreds of young creators have learned to be themselves and encourage their imaginations to inspire endless creativity. Although we don't feel anything like school, campers are constantly learning and reinforcing fundamental academy skills."  data-picture="images/facts-philosophy.jpg">
-						EDUCATION PHILOSOPHY
-						</div>
-						<div class="factBlurb">
-						Our unique, hands-on education philosophy has helped hundreds of kids to learn in a new way.
-						</div>
-					</td>
-				</tr>
-			</table>
-			<div id="factsExtension">
-				<div id="factsExtensionContainer">
-					<div id="closeExtensionButton">
-								X
-					</div>
-					<div id="extensionTitle">
-						8:1 STUDENT-INSTRUCTOR RATIO
-					</div>
-					<div id="extensionText">
-						Learning hands-on, advanced technology requires lots of individual attention. That's why we have a guaranteed ratio of one Pixel Academy instructor for every eight participants during instruction time. Every instructor is an expert in technology and has worked extensively with kids of your camper's age.
-					</div>
-					<a href="schedule.html" style="text-decoration:none;">
-						<div class="extensionButton">
-							SEE A DAY AT CAMP/pixel
-						</div>
-					</a>
-					<a href="topics.html" style="text-decoration:none;">
-						<div class="extensionButton">
-							VIEW CAMP/topics
-						</div>
-					</a>
-				</div>
-			</div>	
-			</div>
-			<div class="sectionBlurb">
-				<div class="sectionImage">
-				</div>
-				Technology is becoming more and more necessary for future jobs, rendering the utility of early STEM education at a critically high level. Don't just take our word for it, take the <a href="http://www.ed.gov/stem" target="_blank">U.S. Department of Education</a>, or <a target="_blank" href="https://www.ncwit.org/edjobsmap">NCWIT</a>, or <a  target="_blank" href="http://blog.linkedin.com/2013/12/18/the-25-hottest-skills-that-got-people-hired-in-2013/?utm_source=buffer&utm_campaign=Buffer&utm_content=bufferc1275&utm_medium=twitter">LinkedIn</a>. CAMP/pixel brings cutting-edge, relevant topics of technology recognizable in A.P. and college-level Computer Science classes and breaks them down into intriguing, hands-on experiences for kids ages 7-14. Campers are introduced to a new world of imagination and creativity through inquiry-based learning using professional-grade technology and methods that most students don't get at school.. Whether it's designing on a 3D plane, experimenting with virtual reality, producing creative digital art, or any of our other time-tested curriculum, our project-based approach encourages exploration and creativity while always promoting our Rule #1: Have Fun. <br><br>
-				We use technology of the present to help kids create ideas for the future.
-			</div>
-		</div>
-	</div>
-    <!-- /COST SECTION -->
-    <a name="cost"></a>
-    <div class="section">
-        <div class="mainSectionHeader" id="costSectionHeader">
-            <div class="mainSectionText">
-            <span>
-            CAMP/cost
-            </span>
-            </div>
-            <div class="mainSectionImageContainer">
-                <div class="mainSectionImage"></div>
-                <div class="mainSectionImageSlash"></div>
-            </div>
-        </div>
-        <div class="sectionContent">
-            <div id="costSection">
-            	<span id="costColumn">
-	                <div class="details">
-	                <div></div>
-	                <span class="detailColumn">
-	                    <div class="costTableLabel tableLabel label">
-	                        Before March 15
-	                    </div>
-	                    <div class="costTableInfo tableInfo">
-	                        $735-775 <br>per week or less*
-	                    </div>
-	                </span>
-	                <span class="detailColumn">
-	                    <div class="costTableLabel tableLabel label">
-	                        After March 15
-	                    </div>
-	                    <div class="costTableInfo tableInfo">
-	                        $795-$835 <br>per week or less*
-	                    </div>
-	                </span>
-	                </div>
-	                <div class="finePrint">
-	                    * Per-week prices decrease based on the number of total number of weeks your family buys! See below.
-	                </div>
-	            </span>
-	            <span id="saveColumn">
-	                <div class="details">
-		                <span class="detailColumn saveColumn">
-		                	<span class="saveIcon">
-		                		<a href="https://hq.pixelacademy.org/tickets/camp-pixel" target="_blank">
-		                		<img width="100" src="images/riskfree-01.png" />
-		                		</a>
-		                	</span>
-		                	<span class="saveDetails">
-			                    <div class="saveTableLabel tableLabel">
-			                      <a class="saveLink" href="https://hq.pixelacademy.org/tickets/camp-pixel" target="_blank">  
-			                      	No-Fee Refunds and Exchanges until April 15th. 
-			                      </a>
-			                    </div>
-			                    <div class="saveTableInfo tableInfo">
-			                        Request a refund for a CAMP/pixel ticket before April 15th and you get 100% of your money back.
-			                    </div>
-			                </span>
-		                </span>
-		                <span class="detailColumn saveColumn">
-		                	<span class="saveIcon">
-		                		<div class="affirm-promo" data-promo-key="W6WU7UK82RS34HDH" data-promo-size="120x90"></div>
-		                	</span>
-		                	<span class="saveDetails">
-			                    <div class="saveTableLabel tableLabel">
-			                    	<a class="saveLink" href="https://www.affirm.com/buy-with-affirm/" target="_blank">
-			                         Affirm: Pay over time for CAMP/pixel. 
-			                        </a>
-			                    </div>
-			                    <div class="saveTableInfo tableInfo">
-			                         Reserve your tickets now and pay later with 0-30% APR. There are no gimmicks like deferred interest or hidden fees, so the total you see at checkout is always what you'll actually pay.
-			                    </div>
-			                </span>
-		                </span>
-		                <span class="detailColumn saveColumn">
-		                	<span class="saveIcon">
-		                		<a href="https://iwannagotocamp.com/camp-pixel" target="_blank"> 
-		                			<img width="80" src="images/iwannagotocamp.png" />
-		                		</a>
-		                	</span>
-		                	<span class="saveDetails">
-			                    <div class="saveTableLabel tableLabel">
-			                    	<a class="saveLink" href="https://iwannagotocamp.com/camp-pixel" target="_blank">
-			                        	IWannaGoToCamp: Fundraise for camp.
-			                    	</a>
-			                    </div>
-			                    <div class="saveTableInfo tableInfo">
-			                        Tell the world you want to come to CAMP/pixel, and start a no-risk fundraiser to help raise money for your kid's camp experience!
-			                    </div>
-			                </span>
-		                </span>
-	                </div>
-	            </span>
-	            <br />
-	            <br />
-	            <div id="discountsSection">
-                <div id="discountsTable">
-                    <div class="discount">
-                        <div class="discountsTableLabel tableLabel">
-                            Early Bird Discount: <span class="discountsTableInfo tableInfo">
-                            $60 off EVERY week when you register before March 15th
-                        </span>
+    <head>
+        <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+        <link rel="stylesheet" type="text/css" href="cssReset.css">
+        <link rel="stylesheet" type="text/css" href="sharedStyle.css">
+        <link rel="stylesheet" type="text/css" href="sharedStyleMobile.css">
+        <link rel="stylesheet" type="text/css" href="topBar.css">
+        <link rel="stylesheet" type="text/css" href="cost.css">
+        <link rel="stylesheet" type="text/css" href="location.css">
+        <link rel="stylesheet" type="text/css" href="about.css">
+        <script src="jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="ejs_production.js">	</script>
+        <!-- Renders the page -->
+        <!-- EJS HERE -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+            	var topBar = new EJS({url: 'topBar.ejs'}).render();
+            	var bottomBar = new EJS({url: 'bottomBar.ejs'}).render();
+            
+            $("#wrapper").prepend(topBar);
+            $("#wrapper").append(bottomBar);
+            });
+        </script>
+        <script src="allPages.js"></script>
+        <script src="about.js"></script>
+        <!-- Embedded affirm logo (cost page) -->
+        <script>
+            var _affirm_config = {
+              public_api_key:  "XXXXXXXXXXXXXXX",
+              script:          "https://cdn1-sandbox.affirm.com/js/v2/affirm.js"
+            };
+            (function(l,g,m,e,a,f,b){var d,c=l[m]||{},h=document.createElement(f),n=document.getElementsByTagName(f)[0],k=function(a,b,c){return function(){a[b]._.push([c,arguments])}};c[e]=k(c,e,"set");d=c[e];c[a]={};c[a]._=[];d._=[];c[a][b]=k(c,a,b);a=0;for(b="set add save post open empty reset on off trigger ready setProduct".split(" ");a<b.length;a++)d[b[a]]=k(c,e,b[a]);a=0;for(b=["get","token","url","items"];a<b.length;a++)d[b[a]]=function(){};h.async=!0;h.src=g[f];n.parentNode.insertBefore(h,n);delete g[f];d(g);l[m]=c})(window,_affirm_config,"affirm","checkout","ui","script","ready");
+        </script>
+        <!--Start of Zopim Live Chat Script-->
+        <script type="text/javascript">
+            window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+                    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+                    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+                $.src="//v2.zopim.com/?154sLdSAaw4zX6Hoq65ZMP28r6UXYRlH";z.t=+new Date;$.
+                        type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+        </script>
+        <!-- Google Analytics -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-31308117-1', 'auto');
+            ga('require', 'linkid', 'linkid.js');
+            ga('send', 'pageview');
+            
+            var trackOutboundLink = function(url) {
+              		ga('send', 'event', url, 'click', url, {'hitCallback':
+                	function () {
+                
+                	}
+              	});
+            }
+        </script>
+        <!-- Page Title -->
+        <title> CAMP/pixel: CAMP/about: NYC's Best Technology Day Camp</title>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="content">
+                <!-- FACTS SECTION -->
+                <div class="section">
+                    <div class="mainSectionHeader" id="campFactsSectionHeader">
+                        <div class="mainSectionText">
+                            <span>
+                            CAMP/about
+                            </span>
+                        </div>
+                        <div class="mainSectionImageContainer">
+                            <div class="mainSectionImage"></div>
+                            <div class="mainSectionImageSlash"></div>
                         </div>
                     </div>
-                    <div class="discount">
-                        <div class="discountsTableLabel tableLabel">
-                            Quantity &amp; Sibling Discounts: <span class="discountsTableInfo tableInfo">
-                            In addition to the Early Bird discount, the more tickets you buy the cheaper they all become! You'll get $10 off EVERY week when you purchase two weeks, all the way up to $90 off each week when you purchase ten (for a total additional savings of $900)!
-                        </span>
+                    <div class="sectionContent">
+                        <div id="factTableHeader">New York's only technology day camp for kids that combines DIGITAL and PHYSICAL projects.</div>
+                        <div id="factTableContainerCTA">Click a fact to learn more.</div>
+                        <div id="factTableContainer">
+                            <table id="desktopTable">
+                                <tr>
+                                    <td class="fact">
+                                        <div class="factHeader" data-title="8:1 STUDENT-INSTRUCTOR RATIO" data-description="Learning hands-on, advanced technology requires lots of individual attention. That's why we have a guaranteed ratio of one Pixel Academy instructor for every 8 participants during instruction time. CAMP/pixel instructors are experts in technology and we have years of experience working with kids and teens." data-picture="images/facts-81.jpg">
+                                            8:1 RATIO
+                                        </div>
+                                        <div class="factBlurb">
+                                            Our guaranteed camper-instructor ratio for our technology workshops.
+                                        </div>
+                                    </td>
+                                    <td class="fact">
+                                        <div class="factHeader" data-title="AGES 7-14" data-description="Our camp experiences are designed specifically for three time-proven age ranges: Ages 7-9, ages 9-11, and ages 12-14. Each age range has its own meticulously-created curriculum with age-appropriate material and goals. There is no prerequisite level of knowledge required to participate in any Camp Pixel session unless advertised with a '+' sign." data-picture="images/facts-ages.jpg">
+                                            AGES 7-14
+                                        </div>
+                                        <div class="factBlurb">
+                                            We design unique camp experiences for three age ranges: 7-9, 9-11, and 12-14.
+                                        </div>
+                                    </td>
+                                    <td class="fact">
+                                        <div class="factHeader" data-title="ALL-NEW AND ADVANCED TOPICS" data-description="This year, we've revamped CAMP/pixel to be better than ever. We've linked pairs of tech topics to make a CAMP/pixel learning experience that is complementary and interactive. Now, each camper works on two linked creative projects each week and comes away with a unique final product for each, one physical and one digital. We're also unveiling new advanced courses for our returning campers this summer, denoted by a '+.'" data-picture="images/facts-topics.jpg">
+                                            ALL-NEW TOPICS
+                                        </div>
+                                        <div class="factBlurb">
+                                            We're unleashing all-new and advanced topic pairs for both new and returning campers.
+                                        </div>
+                                    </td>
+                                    <td class="fact">
+                                        <div class="factHeader" data-title="THE LEARNING/PLAYING EXPERIENCE" data-description="We know how important it is to take a break from the screen, too. While your child will spend a part of the day focused on digital creation with our instructors and technology, he or she will have plenty of off-screen time as well to move around, have fun, and socialize with other awesome campers and staff." data-picture="images/facts-digPhys.jpg">
+                                            LEARNING/PLAYING
+                                        </div>
+                                        <div class="factBlurb">
+                                            Camp Pixel strikes a perfect balance between on- and off-screen inspiration.
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fact">
+                                        <div class="factHeader" data-title="INDUSTRY-GRADE TECHNOLOGY" data-description="On day one of the Pixel Academy, we took a vow to always be on the forefront of the dynamic technology movement. Our unique curriculum uses industry-standard hardware and software and is expertly designed to be fun and challenging for each age group. Our campers end the summer with vast experience creating and problem-solving with cutting-edge technology, using skills that will only become more relevant in the future." data-picture="images/facts-tech.jpg">
+                                            INDUSTRY TECH
+                                        </div>
+                                        <div class="factBlurb">
+                                            We teach the ideas of the future through our carefully-chosen software.
+                                        </div>
+                                    </td>
+                                    <td class="fact">
+                                        <div class="factHeader" data-title="EXPERT INSTRUCTORS AND STAFF" data-description="Our year-round instructors are a professional team of kid-loving tech innovators. You'll find our staff teaching technology to kids at Pixel Academy's after-school programs and developing our curriculum during the academic year. During the summer, they're not only engaged in workshops but also during screen breaks and physical activities to continue the day-long bond with each camper." data-picture="images/facts-expert.jpg">
+                                            EXPERT STAFF
+                                        </div>
+                                        <div class="factBlurb">
+                                            Our instructors teach year-round at the Pixel Academy, not just at Camp.
+                                        </div>
+                                    </td>
+                                    <td class="fact">
+                                        <div class="factHeader" data-title="SAFETY FIRST" data-description="Each Pixel Academy staff member is thoroughly background-checked, certified in CPR and First-Aid, and receives camp-specific training. You'll see them year-round teaching technology to kids at our after-school programs and developing our curriculum. Safety is our highest priority because we know that ensuring safety is critical to having fun all summer." data-picture="images/facts-safety.jpg">
+                                            SAFETY FIRST
+                                        </div>
+                                        <div class="factBlurb">
+                                            Our entire team is certified in CPR/First Aid and passed thorough background checks.
+                                        </div>
+                                    </td>
+                                    <td class="fact">
+                                        <div class="factHeader" data-title="OUR EDUCATION PHILOSOPHY" data-description="From U.S. News: 'It is not a matter of choice: For the United States to remain the global innovation leader, we must make the most of all of the potential STEM talent this country has to offer.' The Pixel Academy's innovative programs jump-start our country's future leaders in technology through experiential, alternative education. Our curriculum is inspired by project-based learning and inquiry-based instruction strategies. We've worked to create a safe space where hundreds of young creators have learned to be themselves and encourage their imaginations to inspire endless creativity. Although we don't feel anything like school, campers are constantly learning and reinforcing fundamental academy skills."  data-picture="images/facts-philosophy.jpg">
+                                            EDUCATION PHILOSOPHY
+                                        </div>
+                                        <div class="factBlurb">
+                                            Our unique, hands-on education philosophy has helped hundreds of kids to learn in a new way.
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table id="mobileTable">
+                                <tr>
+                                    <td class="fact">
+                                        <div class="factHeader" data-title="8:1 STUDENT-INSTRUCTOR RATIO" data-description="Learning hands-on, advanced technology requires lots of individual attention. That's why we have a guaranteed ratio of one Pixel Academy instructor for every 8 participants during instruction time. CAMP/pixel instructors are experts in technology and we have years of experience working with kids and teens." data-picture="images/facts-81.jpg">
+                                            8:1 RATIO
+                                        </div>
+                                        <div class="factBlurb">
+                                            Our guaranteed camper-instructor ratio for our technology workshops.
+                                        </div>
+                                    </td>
+                                    <td class="fact">
+                                        <div class="factHeader" data-title="AGES 7-14" data-description="Our camp experiences are designed specifically for three time-proven age ranges: Ages 7-9, ages 9-11, and ages 12-14. Each age range has its own meticulously-created curriculum with age-appropriate material and goals. There is no prerequisite level of knowledge required to participate in any Camp Pixel session unless advertised with a '+' sign. " data-picture="images/facts-ages.jpg">
+                                            AGES 7-14
+                                        </div>
+                                        <div class="factBlurb">
+                                            We design unique camp experiences for three age ranges: 7-9, 9-11, and 12-14.
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fact">
+                                        <div class="factHeader" data-title="ALL-NEW AND ADVANCED TOPICS" data-description="This year, we've revamped CAMP/pixel to be better than ever. We've linked pairs of tech topics to make a CAMP/pixel learning experience that is complementary and interactive. Now, each camper works on two linked creative projects each week and comes away with a unique final product for each, one physical and one digital. We're also unveiling new advanced courses for our returning campers this summer, denoted by a '+.'" data-picture="images/facts-topics.jpg">
+                                            ALL-NEW TOPICS
+                                        </div>
+                                        <div class="factBlurb">
+                                            We're unleashing all-new and advanced topic pairs for both new and returning campers.
+                                        </div>
+                                    </td>
+                                    <td class="fact">
+                                        <div class="factHeader" data-title="THE LEARNING/PLAYING EXPERIENCE" data-description="We know how important it is to take a break from the screen, too. While your child will spend a part of the day focused on digital creation with our instructors and technology, he or she will have plenty of off-screen time as well to move around, have fun, and socialize with other awesome campers and staff." data-picture="images/facts-digPhys.jpg">
+                                            LEARNING/PLAYING
+                                        </div>
+                                        <div class="factBlurb">
+                                            Camp Pixel strikes a perfect balance between on- and off-screen inspiration.
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fact">
+                                        <div class="factHeader" data-title="INDUSTRY-GRADE TECHNOLOGY" data-description="On day one of the Pixel Academy, we took a vow to always be on the forefront of the dynamic technology movement. Our unique curriculum uses industry-standard hardware and software and is expertly designed to be fun and challenging for each age group. Our campers end the summer with vast experience creating and problem-solving with cutting-edge technology, using skills that will only become more relevant in the future." data-picture="images/facts-tech.jpg">
+                                            INDUSTRY TECH
+                                        </div>
+                                        <div class="factBlurb">
+                                            We teach the ideas of the future through our carefully-chosen software.
+                                        </div>
+                                    </td>
+                                    <td class="fact">
+                                        <div class="factHeader" data-title="EXPERT INSTRUCTORS AND STAFF" data-description="Our year-round instructors are a professional team of kid-loving tech innovators. You'll find our staff teaching technology to kids at Pixel Academy's after-school programs and developing our curriculum during the academic year. During the summer, they're not only engaged in workshops but also during screen breaks and physical activities to continue the day-long bond with each camper." data-picture="images/facts-expert.jpg">
+                                            EXPERT STAFF
+                                        </div>
+                                        <div class="factBlurb">
+                                            Our instructors teach year-round at the Pixel Academy, not just at Camp.
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fact">
+                                        <div class="factHeader" data-title="SAFETY FIRST" data-description="Each Pixel Academy staff member is thoroughly background-checked, certified in CPR and First-Aid, and receives camp-specific training. You'll see them year-round teaching technology to kids at our after-school programs and developing our curriculum. Safety is our highest priority because we know that ensuring safety is critical to having fun all summer." data-picture="images/facts-safety.jpg">
+                                            SAFETY FIRST
+                                        </div>
+                                        <div class="factBlurb">
+                                            Our entire team is certified in CPR/First Aid and passed thorough background checks.
+                                        </div>
+                                    </td>
+                                    <td class="fact">
+                                        <div class="factHeader" data-title="OUR EDUCATION PHILOSOPHY" data-description="From U.S. News: 'It is not a matter of choice: For the United States to remain the global innovation leader, we must make the most of all of the potential STEM talent this country has to offer.' The Pixel Academy's innovative programs jump-start our country's future leaders in technology through experiential, alternative education. Our curriculum is inspired by project-based learning and inquiry-based instruction strategies. We've worked to create a safe space where hundreds of young creators have learned to be themselves and encourage their imaginations to inspire endless creativity. Although we don't feel anything like school, campers are constantly learning and reinforcing fundamental academy skills."  data-picture="images/facts-philosophy.jpg">
+                                            EDUCATION PHILOSOPHY
+                                        </div>
+                                        <div class="factBlurb">
+                                            Our unique, hands-on education philosophy has helped hundreds of kids to learn in a new way.
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div id="factsExtension">
+                                <div id="factsExtensionContainer">
+                                    <div id="closeExtensionButton">
+                                        X
+                                    </div>
+                                    <div id="extensionTitle">
+                                        8:1 STUDENT-INSTRUCTOR RATIO
+                                    </div>
+                                    <div id="extensionText">
+                                        Learning hands-on, advanced technology requires lots of individual attention. That's why we have a guaranteed ratio of one Pixel Academy instructor for every eight participants during instruction time. Every instructor is an expert in technology and has worked extensively with kids of your camper's age.
+                                    </div>
+                                    <a href="schedule.html" style="text-decoration:none;">
+                                        <div class="extensionButton">
+                                            SEE A DAY AT CAMP/pixel
+                                        </div>
+                                    </a>
+                                    <a href="topics.html" style="text-decoration:none;">
+                                        <div class="extensionButton">
+                                            VIEW CAMP/topics
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sectionBlurb">
+                            <div class="sectionImage">
+                            </div>
+                            Technology is becoming more and more necessary for future jobs, rendering the utility of early STEM education at a critically high level. Don't just take our word for it, take the <a href="http://www.ed.gov/stem" target="_blank">U.S. Department of Education</a>, or <a target="_blank" href="https://www.ncwit.org/edjobsmap">NCWIT</a>, or <a  target="_blank" href="http://blog.linkedin.com/2013/12/18/the-25-hottest-skills-that-got-people-hired-in-2013/?utm_source=buffer&utm_campaign=Buffer&utm_content=bufferc1275&utm_medium=twitter">LinkedIn</a>. CAMP/pixel brings cutting-edge, relevant topics of technology recognizable in A.P. and college-level Computer Science classes and breaks them down into intriguing, hands-on experiences for kids ages 7-14. Campers are introduced to a new world of imagination and creativity through inquiry-based learning using professional-grade technology and methods that most students don't get at school.. Whether it's designing on a 3D plane, experimenting with virtual reality, producing creative digital art, or any of our other time-tested curriculum, our project-based approach encourages exploration and creativity while always promoting our Rule #1: Have Fun. <br><br>
+                            We use technology of the present to help kids create ideas for the future.
                         </div>
                     </div>
                 </div>
-                <div class="finePrint">
-                    All discounts are automatically applied, even to tickets already in your cart and already purchased! (Those discounts decrease when you remove tickets.) If you complete your order in multiple purchases, your discounts will carry over as instant rebates.
+                <!-- /COST SECTION -->
+                <a name="cost"></a>
+                <div class="section">
+                    <div class="mainSectionHeader" id="costSectionHeader">
+                        <div class="mainSectionText">
+                            <span>
+                            CAMP/cost
+                            </span>
+                        </div>
+                        <div class="mainSectionImageContainer">
+                            <div class="mainSectionImage"></div>
+                            <div class="mainSectionImageSlash"></div>
+                        </div>
+                    </div>
+                    <div class="sectionContent">
+                        <div id="costSection">
+                            <span id="costColumn">
+                                <div class="details">
+                                    <div></div>
+                                    <span class="detailColumn">
+                                        <div class="costTableLabel tableLabel label">
+                                            Before April 1st
+                                        </div>
+                                        <div class="costTableInfo tableInfo">
+                                            $735-775 <br>per week or less*
+                                        </div>
+                                    </span>
+                                    <span class="detailColumn">
+                                        <div class="costTableLabel tableLabel label">
+                                            After April 1st
+                                        </div>
+                                        <div class="costTableInfo tableInfo">
+                                            $795-$835 <br>per week or less*
+                                        </div>
+                                    </span>
+                                </div>
+                                <div class="finePrint">
+                                    * Per-week prices decrease based on the number of total number of weeks your family buys! See below.
+                                </div>
+                            </span>
+                            <span id="saveColumn">
+                                <div class="details">
+                                    <span class="detailColumn saveColumn">
+                                        <span class="saveIcon">
+                                        <a href="https://hq.pixelacademy.org/tickets/camp-pixel" target="_blank">
+                                        <img width="100" src="images/cost_risk_free.png" />
+                                        </a>
+                                        </span>
+                                        <span class="saveDetails">
+                                            <div class="saveTableLabel tableLabel">
+                                                <a class="saveLink" href="https://hq.pixelacademy.org/tickets/camp-pixel" target="_blank">  
+                                                No-Fee Refunds and Exchanges until April 15th. 
+                                                </a>
+                                            </div>
+                                            <div class="saveTableInfo tableInfo">
+                                                Request a refund for a CAMP/pixel ticket before April 15th and you get 100% of your money back.
+                                            </div>
+                                        </span>
+                                    </span>
+                                    <span class="detailColumn saveColumn">
+                                        <span class="saveIcon">
+                                            <div class="affirm-promo" data-promo-key="W6WU7UK82RS34HDH" data-promo-size="120x90"></div>
+                                        </span>
+                                        <span class="saveDetails">
+                                            <div class="saveTableLabel tableLabel">
+                                                <a class="saveLink" href="https://www.affirm.com/buy-with-affirm/" target="_blank">
+                                                Affirm: Pay over time for CAMP/pixel. 
+                                                </a>
+                                            </div>
+                                            <div class="saveTableInfo tableInfo">
+                                                Reserve your tickets now and pay later with 0-30% APR. There are no gimmicks like deferred interest or hidden fees, so the total you see at checkout is always what you'll actually pay.
+                                            </div>
+                                        </span>
+                                    </span>
+                                    <span class="detailColumn saveColumn">
+                                        <span class="saveIcon">
+                                        <a href="https://iwannagotocamp.com/camp-pixel" target="_blank"> 
+                                        <img width="80" src="images/cost_iwannagotocamp.png" />
+                                        </a>
+                                        </span>
+                                        <span class="saveDetails">
+                                            <div class="saveTableLabel tableLabel">
+                                                <a class="saveLink" href="https://iwannagotocamp.com/camp-pixel" target="_blank">
+                                                IWannaGoToCamp: Fundraise for camp.
+                                                </a>
+                                            </div>
+                                            <div class="saveTableInfo tableInfo">
+                                                Tell the world you want to come to CAMP/pixel, and start a no-risk fundraiser to help raise money for your kid's camp experience!
+                                            </div>
+                                        </span>
+                                    </span>
+                                </div>
+                            </span>
+                            <br />
+                            <br />
+                            <div id="discountsSection">
+                                <div id="discountsTable">
+                                    <div class="discount">
+                                        <div class="discountsTableLabel tableLabel">
+                                            Early Bird Discount: <span class="discountsTableInfo tableInfo">
+                                            $60 off EVERY week when you register before April 1st
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="discount">
+                                        <div class="discountsTableLabel tableLabel">
+                                            Quantity &amp; Sibling Discounts: <span class="discountsTableInfo tableInfo">
+                                           In addition to the Early Bird discount, the more tickets you buy the cheaper they all become! Save $10/week for each additional ticket you buy, up to $900 in savings!
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="finePrint">
+                                    All discounts are automatically applied, even to tickets already in your cart and already purchased! (Those discounts decrease when you remove tickets.) If you complete your order in multiple purchases, your discounts will carry over as instant rebates.
+                                </div>
+                            </div>
+                            <div id="swagListLabel">What Campers Get:</div>
+                            <ul id="swagList">
+                                <li>2 completely unique CREATIVE PROJECTS they create and take home</li>
+                                <li>1 FREE CAMP/pixel T-SHIRT! </li>
+                                <li>1 FREE FLASHDRIVE</li>
+                                <li>2 SNACKS every day!</li>
+                                <li>1 FREE 3D SCAN</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /COST SECTION -->
+                </div>
+                <!-- LOCATION SECTION -->
+                <a name="location"></a>
+                <div class="section">
+                    <div class="mainSectionHeader" id="locationsSectionHeader">
+                        <div class="mainSectionText">
+                            <span>
+                            CAMP/location
+                            </span>
+                        </div>
+                        <div class="mainSectionImageContainer">
+                            <div class="mainSectionImage"></div>
+                            <div class="mainSectionImageSlash"></div>
+                        </div>
+                    </div>
+                    <div id="locationSection" class="sectionContent">
+                        <div id="mapAddresses">
+                            <div class="addressBlock" >
+                                <div class="addressTitle">
+                                    CAMP/pixel New York
+                                </div>
+                                <a class="address" target="_blank" href="https://www.google.com/maps/place/25+Pine+St,+New+York,+NY+10005/@40.7073823,-74.0120413,17z/data=!3m1!4b1!4m2!3m1!1s0x89c25a1705a7aeaf:0x4cc1e7553e970dec">
+                                25 Pine St<br> New York, NY 10005 
+                                </a> <br>
+                                <div id="locationsNote">
+                                    [Opens in Google Maps]
+                                </div>
+                                <div class="subwayIcons">
+                                    <img src="images/subways_1.jpg" />
+                                    <img src="images/subways_2.jpg" />
+                                    <img src="images/subways_3.jpg" />
+                                    <img src="images/subways_4.jpg" />
+                                    <img src="images/subways_5.jpg" />
+                                    <img src="images/subways_A.jpg" />
+                                    <img src="images/subways_C.jpg" />
+                                    <img src="images/subways_R.jpg" />
+                                    <img src="images/subways_J.jpg" />
+                                    <img src="images/subways_Z.jpg" />
+                                </div>
+                                <div id="locationBlurb">
+                                    CAMP/pixel is taking over an entire, 25,000 sq. ft. floor of Pine Street School, a new, state-of-the-art private school in the Financial District for an immersive and totally unique technology camp experience. For full information on the school, visit <a href="http://www.pinestreetschool.com/" target="_blank">www.pinestreetschool.com</a>.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="busesBlurb">
+                            <a target="_blank" href="https://www.google.com/maps/place/25+Pine+St,+New+York,+NY+10005/@40.707388,-74.012042,17z/data=!3m1!4b1!4m2!3m1!1s0x89c25a1705a7aeaf:0xfc191dfa801114dc">
+                            <img id="mapImage" src="images/location-map.jpg" />
+                            </a>
+                            <div id="busesHeader">
+                                Sign-up for transportation with CAMP/pixel! 
+                                Extra convenience for parents and extra time together for campers!
+                            </div>
+                            <div id="busesSubheader">
+                                Our exclusive CAMP/pixel buses make stops in Manhattan and Brooklyn and offer the easiest way to make sure campers are picked up and dropped off on time and alongside their fellow campers.
+                                Sign up now to secure your spot for the summer! Just select the route that works best for you at checkout!* 
+                            </div>
+                            <br>
+                            <div id="busesHeader">
+                                <font color=red>Early-Bird Special: Bus transportation is $10/day!</font>
+                            </div>
+                            <div id="busesSubheader">				
+                                Transportation includes both pickup and dropoff. Campers are accompanied by CAMP/pixel CPR/First-Aid-certified staff the whole way. Bus is regularly $150/week; act now to take advantage!
+                            </div>
+                            <div class="finePrint">
+                                *available soon
+                            </div>
+                        </div>
+                        <div id="locationsBuses">
+                            <div id="busStops">
+                                <div class="busStopsList">
+                                    <div class="busStopsLabel">
+                                        Brooklyn Bus stops at:
+                                    </div>
+                                    <ul>
+                                        <li class="BKLYNstop">
+                                            Lincoln Pl & 7th Ave
+                                        </li>
+                                        <li class="BKLYNstop">
+                                            2nd St & 7th Ave
+                                        </li>
+                                        <li class="BKLYNstop">
+                                            13th St & 7th Ave
+                                        </li>
+                                        <li class="BKLYNstop">
+                                            13th St & 4th Ave
+                                        </li>
+                                        <li class="BKLYNstop">
+                                            Clinton & Carroll
+                                        </li>
+                                        <li class="BKLYNstop">
+                                            Clinton & Baltic
+                                        </li>
+                                        <li class="BKLYNstop">
+                                            Clinton & Pacific (The Pixel Academy)
+                                        </li>
+                                        <li class="BKLYNstop">
+                                            Clinton & Pierrepont
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="busStopsList">
+                                    <div class="busStopsLabel">
+                                        Upper East Side Bus stops at:
+                                    </div>
+                                    <ul>
+                                        <li class="UESstop">
+                                            111th St & Lexington
+                                        </li>
+                                        <li class="UESstop">
+                                            106th St & Lexington
+                                        </li>
+                                        <li class="UESstop">
+                                            97th St & Lexington
+                                        </li>
+                                        <li class="UESstop">
+                                            78th St & Lexington
+                                        </li>
+                                        <li class="UESstop">
+                                            69th St & Lexington
+                                        </li>
+                                        <li class="UESstop">
+                                            62nd St & Lexington
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="busStopsList">
+                                    <div class="busStopsLabel">
+                                        Upper West Side Bus stops at:
+                                    </div>
+                                    <ul>
+                                        <li class="UWSstop">
+                                            105th St & Columbus 
+                                        </li>
+                                        <li class="UWSstop">
+                                            97th St & Columbus  
+                                        </li>
+                                        <li class="UWSstop">
+                                            89th St & Columbus 
+                                        </li>
+                                        <li class="UWSstop">
+                                            79th St & Columbus 
+                                        </li>
+                                        <li class="UWSstop">
+                                            68th St & Columbus 
+                                        </li>
+                                        <li class="UWSstop">
+                                            62nd St & Columbus 
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="busesSubheader">
+                                Don't see your location on our bus stop list? Fill out our <a href="https://pixelacademy.formstack.com/forms/busrequest">bus request form</a>.
+                            </div>
+                        </div>
+                        <div id="locationsCTA" >
+                            <a href="schedule.html">
+                                <div id="locationsCTA1">
+                                    A DAY AT CAMP/pixel
+                                </div>
+                            </a>
+                            <a href="topics.html">
+                                <div id="locationsCTA2">
+                                    VIEW CAMP/topics
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-                <div id="swagListLabel">What Campers Get:</div>
-                <ul id="swagList">
-                    <li>2 completely unique CREATIVE PROJECTS they create and take home</li>
-                    <li>1 FREE CAMP/pixel T-SHIRT! </li>
-                    <li>1 FREE FLASHDRIVE</li>
-                    <li>2 SNACKS every day!</li>
-                    <li>1 FREE 3D SCAN</li>
-                </ul>
-            </div>
         </div>
-        <!-- /COST SECTION -->
-    </div>
-	<!-- LOCATION SECTION -->
-	 <a name="location"></a>
-	<div class="section">
-		<div class="mainSectionHeader" id="locationsSectionHeader">
-			<div class="mainSectionText">
-				<span>
-				CAMP/location
-				</span>
-			</div>
-			<div class="mainSectionImageContainer">
-				<div class="mainSectionImage"></div>
-				<div class="mainSectionImageSlash"></div>
-			</div>
-		</div>
-		<div id="locationSection" class="sectionContent">
-			<div id="mapAddresses">
-				<div class="addressBlock" >
-					<div class="addressTitle">
-						CAMP/pixel New York
-					</div>		
-					<a class="address" target="_blank" href="https://www.google.com/maps/place/25+Pine+St,+New+York,+NY+10005/@40.7073823,-74.0120413,17z/data=!3m1!4b1!4m2!3m1!1s0x89c25a1705a7aeaf:0x4cc1e7553e970dec">
-					25 Pine St<br> New York, NY 10005 
-					</a> <br>
-					<div id="locationsNote">
-					[Opens in Google Maps]
-					</div>
-					<div class="subwayIcons">
-						<img src="images/subways_1.jpg" />
-						<img src="images/subways_2.jpg" />
-						<img src="images/subways_3.jpg" />
-						<img src="images/subways_4.jpg" />
-						<img src="images/subways_5.jpg" />
-						<img src="images/subways_A.jpg" />
-						<img src="images/subways_C.jpg" />
-						<img src="images/subways_R.jpg" />
-						<img src="images/subways_J.jpg" />
-						<img src="images/subways_Z.jpg" />
-					</div>
-					<div id="locationBlurb">
-						CAMP/pixel is taking over an entire, 25,000 sq. ft. floor of Pine Street School, a new, state-of-the-art private school in the Financial District for an immersive and totally unique technology camp experience. For full information on the school, visit <a href="http://www.pinestreetschool.com/" target="_blank">www.pinestreetschool.com</a>.
-					</div>
-				</div>
-			</div>
-			<div class="busesBlurb">
-				<a target="_blank" href="https://www.google.com/maps/place/25+Pine+St,+New+York,+NY+10005/@40.707388,-74.012042,17z/data=!3m1!4b1!4m2!3m1!1s0x89c25a1705a7aeaf:0xfc191dfa801114dc">
-				
-						<img id="mapImage" src="images/location-map.jpg" />
-				
-				</a>
-						
-				<div id="busesHeader">
-					Sign-up for transportation with CAMP/pixel! 
-					Extra convenience for parents and extra time together for campers!
-				</div>
-				<div id="busesSubheader">
-					Our exclusive CAMP/pixel buses make stops in Manhattan and Brooklyn and offer the easiest way to make sure campers are picked up and dropped off on time and alongside their fellow campers.
-					Sign up now to secure your spot for the summer! Just select the route that works best for you at checkout!* 
-				</div>
-				<br>
-
-				<div id="busesHeader">
-				<font color=red>Early-Bird Special: Bus transportation is $10/day!</font></div>
-
-				<div id="busesSubheader">				
-				Transportation includes both pickup and dropoff. Campers are accompanied by CAMP/pixel CPR/First-Aid-certified staff the whole way. Bus is regularly $150/week; act now to take advantage!
-				</div>
-					<div class="finePrint">
-						*available soon
-					</div>
-				</div>
-				<div id="locationsBuses">
-				<div id="busStops">
-					<div class="busStopsList">
-						<div class="busStopsLabel">
-							Brooklyn Bus stops at:
-						</div>
-						<ul>
-							<li class="BKLYNstop">
-								Lincoln Pl & 7th Ave
-							</li>
-							<li class="BKLYNstop">
-								2nd St & 7th Ave
-							</li>
-							<li class="BKLYNstop">
-								13th St & 7th Ave
-							</li>
-							<li class="BKLYNstop">
-								13th St & 4th Ave
-							</li>
-							<li class="BKLYNstop">
-								Clinton & Carroll
-							</li>
-							<li class="BKLYNstop">
-								Clinton & Baltic
-							</li>
-							<li class="BKLYNstop">
-								Clinton & Pacific (The Pixel Academy)
-							</li>
-							<li class="BKLYNstop">
-								Clinton & Pierrepont
-							</li>
-						</ul>	
-					</div>
-					<div class="busStopsList">
-						<div class="busStopsLabel">
-							Upper East Side Bus stops at:
-						</div>
-						<ul>
-							<li class="UESstop">
-								111th St & Lexington
-							</li>
-							<li class="UESstop">
-								106th St & Lexington
-							</li>
-							<li class="UESstop">
-								97th St & Lexington
-							</li>
-							<li class="UESstop">
-								78th St & Lexington
-							</li>							
-							<li class="UESstop">
-								69th St & Lexington
-							</li>
-							<li class="UESstop">
-								62nd St & Lexington
-							</li>
-						</ul>	
-					</div>
-					<div class="busStopsList">
-						<div class="busStopsLabel">
-							Upper West Side Bus stops at:
-						</div>
-						<ul>
-							<li class="UWSstop">
-								105th St & Columbus 
-							</li>
-							<li class="UWSstop">
-								97th St & Columbus  
-							</li>
-							<li class="UWSstop">
-								89th St & Columbus 
-							</li>
-							<li class="UWSstop">
-								79th St & Columbus 
-							</li>
-							<li class="UWSstop">
-								68th St & Columbus 
-							</li>
-							<li class="UWSstop">
-								62nd St & Columbus 
-							</li>
-						</ul>	
-					</div>
-					
-				</div>
-				<div id="busesSubheader">
-					Don't see your location on our bus stop list? Fill out our <a href="https://pixelacademy.formstack.com/forms/busrequest">bus request form</a>.
-				</div>
-			</div>
-			<div id="locationsCTA" >
-				<a href="schedule.html">
-					<div id="locationsCTA1">
-						A DAY AT CAMP/pixel
-					</div>
-				</a>
-				<a href="topics.html">
-				<div id="locationsCTA2">
-					VIEW CAMP/topics
-				</div>
-				</a>
-			</div>
-		</div>
-	</div>
-
-	</div>
-
-	<!-- BOTTOM BAR -->
-		<div id="bottomBar">
-			<div id="bottomBarContainer">
-				<div id="bottomBarLogos">
-					<a href="home.html">
-						<div id="bottomBarCampLogo">
-						</div>
-					</a> 
-					<a href="http://www.pixelacademy.org/" target="_blank">
-						<div id="bottomBarPixelLogo">
-						</div>
-					</a>
-				</div>
-				<div id="bottomBarLinks">
-					<div id="topLinks">
-						<a href="about.html" class="thisPageLink">
-							About CAMP/pixel
-						</a>
-						<a href="schedule.html">
-							A Day at CAMP/pixel
-						</a>
-						<a href="topics.html">
-							CAMP/pixel topics
-						</a>
-						<a href="packages.html">
-							CAMP/packages
-						</a>
-					</div>
-					<div id="bottomLinks">
-						<a href="about.html#location">
-							Location
-						</a>
-						<a href="about.html#cost">
-							Cost
-						</a>
-						<a href="cit-program.html">
-							C.I.T. Program
-						</a>
-						<a href="http://www.pixelacademy.org/" target="_blank">
-							Pixel Academy Home Page
-						</a>
-					</div>
-				</div>
-			</div>
-				<div id ="bottomBarButtons">
-					<a href="https://hq.pixelacademy.org/tickets/camp-pixel">
-						<div id="bottomBarSignUp">
-							SIGN UP
-						</div>
-					</a>
-					<a href="contactfaq.html">
-						<div id="bottomBarSignUp">
-							CONTACT/faq
-						</div>
-					</a>
-				</div>
-				<div id="phoneNumber">
-					<div id="phone">
-						<img class="topBarContactIcon" height="20" src="images/phone-icon.png" />
-							(866) 771-6837
-						<div id="phoneSpacer">
-						</div>
-						<img class="topBarContactIcon"  height="20" src="images/email-icon.png" />
-							info@pixelacademy.org
-					</div>
-				</div>
-			</div>
-	</div>
-	<!-- END BOTTOM BAR -->
-	</div>
-
-</body>
+    </body>
 </html>
