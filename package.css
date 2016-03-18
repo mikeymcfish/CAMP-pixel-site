@@ -566,7 +566,6 @@ table .packagePurchase td, .contenttd.smaller tr.packagePurchase td{
   #DetailsSection .label .labelText {
     font-size: 28px;
     top: 35px;
-    width: 100%; 
   } 
 }
 
@@ -622,6 +621,9 @@ table .packagePurchase td, .contenttd.smaller tr.packagePurchase td{
     position: relative;
     width: 100%;
   }
+  .labelText{
+    width: auto;
+  }
 }
 
 @media screen and (max-width: 670px) { 
@@ -675,6 +677,8 @@ table .packagePurchase td, .contenttd.smaller tr.packagePurchase td{
   }
 
 
+
+
 .headerText{
   font-size: 24px;
   line-height: 28px;
@@ -703,5 +707,15 @@ table .packagePurchase td, .contenttd.smaller tr.packagePurchase td{
   }
   .headerMask{
     padding: 0px;
+  }
+
+  .skillContainer{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 370px) { 
+  .mainSection{
+    top: 25px;
   }
 }

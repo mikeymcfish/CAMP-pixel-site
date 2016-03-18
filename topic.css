@@ -330,13 +330,16 @@
   }
   #DetailsSection .label .labelText {
     font-size: 28px;
-    width: 100%; 
   } 
 }
 
 @media screen and (max-width: 815px) {
 .backToTopics{
     top: 95px;
+  }
+
+  .labelText{
+    width: auto;
   }
 }
 

@@ -250,6 +250,21 @@ font-family: "Header";
    margin-left: 180px;
 }
 
+#whr_embed_hook{
+  margin-bottom: 20px;
+}
+
+.whr-title{
+  font-style: bold;
+  margin-bottom: 5px;
+}
+
+.whr-info{
+  line-height: 12px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
 
 #viewAllTopics{
     height: 70px;
